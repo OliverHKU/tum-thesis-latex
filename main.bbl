@@ -40,6 +40,8 @@
       \field{labelalpha}{Lam94}
       \field{sortinit}{L}
       \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{LaTeX : A Documentation Preparation System User's Guide and Reference Manual}

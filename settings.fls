@@ -1,0 +1,12 @@
+PWD /Users/Oliver9/GoogleDrive/Dropbox/academy/TUM/Studium/master_thesis/writing/tum-thesis-latex
+INPUT /usr/local/texlive/2019/texmf.cnf
+INPUT /usr/local/texlive/2019/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT settings.tex
+OUTPUT settings.log
+INPUT settings.bbl
+INPUT settings.bbl
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+OUTPUT settings.pdf
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
