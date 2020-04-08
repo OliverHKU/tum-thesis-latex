@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.4.2)  8 APR 2020 11:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.4.2)  8 APR 2020 13:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1181,13 +1181,27 @@ Package auxhook Info: \AddLineBeginMainAux comes a little late,
 Package nag Info: Command \hc@caption not defined, skipping amendment on input line 22.
 Package nag Info: Command \topcaption not defined, skipping amendment on input line 22.
  (./pages/cover.tex
+<logos/tumlogo.png, id=7, 903.375pt x 501.875pt>
+File: logos/tumlogo.png Graphic file (type png)
+<use logos/tumlogo.png>
+Package pdftex.def Info: logos/tumlogo.png  used on input line 16.
+(pdftex.def)             Requested size: 102.4179pt x 56.9055pt.
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <20.74> not available
 (Font)              Font shape `T1/pplx/b/n' tried instead on input line 28.
+<logos/infologo.jpg, id=8, 165.61874pt x 165.61874pt>
+File: logos/infologo.jpg Graphic file (type jpg)
+<use logos/infologo.jpg>
+Package pdftex.def Info: logos/infologo.jpg  used on input line 36.
+(pdftex.def)             Requested size: 56.90349pt x 56.9055pt.
  [1
 
 
 
-{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]) (./pages/title.tex
+{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./logos/tumlogo.png> <./logos/infologo.jpg>]) (./pages/title.tex
+File: logos/tumlogo.png Graphic file (type png)
+<use logos/tumlogo.png>
+Package pdftex.def Info: logos/tumlogo.png  used on input line 8.
+(pdftex.def)             Requested size: 102.4179pt x 56.9055pt.
 LaTeX Font Info:    Try loading font information for OT1+pplx on input line 26.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/ot1pplx.fd
 File: ot1pplx.fd 2004/09/06 font definitions for OT1/pplx.
@@ -1212,6 +1226,10 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `zplm' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+File: logos/infologo.jpg Graphic file (type jpg)
+<use logos/infologo.jpg>
+Package pdftex.def Info: logos/infologo.jpg  used on input line 36.
+(pdftex.def)             Requested size: 56.90349pt x 56.9055pt.
  [1
 
 
@@ -1334,18 +1352,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 51437 strings out of 492616
- 1131604 string characters out of 6129482
- 1809486 words of memory out of 5000000
- 54566 multiletter control sequences out of 15000+600000
+ 51446 strings out of 492616
+ 1131788 string characters out of 6129482
+ 1809770 words of memory out of 5000000
+ 54573 multiletter control sequences out of 15000+600000
  567965 words of font info for 110 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  81i,19n,136p,9083b,2299s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (11 pages, 83839 bytes).
+Output written on main.pdf (11 pages, 96767 bytes).
 PDF statistics:
- 143 PDF objects out of 1000 (max. 8388607)
+ 146 PDF objects out of 1000 (max. 8388607)
  124 compressed objects within 2 object streams
  28 named destinations out of 1000 (max. 500000)
- 27221 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 27231 words of extra memory for PDF output out of 29859 (max. 10000000)
 
