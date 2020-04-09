@@ -159,29 +159,52 @@
       \verb https://www.mentalhealth.org.uk/statistics/mental-health-statistics-stress
       \endverb
     \endentry
-    \entry{todo}{book}{}
-      \name{author}{1}{}{%
-        {{uniquename=0,uniquepart=base,hash=b7b1e314614cf326c6e2b6eba1540682}{%
-           family={TODO},
-           familyi={T\bibinitperiod}}}%
+    \entry{5_stress_eating}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=d500d0822f1f2e0dca9bc435efeccc7c}{%
+           family={Torres},
+           familyi={T\bibinitperiod},
+           given={Susan\bibnamedelima J.},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=55e0d34e5115b8bf171f14a14cdb0b65}{%
+           family={Nowson},
+           familyi={N\bibinitperiod},
+           given={Caryl\bibnamedelima A.},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
       }
-      \list{publisher}{1}{%
-        {TODO}%
-      }
-      \strng{namehash}{b7b1e314614cf326c6e2b6eba1540682}
-      \strng{fullhash}{b7b1e314614cf326c6e2b6eba1540682}
-      \strng{bibnamehash}{b7b1e314614cf326c6e2b6eba1540682}
-      \strng{authorbibnamehash}{b7b1e314614cf326c6e2b6eba1540682}
-      \strng{authornamehash}{b7b1e314614cf326c6e2b6eba1540682}
-      \strng{authorfullhash}{b7b1e314614cf326c6e2b6eba1540682}
+      \strng{namehash}{51a01e2228e62a51eb00c172b04981cd}
+      \strng{fullhash}{51a01e2228e62a51eb00c172b04981cd}
+      \strng{bibnamehash}{51a01e2228e62a51eb00c172b04981cd}
+      \strng{authorbibnamehash}{51a01e2228e62a51eb00c172b04981cd}
+      \strng{authornamehash}{51a01e2228e62a51eb00c172b04981cd}
+      \strng{authorfullhash}{51a01e2228e62a51eb00c172b04981cd}
       \field{sortinit}{T}
       \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{TODO: Find Sources to Support the Argument}
-      \field{year}{2020}
+      \field{abstract}{Stress is thought to influence human eating behavior and has been examined in animal and human studies. Our understanding of the stress-eating relation is confounded by limitations inherent in the study designs; however, we can make some tentative conclusions that support the notion that stress can influence eating patterns in humans. Stress appears to alter overall food intake in two ways, resulting in under- or overeating, which may be influenced by stressor severity. Chronic life stress seems to be associated with a greater preference for energy- and nutrient-dense foods, namely those that are high in sugar and fat. Evidence from longitudinal studies suggests that chronic life stress may be causally linked to weight gain, with a greater effect seen in men. Stress-induced eating may be one factor contributing to the development of obesity. Future studies that measure biological markers of stress will assist our understanding of the physiologic mechanism underlying the stress-eating relation and how stress might be linked to neurotransmitters and hormones that control appetite.}
+      \field{issn}{0899-9007}
+      \field{journaltitle}{Nutrition}
+      \field{number}{11}
+      \field{title}{Relationship between stress, eating behavior, and obesity}
+      \field{volume}{23}
+      \field{year}{2007}
+      \field{pages}{887\bibrangedash 894}
+      \range{pages}{8}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.nut.2007.08.008
+      \endverb
+      \verb{urlraw}
+      \verb http://www.sciencedirect.com/science/article/pii/S0899900707002493
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S0899900707002493
+      \endverb
+      \keyw{Stress,Eating behavior,Sucrose,Fat,Rat,Weight gain,Obesity}
     \endentry
   \enddatalist
 \endrefsection
