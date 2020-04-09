@@ -1,10 +1,10 @@
 # Fdb version 3
-["bibtex settings"] 1586179949 "settings.aux" "settings.bbl" "settings" 1586336879
+["bibtex settings"] 1586179949 "settings.aux" "settings.bbl" "settings" 1586427020
   "settings.aux" 1586179949 8 a94a2480d3289e625eea47cd1b285758 ""
   (generated)
   "settings.bbl"
   "settings.blg"
-["pdflatex"] 1586336879 "settings.tex" "settings.pdf" "settings" 1586336879
+["pdflatex"] 1586427020 "settings.tex" "settings.pdf" "settings" 1586427020
   "/usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm" 1136768653 768 1321e9409b4137d6fb428ac9dc956269 ""
@@ -13,7 +13,7 @@
   "/usr/local/texlive/2019/texmf.cnf" 1557341546 577 d150fef99ac436ad1156e86b0892f6ef ""
   "settings.aux" 1586179949 8 a94a2480d3289e625eea47cd1b285758 ""
   "settings.bbl" 1586179950 0 d41d8cd98f00b204e9800998ecf8427e "bibtex settings"
-  "settings.tex" 1586336876 2135 947b28bd1442e8a204d78664c039168f ""
+  "settings.tex" 1586427017 2135 2a576745035438186713b6d166ffd117 ""
   (generated)
   "settings.log"
   "settings.pdf"
