@@ -23,11 +23,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {7}Result}{9}{chapter.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Conclusion}{10}{chapter.8}% 
+\contentsline {chapter}{\numberline {8}Limitations}{10}{chapter.8}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {9}Limitations}{11}{chapter.9}% 
+\contentsline {chapter}{\numberline {9}Future Work}{11}{chapter.9}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {10}Future Work}{12}{chapter.10}% 
+\contentsline {chapter}{\numberline {10}Conclusion}{12}{chapter.10}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\nonumberline List of Figures}{13}{chapter*.7}% 
 \defcounter {refsection}{0}\relax 
