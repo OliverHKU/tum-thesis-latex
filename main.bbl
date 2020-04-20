@@ -244,6 +244,54 @@
       \endverb
       \keyw{Mood,Well-being,Mood management,Temporal construal,Healthy eating}
     \endentry
+    \entry{9_stress_detection}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=68a4ae7d0688461ecbb2f8175f490497}{%
+           family={Melillo},
+           familyi={M\bibinitperiod},
+           given={Paolo},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=b630ddc700591f93e698b57aeecc2be6}{%
+           family={Bracale},
+           familyi={B\bibinitperiod},
+           given={Marcello},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=89fa6f969d387ab74adf56a3ce15dc15}{%
+           family={Pecchia},
+           familyi={P\bibinitperiod},
+           given={Leandro},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{70a82e4da8455b3008832cc91ac36866}
+      \strng{fullhash}{6539b4a4298d905d001876ea3a56d31e}
+      \strng{bibnamehash}{6539b4a4298d905d001876ea3a56d31e}
+      \strng{authorbibnamehash}{6539b4a4298d905d001876ea3a56d31e}
+      \strng{authornamehash}{70a82e4da8455b3008832cc91ac36866}
+      \strng{authorfullhash}{6539b4a4298d905d001876ea3a56d31e}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{BioMed Eng OnLine}
+      \field{number}{96}
+      \field{title}{Nonlinear Heart Rate Variability features for real-life stress detection. Case study: students under stress due to university examination}
+      \field{volume}{10}
+      \field{year}{2011}
+      \verb{doi}
+      \verb 10.1186/1475-925X-10-96
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1186/1475-925X-10-96
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1186/1475-925X-10-96
+      \endverb
+    \endentry
     \entry{2_many_stress}{online}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=963a807685f113279fb0b6d74c22f5d6}{%
@@ -273,6 +321,148 @@
       \endverb
       \verb{url}
       \verb https://www.mentalhealth.org.uk/statistics/mental-health-statistics-stress
+      \endverb
+    \endentry
+    \entry{10_rasa}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=c46817f2b68a1c27b344833ee96210cc}{%
+           family={{Rasa}},
+           familyi={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{c46817f2b68a1c27b344833ee96210cc}
+      \strng{fullhash}{c46817f2b68a1c27b344833ee96210cc}
+      \strng{bibnamehash}{c46817f2b68a1c27b344833ee96210cc}
+      \strng{authorbibnamehash}{c46817f2b68a1c27b344833ee96210cc}
+      \strng{authornamehash}{c46817f2b68a1c27b344833ee96210cc}
+      \strng{authorfullhash}{c46817f2b68a1c27b344833ee96210cc}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Rasa: Open source conversational AI}
+      \field{urlday}{15}
+      \field{urlmonth}{4}
+      \field{urlyear}{2020}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://rasa.com/
+      \endverb
+      \verb{url}
+      \verb https://rasa.com/
+      \endverb
+    \endentry
+    \entry{8_stress_detection}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{uniquename=0,uniquepart=base,hash=246a0374a59ae4bae2425959e260aaa8}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Feng-Tso},
+           giveni={F\bibinithyphendelim T\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=056cad769d2101dedcf4a4dc12429308}{%
+           family={Kuo},
+           familyi={K\bibinitperiod},
+           given={Cynthia},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=ed00db26c928a36037c9e0a3fa4eccf5}{%
+           family={Cheng},
+           familyi={C\bibinitperiod},
+           given={Heng-Tze},
+           giveni={H\bibinithyphendelim T\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=a3c3e8b91ff9b7b6f573a69402da78cf}{%
+           family={Buthpitiya},
+           familyi={B\bibinitperiod},
+           given={Senaka},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=0fc92a7d5c103a9f88abe981c0bc12c3}{%
+           family={Collins},
+           familyi={C\bibinitperiod},
+           given={Patricia},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=8f3a2638ad1d0e13881f58bc5450fe30}{%
+           family={Griss},
+           familyi={G\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=caf31093b7a4236a645df56501c56c7e}{%
+           family={Gris},
+           familyi={G\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=11a33b1aa9e89479e304318dff521b9c}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Guang},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin, Heidelberg}%
+      }
+      \list{publisher}{1}{%
+        {Springer Berlin Heidelberg}%
+      }
+      \strng{namehash}{837fab72464ea881d68d77132fb61fc7}
+      \strng{fullhash}{4d9c415ebebcc04952cf3814615716e5}
+      \strng{bibnamehash}{4d9c415ebebcc04952cf3814615716e5}
+      \strng{authorbibnamehash}{4d9c415ebebcc04952cf3814615716e5}
+      \strng{authornamehash}{837fab72464ea881d68d77132fb61fc7}
+      \strng{authorfullhash}{4d9c415ebebcc04952cf3814615716e5}
+      \strng{editorbibnamehash}{a9f840da6772449b5ffe8c261b640ffb}
+      \strng{editornamehash}{a9f840da6772449b5ffe8c261b640ffb}
+      \strng{editorfullhash}{a9f840da6772449b5ffe8c261b640ffb}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Continuous stress monitoring may help users better under- stand their stress patterns and provide physicians with more reliable data for interventions. Previously, studies on mental stress detection were lim- ited to a laboratory environment where participants generally rested in a sedentary position. However, it is impractical to exclude the effects of physical activity while developing a pervasive stress monitoring appli- cation for everyday use. The physiological responses caused by mental stress can be masked by variations due to physical activity.}
+      \field{booktitle}{Mobile Computing, Applications, and Services}
+      \field{isbn}{978-3-642-29336-8}
+      \field{title}{Activity-Aware Mental Stress Detection Using Physiological Sensors}
+      \field{year}{2012}
+      \field{pages}{282\bibrangedash 301}
+      \range{pages}{20}
+    \endentry
+    \entry{11_tg_bot_api}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=c915683f3ec888b8edcc7b06bd1428ec}{%
+           family={{Telegram}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{c915683f3ec888b8edcc7b06bd1428ec}
+      \strng{fullhash}{c915683f3ec888b8edcc7b06bd1428ec}
+      \strng{bibnamehash}{c915683f3ec888b8edcc7b06bd1428ec}
+      \strng{authorbibnamehash}{c915683f3ec888b8edcc7b06bd1428ec}
+      \strng{authornamehash}{c915683f3ec888b8edcc7b06bd1428ec}
+      \strng{authorfullhash}{c915683f3ec888b8edcc7b06bd1428ec}
+      \field{sortinit}{T}
+      \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Telegram Bot API}
+      \field{urlday}{15}
+      \field{urlmonth}{4}
+      \field{urlyear}{2020}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://core.telegram.org/bots/api
+      \endverb
+      \verb{url}
+      \verb https://core.telegram.org/bots/api
       \endverb
     \endentry
     \entry{5_stress_eating}{article}{}
@@ -321,6 +511,39 @@
       \verb http://www.sciencedirect.com/science/article/pii/S0899900707002493
       \endverb
       \keyw{Stress,Eating behavior,Sucrose,Fat,Rat,Weight gain,Obesity}
+    \endentry
+    \entry{7_stress_detection}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=7532e9ee5b7717c363f70867dfde14c3}{%
+           family={{Zhai}},
+           familyi={Z\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=e66ebae9da401e4cdbe0bb08bb48fb51}{%
+           family={{Barreto}},
+           familyi={B\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0fed10074a7702b2e9a25c20acdad8e1}
+      \strng{fullhash}{0fed10074a7702b2e9a25c20acdad8e1}
+      \strng{bibnamehash}{0fed10074a7702b2e9a25c20acdad8e1}
+      \strng{authorbibnamehash}{0fed10074a7702b2e9a25c20acdad8e1}
+      \strng{authornamehash}{0fed10074a7702b2e9a25c20acdad8e1}
+      \strng{authorfullhash}{0fed10074a7702b2e9a25c20acdad8e1}
+      \field{sortinit}{Z}
+      \field{sortinithash}{156173bd08b075d7295bc3e0f4735a04}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2006 International Conference of the IEEE Engineering in Medicine and Biology Society}
+      \field{title}{Stress Detection in Computer Users Based on Digital Signal Processing of Noninvasive Physiological Variables}
+      \field{year}{2006}
+      \field{pages}{1355\bibrangedash 1358}
+      \range{pages}{4}
     \endentry
   \enddatalist
 \endrefsection

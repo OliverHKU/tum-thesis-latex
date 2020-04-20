@@ -1,4 +1,37 @@
 % !TeX root = ../main.tex
 % Add the above to each chapter to make compiling the PDF easier in some editors.
 
-\chapter{Goal and Requirements}\label{chapter:goal_req}
+\chapter{Goal and Scope}\label{chapter:goal_req}
+Developing a system to serve the purposes as introduced in the previous chapter is a complicated task that covers a wide area of knowledge and various domains. Therefore, it is essential to define the scope of the study, i.e. the goal it aims to achieve, and the scope which the key terms of it is supposed to cover.
+
+\section{Goal}
+The goal of this study is to find a method to create a stress-eating profile for a random individual, based on his/her stress and eating data. More specifically, it tries to build a pipeline along which the following data can be collected via a conversational agent (which in this project was a chatbot) that interacts with its user on a daily basis:
+\begin{itemize}
+	\item Data on the individual’s level of stress at the time of measure, which is either detected by the conversational agent or reported by the individual through conversations
+	\item Data on the individual’s level of stress during the days for a measurement period of more than 2 weeks
+	\item Data on the individual’s food consumed when he/she was stressed at the time of measure, as self-reported by the individual to the conversational agent
+	\item Data on the individual’s amount of food consumed during the days for a measurement period of more than 2 weeks
+\end{itemize}
+after which it builds a classification model for the individual based on the data collected that predicts whether the individual is likely to eat more or less under the influence of stress.
+
+Furthermore, it is expected that the method can be applied to more users over a longer period of time, and ultimately provide insights and input for other applications, such as a dietary adviser or a food recommendation system.
+
+The following sections will define the scope of this project.
+
+\section{Scope of Stress Detection}
+Some of the most predominant research works on stress detection (\cite{7_stress_detection, 8_stress_detection, 9_stress_detection}) all rely on sensor data. Sensors, especially those embedded in smart devices such as smartwatches and smart armbands, have the advantage of accessing health data including heart rate, sleep, and physical exercises, which is, on the one hand, non-intrusive, and on the other, hardly available by other forms of non-intrusive daily-used data-providers such as smartphone apps. Some smartphones are also equipped with such sensors but their data quality is relatively poor, considering that users are not carrying the phone all the time. However, for this study, we choose not to utilize wearable smart devices because the data qualities provided by different smart devices vary, while this factor has to be controlled to obtain an accurate and unbiased prediction of stress across users.
+
+Furthermore, no contextual information such as GPS data and social activities being performed by the participants is utilized, for the chatbot platform (Rasa) (\cite{10_rasa}) and API (Telegram Bot API) (\cite{11_tg_bot_api}) chosen to be used do not support the gathering of such data in the background, making it intrusive to try to get these contexts (for example, in order to get the social activity a user is performing, the bot has to ask explicitly for where he/she is, whom he/she is with, and what exactly is he/she doing). More information on the choice of the framework can be found in \autoref{chapter:sys_design}. \bigskip
+
+Instead, stress detection is done with a two-step process solely relying on simple conversations between the chatbot and the user. First, stress is sampled three times per day at fixed hours for every participant, i.e, the chatbot decides to ask about the user’s level of stress at these timestamps. Second, based on the answers collected from the users in the first two weeks, a weighted clustering algorithm is performed on the timestamps to determine the scheduled time of the coming day of stress detection. The number of clusters is determined by the stress states of the user in the past two days. If the user was stressed the day before, stress is going to be sampled three times the day after, hence three clusters. If the user was not stressed the day before but was two days before, two clusters will be trained, leading to asking for stress in twice in the coming day. Otherwise, only one cluster is going to be trained. \autoref{fig:adapt-stress} illustrates the way this adaptive stress-sampling works.
+
+\begin{figure}[ht]
+  \caption{The adaptive stress-sampling process}
+  \label{fig:adapt-stress}
+  \centering
+  \includegraphics[width=0.7\textwidth]{fig-adapt-stress}
+\end{figure}
+
+\section{Scope of Stress Self-Reporting}
+
+Users of the system have the option to actively report stress in the form of a conversation with the chatbot. The self-reporting uses natural language, and specifically in this project, English, as an natural language understanding (NLU) module in English is trained in this project. No other forms of interaction are involved.

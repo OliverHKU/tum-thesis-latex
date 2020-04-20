@@ -2005,6 +2005,11 @@
     <bcf:citekey order="7">5_stress_eating</bcf:citekey>
     <bcf:citekey order="8">6_cbt</bcf:citekey>
     <bcf:citekey order="9">3_woebot</bcf:citekey>
+    <bcf:citekey order="10">7_stress_detection</bcf:citekey>
+    <bcf:citekey order="10">8_stress_detection</bcf:citekey>
+    <bcf:citekey order="10">9_stress_detection</bcf:citekey>
+    <bcf:citekey order="11">10_rasa</bcf:citekey>
+    <bcf:citekey order="12">11_tg_bot_api</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
