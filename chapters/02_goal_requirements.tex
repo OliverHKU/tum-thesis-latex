@@ -34,4 +34,12 @@ Instead, stress detection is done with a two-step process solely relying on simp
 
 \section{Scope of Stress Self-Reporting}
 
-Users of the system have the option to actively report stress in the form of a conversation with the chatbot. The self-reporting uses natural language, and specifically in this project, English, as an natural language understanding (NLU) module in English is trained in this project. No other forms of interaction are involved.
+Users of the system have the option to actively report stress in the form of a conversation with the chatbot. The self-reporting uses natural language, and specifically in this project, English, as a natural language understanding (NLU) module in English is trained in this project. No other forms of interaction are involved.
+
+\section{Definition of Eating Behaviors}
+
+In this research, the so-called “eating behaviors” refer to patterns in food consumption. The scope of such patterns differs in two scenarios, under one of which is the data the system collects which is related to eating. This data is used as input to a supervised learning scheme which builds predictive models. Under the other scenario, i.e. when such models are put into use, “eating behaviors” refer to food consumption patterns of the participants and future users that the models try to predict.
+
+In the first scenario, the chatbot collects both descriptive and categorical data. It asks the participants to describe the food consumed, in natural language, at the time when they are stressed, or at the end of the day. In addition, it invites the participants to reflect the amount of food consumed during the day, and in case the participants have been stressed during the day, to compare this amount with the amount they are likely to eat when they are not stressed.
+
+In the second scenario, the models try to predict only the categorical data related to food consumption, i.e. the amount of food likely to be consumed by a user given his/her stress level. In addition, it tries to predict whether the user is likely to eat any comfort food, which is defined in the coming section.
