@@ -244,6 +244,71 @@
       \endverb
       \keyw{Mood,Well-being,Mood management,Temporal construal,Healthy eating}
     \endentry
+    \entry{14_comfort_food}{article}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,uniquepart=base,hash=f411eb6634014ab9ef91a642c89c99e3}{%
+           family={Locher},
+           familyi={L\bibinitperiod},
+           given={Julie\bibnamedelima L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=fa8c6a5e44c585df46bcf131f5a62f0d}{%
+           family={Yoels},
+           familyi={Y\bibinitperiod},
+           given={William\bibnamedelima C.},
+           giveni={W\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=1c4e2ae98f73317cf68248c9e0237c51}{%
+           family={Maurer},
+           familyi={M\bibinitperiod},
+           given={Donna},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=b700638ad2bd99706ec5b35e25ee7c44}{%
+           family={Ells},
+           familyi={E\bibinitperiod},
+           given={Jillian},
+           giveni={J\bibinitperiod},
+           givenun=0,
+           prefix={van},
+           prefixi={v\bibinitperiod},
+           prefixun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Routledge}%
+      }
+      \strng{namehash}{391d3a7c188fed12e2c075d0de4224ea}
+      \strng{fullhash}{6f97924326e2a305b074509ebd989fa2}
+      \strng{bibnamehash}{6f97924326e2a305b074509ebd989fa2}
+      \strng{authorbibnamehash}{6f97924326e2a305b074509ebd989fa2}
+      \strng{authornamehash}{391d3a7c188fed12e2c075d0de4224ea}
+      \strng{authorfullhash}{6f97924326e2a305b074509ebd989fa2}
+      \field{sortinit}{L}
+      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Food and Foodways}
+      \field{number}{4}
+      \field{title}{Comfort Foods: An Exploratory Journey Into The Social and Emotional Significance of Food}
+      \field{volume}{13}
+      \field{year}{2005}
+      \field{pages}{273\bibrangedash 297}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1080/07409710500334509
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1080/07409710500334509
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1080/07409710500334509
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1080/07409710500334509
+      \endverb
+    \endentry
     \entry{9_stress_detection}{article}{}
       \name{author}{3}{}{%
         {{uniquename=0,uniquepart=base,hash=68a4ae7d0688461ecbb2f8175f490497}{%
@@ -353,6 +418,46 @@
       \verb{url}
       \verb https://rasa.com/
       \endverb
+    \endentry
+    \entry{15_comfort_food_review}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=114b05f6dd02c63aee3364435e3de721}{%
+           family={Spence},
+           familyi={S\bibinitperiod},
+           given={Charles},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{114b05f6dd02c63aee3364435e3de721}
+      \strng{fullhash}{114b05f6dd02c63aee3364435e3de721}
+      \strng{bibnamehash}{114b05f6dd02c63aee3364435e3de721}
+      \strng{authorbibnamehash}{114b05f6dd02c63aee3364435e3de721}
+      \strng{authornamehash}{114b05f6dd02c63aee3364435e3de721}
+      \strng{authorfullhash}{114b05f6dd02c63aee3364435e3de721}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Everyone has heard of comfort foods, but what exactly are they, and what influence, if any, do they actually have over our mood? In this review, I summarize the literature on this important topic, highlighting the role that comfort foods play in alleviating loneliness by priming positive thoughts of previous social interactions, at least amongst those who are securely attached. The evidence concerning individual differences in the kinds of food that are likely to constitute comfort food for different sections of the population is also highlighted. Intriguingly, while most people believe that comfort foods elevate their mood, robust empirical findings in support of such claims are somewhat harder to come by. Such results have led to some influential headlines suggesting that the very notion of comfort food is nothing more than a myth. While this may be overstating matters somewhat, it is clear that many uncertainties still surround if, when, and for whom, the consumption of comfort food really does provide some sort of psychological benefit. This represents something of a challenge for all those marketers out there waiting to associate their products with the appealing notion of comfort food.}
+      \field{issn}{1878-450X}
+      \field{journaltitle}{International Journal of Gastronomy and Food Science}
+      \field{title}{Comfort food: A review}
+      \field{volume}{9}
+      \field{year}{2017}
+      \field{pages}{105\bibrangedash 109}
+      \range{pages}{5}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.ijgfs.2017.07.001
+      \endverb
+      \verb{urlraw}
+      \verb http://www.sciencedirect.com/science/article/pii/S1878450X16300786
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S1878450X16300786
+      \endverb
+      \keyw{Comfort food,Emotional eating,Nostalgia,Mood,Loneliness,Unhealthy eating}
     \endentry
     \entry{8_stress_detection}{inproceedings}{}
       \name{author}{6}{}{%
@@ -464,6 +569,58 @@
       \verb{url}
       \verb https://core.telegram.org/bots/api
       \endverb
+    \endentry
+    \entry{12_comfort_food_women}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=b433be2c16f7cb58463698e2b41f0a5b}{%
+           family={Tomiyama},
+           familyi={T\bibinitperiod},
+           given={A.\bibnamedelimi Janet},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=4a7dbc634347bc575fdf4c61e4326843}{%
+           family={Dallman},
+           familyi={D\bibinitperiod},
+           given={Mary\bibnamedelima F.},
+           giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=646ebaea089797c900b87d604b6b510b}{%
+           family={Epel},
+           familyi={E\bibinitperiod},
+           given={Elissa\bibnamedelima S.},
+           giveni={E\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{376a990875f19c6a1b8b2c189fd71028}
+      \strng{fullhash}{d301ab61aa519a8a426cabf293661c7e}
+      \strng{bibnamehash}{d301ab61aa519a8a426cabf293661c7e}
+      \strng{authorbibnamehash}{d301ab61aa519a8a426cabf293661c7e}
+      \strng{authornamehash}{376a990875f19c6a1b8b2c189fd71028}
+      \strng{authorfullhash}{d301ab61aa519a8a426cabf293661c7e}
+      \field{sortinit}{T}
+      \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0306-4530}
+      \field{journaltitle}{Psychoneuroendocrinology}
+      \field{number}{10}
+      \field{title}{Comfort food is comforting to those most stressed: Evidence of the chronic stress response network in high stress women}
+      \field{volume}{36}
+      \field{year}{2011}
+      \field{pages}{1513\bibrangedash 1519}
+      \range{pages}{7}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.psyneuen.2011.04.005
+      \endverb
+      \verb{urlraw}
+      \verb http://www.sciencedirect.com/science/article/pii/S0306453011001296
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S0306453011001296
+      \endverb
+      \keyw{Abdominal fat,Cortisol,Stress,Stress eating,Hypothalamicâpituitaryâadrenal axis}
     \endentry
     \entry{5_stress_eating}{article}{}
       \name{author}{2}{}{%
