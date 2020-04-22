@@ -470,10 +470,10 @@ INPUT pages/abstract.tex
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplb9e.tfm
 INPUT main.toc
 INPUT main.toc
-OUTPUT main.toc
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplb9e.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmb.tfm
+OUTPUT main.toc
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplri9e.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplri9e.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplri8r.tfm

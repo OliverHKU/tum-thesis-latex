@@ -1,17 +1,17 @@
 [0] Config.pm:304> INFO - This is Biber 2.12
 [0] Config.pm:307> INFO - Logfile is 'main.blg'
-[42] biber-darwin:315> INFO - === Wed Apr 22, 2020, 01:02:54
-[68] Biber.pm:371> INFO - Reading 'main.bcf'
-[163] Biber.pm:889> INFO - Found 14 citekeys in bib section 0
-[176] Biber.pm:4093> INFO - Processing section 0
-[190] Biber.pm:4254> INFO - Looking for bibtex format file 'bibliography.bib' for section 0
-[192] bibtex.pm:1523> INFO - LaTeX decoding ...
-[224] bibtex.pm:1340> INFO - Found BibTeX data source 'bibliography.bib'
-[268] Utils.pm:193> WARN - month field 'Jun' in entry '3_woebot' is not an integer - this will probably not sort properly.
-[354] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[354] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[354] Biber.pm:3921> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[354] Biber.pm:3927> INFO - No sort tailoring available for locale 'en-US'
-[378] bbl.pm:636> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[391] bbl.pm:739> INFO - Output to main.bbl
-[392] Biber.pm:110> INFO - WARNINGS: 1
+[41] biber-darwin:315> INFO - === Wed Apr 22, 2020, 22:55:21
+[67] Biber.pm:371> INFO - Reading 'main.bcf'
+[167] Biber.pm:889> INFO - Found 16 citekeys in bib section 0
+[182] Biber.pm:4093> INFO - Processing section 0
+[195] Biber.pm:4254> INFO - Looking for bibtex format file 'bibliography.bib' for section 0
+[198] bibtex.pm:1523> INFO - LaTeX decoding ...
+[268] bibtex.pm:1340> INFO - Found BibTeX data source 'bibliography.bib'
+[313] Utils.pm:193> WARN - month field 'Jun' in entry '3_woebot' is not an integer - this will probably not sort properly.
+[424] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[424] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[424] Biber.pm:3921> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[424] Biber.pm:3927> INFO - No sort tailoring available for locale 'en-US'
+[454] bbl.pm:636> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[472] bbl.pm:739> INFO - Output to main.bbl
+[472] Biber.pm:110> INFO - WARNINGS: 1

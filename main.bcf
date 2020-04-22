@@ -2021,6 +2021,16 @@
     <bcf:citekey order="16">14_comfort_food</bcf:citekey>
     <bcf:citekey order="17">14_comfort_food</bcf:citekey>
     <bcf:citekey order="18">14_comfort_food</bcf:citekey>
+    <bcf:citekey order="19">4_mood_eat</bcf:citekey>
+    <bcf:citekey order="20">4_mood_eat</bcf:citekey>
+    <bcf:citekey order="21">32_endorphins</bcf:citekey>
+    <bcf:citekey order="22">16_martin</bcf:citekey>
+    <bcf:citekey order="23">16_martin</bcf:citekey>
+    <bcf:citekey order="24">16_martin</bcf:citekey>
+    <bcf:citekey order="25">5_stress_eating</bcf:citekey>
+    <bcf:citekey order="26">5_stress_eating</bcf:citekey>
+    <bcf:citekey order="27">4_mood_eat</bcf:citekey>
+    <bcf:citekey order="28">5_stress_eating</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

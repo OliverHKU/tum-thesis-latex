@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.4.2)  22 APR 2020 01:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.4.2)  22 APR 2020 22:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1259,16 +1259,15 @@ LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <10.95> not available
 
 ]
 Package tocbasic Info: character protrusion at toc deactivated on input line 36.
- (./main.toc)
+ (./main.toc [5
+
+
+
+
+])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- [5
-
-
-
-
-]
 LaTeX Font Info:    Font shape `T1/pplx/m/sl' in size <10.95> not available
 (Font)              Font shape `T1/pplx/m/it' tried instead on input line 39.
  [6] (./chapters/01_introduction.tex
@@ -1310,49 +1309,49 @@ LaTeX Font Warning: Font shape `OMS/pplx/m/n' undefined
 
 
 ]
-<./figures/fig-adapt-stress.png, id=142, 1262.7175pt x 929.4725pt>
+<./figures/fig-adapt-stress.png, id=148, 1262.7175pt x 929.4725pt>
 File: ./figures/fig-adapt-stress.png Graphic file (type png)
 <use ./figures/fig-adapt-stress.png>
 Package pdftex.def Info: ./figures/fig-adapt-stress.png  used on input line 32.
 (pdftex.def)             Requested size: 292.7776pt x 215.50446pt.
  [5] [6 <./figures/fig-adapt-stress.png>]) (./chapters/03_related_work.tex [7]
 chapter 3.
-) (./chapters/04_system_design.tex [8
+[8
 
 
-]
+]) (./chapters/04_system_design.tex [9]
 chapter 4.
-) (./chapters/05_experiment.tex [9
+) (./chapters/05_experiment.tex [10
 
 
 ]
 chapter 5.
-) (./chapters/06_data_analysis.tex [10
+) (./chapters/06_data_analysis.tex [11
 
 
 ]
 chapter 6.
-) (./chapters/07_result.tex [11
+) (./chapters/07_result.tex [12
 
 
 ]
 chapter 7.
-) (./chapters/08_limitations.tex [12
+) (./chapters/08_limitations.tex [13
 
 
 ]
 chapter 8.
-) (./chapters/09_future_work.tex [13
+) (./chapters/09_future_work.tex [14
 
 
 ]
 chapter 9.
-) (./chapters/10_conclusion.tex [14
+) (./chapters/10_conclusion.tex [15
 
 
 ]
 chapter 10.
-) [15
+) [16
 
 
 ]
@@ -1361,7 +1360,7 @@ Package tocbasic Info: character protrusion at lof deactivated on input line 55.
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
- [16
+ [17
 
 
 ]
@@ -1370,7 +1369,7 @@ Package tocbasic Info: character protrusion at lot deactivated on input line 56.
 \tf@lot=\write8
 \openout8 = `main.lot'.
 
- [17
+ [18
 
 
 ]
@@ -1378,12 +1377,12 @@ chapter without number
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplx/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
-[18
+[19
 
 
 ]
 No complaints by nag.
-[19]
+[20]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 60.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 60.
  (./main.aux)
@@ -1400,18 +1399,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 52847 strings out of 492616
- 1164716 string characters out of 6129482
- 1868321 words of memory out of 5000000
- 55718 multiletter control sequences out of 15000+600000
- 581606 words of font info for 237 fonts, out of 8000000 for 9000
+ 52877 strings out of 492616
+ 1165369 string characters out of 6129482
+ 1870555 words of memory out of 5000000
+ 55738 multiletter control sequences out of 15000+600000
+ 581829 words of font info for 240 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  81i,19n,136p,9083b,2299s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (26 pages, 225622 bytes).
+Output written on main.pdf (27 pages, 231274 bytes).
 PDF statistics:
- 357 PDF objects out of 1000 (max. 8388607)
- 314 compressed objects within 4 object streams
- 71 named destinations out of 1000 (max. 500000)
- 33492 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 383 PDF objects out of 1000 (max. 8388607)
+ 339 compressed objects within 4 object streams
+ 77 named destinations out of 1000 (max. 500000)
+ 33516 words of extra memory for PDF output out of 35830 (max. 10000000)
 

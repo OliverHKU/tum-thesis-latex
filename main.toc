@@ -25,22 +25,28 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Related Work}{8}{chapter.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}System Design}{9}{chapter.4}% 
+\contentsline {section}{\numberline {3.1}The Effect of Emotions and Stress on Eating}{8}{section.3.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Experiment}{10}{chapter.5}% 
+\contentsline {subsection}{\numberline {3.1.1}The Effect of Emotions on Eating}{8}{subsection.3.1.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Data Analysis}{11}{chapter.6}% 
+\contentsline {subsection}{\numberline {3.1.2}The Effect of Stress on Eating}{9}{subsection.3.1.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Result}{12}{chapter.7}% 
+\contentsline {chapter}{\numberline {4}System Design}{10}{chapter.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Limitations}{13}{chapter.8}% 
+\contentsline {chapter}{\numberline {5}Experiment}{11}{chapter.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {9}Future Work}{14}{chapter.9}% 
+\contentsline {chapter}{\numberline {6}Data Analysis}{12}{chapter.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {10}Conclusion}{15}{chapter.10}% 
+\contentsline {chapter}{\numberline {7}Result}{13}{chapter.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Figures}{16}{chapter*.8}% 
+\contentsline {chapter}{\numberline {8}Limitations}{14}{chapter.8}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Tables}{17}{chapter*.9}% 
+\contentsline {chapter}{\numberline {9}Future Work}{15}{chapter.9}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Bibliography}{18}{chapter*.10}% 
+\contentsline {chapter}{\numberline {10}Conclusion}{16}{chapter.10}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline List of Figures}{17}{chapter*.8}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline List of Tables}{18}{chapter*.9}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline Bibliography}{19}{chapter*.10}% 

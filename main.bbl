@@ -244,6 +244,62 @@
       \endverb
       \keyw{Mood,Well-being,Mood management,Temporal construal,Healthy eating}
     \endentry
+    \entry{32_endorphins}{article}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,uniquepart=base,hash=5aad476066bc8ef101ea1fc7def3f051}{%
+           family={Gold},
+           familyi={G\bibinitperiod},
+           given={A.\bibnamedelimi E.},
+           giveni={A\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=23b8262910ff1e8b62d79f9de35652e5}{%
+           family={MacLeod},
+           familyi={M\bibinitperiod},
+           given={K.\bibnamedelimi M.},
+           giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=7fbfefd2efef07539870f060d2ce0eb4}{%
+           family={Frier},
+           familyi={F\bibinitperiod},
+           given={B.\bibnamedelimi M.},
+           giveni={B\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=027da76a4d809ac8ff2a9c87514128cf}{%
+           family={Deary},
+           familyi={D\bibinitperiod},
+           given={I\bibnamedelima J.},
+           giveni={I\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{08f904ebb58b6e0c52fb2b55e7a8f8db}
+      \strng{fullhash}{7e520673f5135a85dcd6eecd944898dd}
+      \strng{bibnamehash}{7e520673f5135a85dcd6eecd944898dd}
+      \strng{authorbibnamehash}{7e520673f5135a85dcd6eecd944898dd}
+      \strng{authornamehash}{08f904ebb58b6e0c52fb2b55e7a8f8db}
+      \strng{authorfullhash}{7e520673f5135a85dcd6eecd944898dd}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Personality and Social Psychology}
+      \field{number}{3}
+      \field{title}{Changes in mood during acute hypoglycemia in healthy participants}
+      \field{volume}{68}
+      \field{year}{1995}
+      \field{pages}{498\bibrangedash 504}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1037/0022-3514.68.3.498
+      \endverb
+      \verb{urlraw}
+      \verb https://psycnet.apa.org/doi/10.1037/0022-3514.68.3.498
+      \endverb
+      \verb{url}
+      \verb https://psycnet.apa.org/doi/10.1037/0022-3514.68.3.498
+      \endverb
+    \endentry
     \entry{14_comfort_food}{article}{}
       \name{author}{4}{}{%
         {{uniquename=0,uniquepart=base,hash=f411eb6634014ab9ef91a642c89c99e3}{%
@@ -308,6 +364,35 @@
       \verb{url}
       \verb https://doi.org/10.1080/07409710500334509
       \endverb
+    \endentry
+    \entry{16_martin}{thesis}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=4384f903f0b7bf67f6a30956192d7837}{%
+           family={Meinel},
+           familyi={M\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Technical University of Munich, Munich, Germany}%
+      }
+      \strng{namehash}{4384f903f0b7bf67f6a30956192d7837}
+      \strng{fullhash}{4384f903f0b7bf67f6a30956192d7837}
+      \strng{bibnamehash}{4384f903f0b7bf67f6a30956192d7837}
+      \strng{authorbibnamehash}{4384f903f0b7bf67f6a30956192d7837}
+      \strng{authornamehash}{4384f903f0b7bf67f6a30956192d7837}
+      \strng{authorfullhash}{4384f903f0b7bf67f6a30956192d7837}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Development of a chatbot for supporting healthy dietary choices}
+      \field{type}{unpublished guided research supervised by PD Dr. Georg Groh, advised by Monika Wintergerst}
+      \field{year}{2019}
+      \field{dateera}{ce}
     \endentry
     \entry{9_stress_detection}{article}{}
       \name{author}{3}{}{%
