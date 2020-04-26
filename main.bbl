@@ -19,6 +19,118 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global}
+    \entry{25_timing_review}{article}{}
+      \name{author}{6}{}{%
+        {{uniquename=0,uniquepart=base,hash=e20b581922923b9fb23c8544df3fa98b}{%
+           family={Alkhaldi},
+           familyi={A\bibinitperiod},
+           given={Ghadah},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=bbed2db1071fcaa64124073ce8c02364}{%
+           family={Hamilton},
+           familyi={H\bibinitperiod},
+           given={Fiona\bibnamedelima L},
+           giveni={F\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=54fccf49bc33645356b9f7adbf16f778}{%
+           family={Lau},
+           familyi={L\bibinitperiod},
+           given={Rosa},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=c445ce014b9f755245f3242977c94c00}{%
+           family={Webster},
+           familyi={W\bibinitperiod},
+           given={Rosie},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=64ee05d60f413a4b7b295229bfddd5dc}{%
+           family={Michie},
+           familyi={M\bibinitperiod},
+           given={Susan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=497c7b3f990d485e244359419c286eb4}{%
+           family={Murray},
+           familyi={M\bibinitperiod},
+           given={Elizabeth},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b82665943280d43f1d58eb0e108d1080}
+      \strng{fullhash}{a6dd04262b4cd6dde984012022188cbe}
+      \strng{bibnamehash}{a6dd04262b4cd6dde984012022188cbe}
+      \strng{authorbibnamehash}{a6dd04262b4cd6dde984012022188cbe}
+      \strng{authornamehash}{b82665943280d43f1d58eb0e108d1080}
+      \strng{authorfullhash}{a6dd04262b4cd6dde984012022188cbe}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Background: Digital interventions have been effective in improving numerous health outcomes and health behaviors; furthermore, they are increasingly being used in different health care areas, including self-management of long-term conditions, mental health, and health promotion. The full potential of digital interventions is hindered by a lack of user engagement. There is an urgent need to develop effective strategies that can promote users' engagement with digital interventions. One potential method is the use of technology-based reminders or prompts. Objective: To evaluate the effectiveness of technology-based strategies for promoting engagement with digital interventions. Methods: Cochrane Collaboration guidelines on systematic review methodology were followed. The search strategy was executed across 7 electronic databases: the Cochrane Central Register of Controlled Trials (CENTRAL), MEDLINE, Embase, Web of Science, the Education Resources Information Center (ERIC), PsycINFO, and the Cumulative Index to Nursing and Allied Health Literature (CINAHL). Databases were searched from inception to September 13, 2013, with no language or publication type restrictions, using three concepts: randomized controlled trials, digital interventions, and engagement. Gray literature and reference lists of included studies were also searched. Titles and abstracts were independently screened by 2 authors, then the full texts of potentially eligible papers were obtained and double-screened. Data from eligible papers were extracted by one author and checked for accuracy by another author. Bias was assessed using the Cochrane risk of bias assessment tool. Narrative synthesis was performed on all included studies and, where appropriate, data were pooled using meta-analysis. All findings were reported according to the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) guidelines. Results: A total of 14 studies were included in the review with 8774 participants. Of the 14 studies, 9 had sufficient data to be included in the meta-analyses. The meta-analyses suggested that technology-based strategies can potentially promote engagement compared to no strategy for dichotomous outcomes (relative risk [RR] 1.27, 95{\%} CI 1.01-1.60, I2=71{\%}), but due to considerable heterogeneity and the small sample sizes in most studies, this result should be treated with caution. No studies reported adverse or economic outcomes. Only one study with a small sample size compared different characteristics; the study found that strategies promoting new digital intervention content and those sent to users shortly after they started using the digital intervention were more likely to engage users. Conclusions: Overall, studies reported borderline positive effects of technology-based strategies on engagement compared to no strategy. However, the results have to be interpreted with caution. More research is needed to replicate findings and understand which characteristics of the strategies are effective in promoting engagement and how cost-effective they are.}
+      \field{issn}{1438-8871}
+      \field{journaltitle}{J Med Internet Res}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{The Effectiveness of Prompts to Promote Engagement With Digital Interventions: A Systematic Review}
+      \field{volume}{18}
+      \field{year}{2016}
+      \field{pages}{e6}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.2196/jmir.4790
+      \endverb
+      \verb{urlraw}
+      \verb http://www.ncbi.nlm.nih.gov/pubmed/26747176
+      \endverb
+      \verb{url}
+      \verb http://www.ncbi.nlm.nih.gov/pubmed/26747176
+      \endverb
+      \keyw{systematic review; adherence; engagement; prompts; digital interventions}
+    \endentry
+    \entry{34_chatbot_name}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=c65a5b424e24622ac946ec7e4a124c6e}{%
+           family={Araujo},
+           familyi={A\bibinitperiod},
+           given={Theo},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c65a5b424e24622ac946ec7e4a124c6e}
+      \strng{fullhash}{c65a5b424e24622ac946ec7e4a124c6e}
+      \strng{bibnamehash}{c65a5b424e24622ac946ec7e4a124c6e}
+      \strng{authorbibnamehash}{c65a5b424e24622ac946ec7e4a124c6e}
+      \strng{authornamehash}{c65a5b424e24622ac946ec7e4a124c6e}
+      \strng{authorfullhash}{c65a5b424e24622ac946ec7e4a124c6e}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Disembodied conversational agents in the form of chatbots are increasingly becoming a reality on social media and messaging applications, and are a particularly pressing topic for service encounters with companies. Adopting an experimental design with actual chatbots powered with current technology, this study explores the extent to which human-like cues such as language style and name, and the framing used to introduce the chatbot to the consumer can influence perceptions about social presence as well as mindful and mindless anthropomorphism. Moreover, this study investigates the relevance of anthropomorphism and social presence to important company-related outcomes, such as attitudes, satisfaction and the emotional connection that consumers feel with the company after interacting with the chatbot.}
+      \field{issn}{0747-5632}
+      \field{journaltitle}{Computers in Human Behavior}
+      \field{title}{Living up to the chatbot hype: The influence of anthropomorphic design cues and communicative agency framing on conversational agent and company perceptions}
+      \field{volume}{85}
+      \field{year}{2018}
+      \field{pages}{183\bibrangedash 189}
+      \range{pages}{7}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.chb.2018.03.051
+      \endverb
+      \verb{urlraw}
+      \verb http://www.sciencedirect.com/science/article/pii/S0747563218301560
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S0747563218301560
+      \endverb
+      \keyw{Disembodied conversational agents,Chatbots,Service encounters,Social presence,Anthropomorphism}
+    \endentry
     \entry{6_cbt}{article}{}
       \name{author}{4}{}{%
         {{uniquename=0,uniquepart=base,hash=56ed7f66d8ac1a5e62a676333b5bd89d}{%
@@ -79,6 +191,160 @@
       \endverb
       \verb{url}
       \verb https://doi.org/10.1080/15228830802094429
+      \endverb
+    \endentry
+    \entry{24_why_rasa}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,uniquepart=base,hash=6a3d37f69e57d79cc397dc282464f563}{%
+           family={Braun},
+           familyi={B\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=8b316685bdbe61b153b2d2520ae575e8}{%
+           family={Hernandez\bibnamedelima Mendez},
+           familyi={H\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Adrian},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=38a084c836fd0cc69afdd64930cf367c}{%
+           family={Matthes},
+           familyi={M\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=76aa6bfb1780886e311ce9aec806b2fa}{%
+           family={Langen},
+           familyi={L\bibinitperiod},
+           given={Manfred},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1086667cb9899a1f9bf8dca77f0aa1f2}
+      \strng{fullhash}{8075df23915b2d3bd009fac0b069ed3d}
+      \strng{bibnamehash}{8075df23915b2d3bd009fac0b069ed3d}
+      \strng{authorbibnamehash}{8075df23915b2d3bd009fac0b069ed3d}
+      \strng{authornamehash}{1086667cb9899a1f9bf8dca77f0aa1f2}
+      \strng{authorfullhash}{8075df23915b2d3bd009fac0b069ed3d}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{08}
+      \field{title}{Evaluating Natural Language Understanding Services for Conversational Question Answering Systems}
+      \field{year}{2017}
+      \verb{doi}
+      \verb 10.18653/v1/W17-5522
+      \endverb
+    \endentry
+    \entry{20_ciman}{inproceedings}{}
+      \name{author}{3}{uniquelist=3}{%
+        {{uniquename=0,uniquepart=base,hash=a997969a6bcdf4714f770e048f87f640}{%
+           family={{Ciman}},
+           familyi={C\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=76ff0a04d0173a9d05e1d3a6fa7363c5}{%
+           family={{Wac}},
+           familyi={W\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=e988644834896636ecce6348a1566d8c}{%
+           family={{Gaggi}},
+           familyi={G\bibinitperiod},
+           given={O.},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{46bf3eeec16c6158531ce853ba36f989}
+      \strng{fullhash}{46bf3eeec16c6158531ce853ba36f989}
+      \strng{bibnamehash}{46bf3eeec16c6158531ce853ba36f989}
+      \strng{authorbibnamehash}{46bf3eeec16c6158531ce853ba36f989}
+      \strng{authornamehash}{46bf3eeec16c6158531ce853ba36f989}
+      \strng{authorfullhash}{46bf3eeec16c6158531ce853ba36f989}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2015 9th International Conference on Pervasive Computing Technologies for Healthcare (PervasiveHealth)}
+      \field{title}{iSensestress: Assessing stress through human-smartphone interaction analysis}
+      \field{year}{2015}
+      \field{pages}{84\bibrangedash 91}
+      \range{pages}{8}
+    \endentry
+    \entry{21_ciman_2}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=423fd52d56d7b1e6cb3a20750ae88486}{%
+           family={Ciman},
+           familyi={C\bibinitperiod},
+           given={Matteo},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=907a633dbed77c6abbc7bdb0cc768af0}{%
+           family={Wac},
+           familyi={W\bibinitperiod},
+           given={Katarzyna},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{49c0b1dcf8e1cd0258cebfdb03f06b04}
+      \strng{fullhash}{49c0b1dcf8e1cd0258cebfdb03f06b04}
+      \strng{bibnamehash}{49c0b1dcf8e1cd0258cebfdb03f06b04}
+      \strng{authorbibnamehash}{49c0b1dcf8e1cd0258cebfdb03f06b04}
+      \strng{authornamehash}{49c0b1dcf8e1cd0258cebfdb03f06b04}
+      \strng{authorfullhash}{49c0b1dcf8e1cd0258cebfdb03f06b04}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Affective Computing}
+      \field{month}{07}
+      \field{title}{Individuals' Stress Assessment Using Human-Smartphone Interaction Analysis}
+      \field{volume}{PP}
+      \field{year}{2016}
+      \field{pages}{1\bibrangedash 1}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1109/TAFFC.2016.2592504
+      \endverb
+    \endentry
+    \entry{37_early_chatbots_1}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=efcb178d97153dcc9b575ed34dbd6582}{%
+           family={{Computer History Museum}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{efcb178d97153dcc9b575ed34dbd6582}
+      \strng{fullhash}{efcb178d97153dcc9b575ed34dbd6582}
+      \strng{bibnamehash}{efcb178d97153dcc9b575ed34dbd6582}
+      \strng{authorbibnamehash}{efcb178d97153dcc9b575ed34dbd6582}
+      \strng{authornamehash}{efcb178d97153dcc9b575ed34dbd6582}
+      \strng{authorfullhash}{efcb178d97153dcc9b575ed34dbd6582}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Computer History Museum - Exhibits - Internet History - 1970's}
+      \field{urlday}{26}
+      \field{urlmonth}{4}
+      \field{urlyear}{2020}
+      \field{year}{2008}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://web.archive.org/web/20080221093646/http://www.computerhistory.org/internet_history/internet_history_70s.shtml
+      \endverb
+      \verb{url}
+      \verb https://web.archive.org/web/20080221093646/http://www.computerhistory.org/internet_history/internet_history_70s.shtml
       \endverb
     \endentry
     \entry{1_stress_emotion}{article}{}
@@ -300,6 +566,268 @@
       \verb https://psycnet.apa.org/doi/10.1037/0022-3514.68.3.498
       \endverb
     \endentry
+    \entry{27_oguz}{thesis}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=0e401e042d68c18cbeaf6906c28e92f5}{%
+           family={Gültepe},
+           familyi={G\bibinitperiod},
+           given={Oguz},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Technical University of Munich, Munich, Germany}%
+      }
+      \strng{namehash}{0e401e042d68c18cbeaf6906c28e92f5}
+      \strng{fullhash}{0e401e042d68c18cbeaf6906c28e92f5}
+      \strng{bibnamehash}{0e401e042d68c18cbeaf6906c28e92f5}
+      \strng{authorbibnamehash}{0e401e042d68c18cbeaf6906c28e92f5}
+      \strng{authornamehash}{0e401e042d68c18cbeaf6906c28e92f5}
+      \strng{authorfullhash}{0e401e042d68c18cbeaf6906c28e92f5}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Notification Timing for a Proactive Virtual Dietary Advisor}
+      \field{type}{unpublished bachelor's thesis supervised by PD Dr. Georg Groh, advised by Monika Wintergerst}
+      \field{year}{2019}
+      \field{dateera}{ce}
+    \endentry
+    \entry{17_ludwig}{thesis}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=816178511f2ab92f0bebf0e37e15dfff}{%
+           family={Horner},
+           familyi={H\bibinitperiod},
+           given={Ludwig},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Technical University of Munich, Munich, Germany}%
+      }
+      \strng{namehash}{816178511f2ab92f0bebf0e37e15dfff}
+      \strng{fullhash}{816178511f2ab92f0bebf0e37e15dfff}
+      \strng{bibnamehash}{816178511f2ab92f0bebf0e37e15dfff}
+      \strng{authorbibnamehash}{816178511f2ab92f0bebf0e37e15dfff}
+      \strng{authornamehash}{816178511f2ab92f0bebf0e37e15dfff}
+      \strng{authorfullhash}{816178511f2ab92f0bebf0e37e15dfff}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Dialog System-Based Dietary Assessment for a Virtual Dietary Advisor}
+      \field{type}{unpublished bachelor's thesis supervised by PD Dr. Georg Groh, advised by Monika Wintergerst}
+      \field{year}{2019}
+      \field{dateera}{ce}
+    \endentry
+    \entry{31_marija}{thesis}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=b9df425dafae1993cfb403fd333171f5}{%
+           family={Juodytė},
+           familyi={J\bibinitperiod},
+           given={Marija},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Technical University of Munich, Munich, Germany}%
+      }
+      \strng{namehash}{b9df425dafae1993cfb403fd333171f5}
+      \strng{fullhash}{b9df425dafae1993cfb403fd333171f5}
+      \strng{bibnamehash}{b9df425dafae1993cfb403fd333171f5}
+      \strng{authorbibnamehash}{b9df425dafae1993cfb403fd333171f5}
+      \strng{authornamehash}{b9df425dafae1993cfb403fd333171f5}
+      \strng{authorfullhash}{b9df425dafae1993cfb403fd333171f5}
+      \field{sortinit}{J}
+      \field{sortinithash}{fce5f8d0bd05e8d93f3dbe21c78897ca}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Dialog System-Based Assessment of Stress Eating}
+      \field{type}{unpublished bachelor's thesis supervised by PD Dr. Georg Groh, advised by Monika Wintergerst and Martin Lurz}
+      \field{year}{2019}
+      \field{dateera}{ce}
+    \endentry
+    \entry{39_demeter}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=fae4e23a5ad753a2ebe6edd6f9b98d3c}{%
+           family={Kárpáti},
+           familyi={K\bibinitperiod},
+           given={János},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Peter Lang AG}%
+      }
+      \strng{namehash}{fae4e23a5ad753a2ebe6edd6f9b98d3c}
+      \strng{fullhash}{fae4e23a5ad753a2ebe6edd6f9b98d3c}
+      \strng{bibnamehash}{fae4e23a5ad753a2ebe6edd6f9b98d3c}
+      \strng{authorbibnamehash}{fae4e23a5ad753a2ebe6edd6f9b98d3c}
+      \strng{authornamehash}{fae4e23a5ad753a2ebe6edd6f9b98d3c}
+      \strng{authorfullhash}{fae4e23a5ad753a2ebe6edd6f9b98d3c}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Our discussion focuses on two analogous mythic personalities: the Japanese sun-goddess, Amaterasu, and the Greek corn-goddess, Demeter. Parallel examination of both myths and their related rituals reveals a process of identical structure in which different peoples realize the cycles of the solar year and agriculture. In order to influence these cycles, they create rites in which primitive magic, shamanism, and more developed human communication, i.e. chant, music, and dance, are superimposed upon one another. A lack of historical documentation on the music in both myths, especially the Demeter, is addressed.}
+      \field{issn}{09419535}
+      \field{journaltitle}{International Journal of Musicology}
+      \field{title}{Amaterasu and Demeter: About a Japanese – Greek Mythological Analogy}
+      \field{volume}{2}
+      \field{year}{1993}
+      \field{pages}{9\bibrangedash 21}
+      \range{pages}{13}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/24617979
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/24617979
+      \endverb
+    \endentry
+    \entry{18_nutrilize}{inproceedings}{}
+      \name{author}{9}{}{%
+        {{uniquename=0,uniquepart=base,hash=341b23cbbca02e7addde4e8d2ff5ba53}{%
+           family={Leipold},
+           familyi={L\bibinitperiod},
+           given={Nadja},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=e42a09e82b03c4a225f9c1c132d42e84}{%
+           family={Madenach},
+           familyi={M\bibinitperiod},
+           given={Mira},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=9de3e53965df0baad0aee14979e1be7c}{%
+           family={Sch{ä}fer},
+           familyi={S\bibinitperiod},
+           given={Hanna},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=b8210a8034be601304833d3046452257}{%
+           family={Lurz},
+           familyi={L\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=bab4f3d1149eceef229560f8c687a1f0}{%
+           family={Terzimehic},
+           familyi={T\bibinitperiod},
+           given={Nada},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=575b1832386aabbd188fba8611b9b410}{%
+           family={Groh},
+           familyi={G\bibinitperiod},
+           given={Georg},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=a18ba2cdb90a29f7f9749135d440476e}{%
+           family={B{ö}hm},
+           familyi={B\bibinitperiod},
+           given={Markus},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=07b26b49a126321c5fec8567150e4b62}{%
+           family={Gedrich},
+           familyi={G\bibinitperiod},
+           given={Kurt},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=97558c30684fb70538b0efcd39836dfd}{%
+           family={Krcmar},
+           familyi={K\bibinitperiod},
+           given={Helmut},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b901439fc1c7b2c77ae95bd9091e4393}
+      \strng{fullhash}{50817ddc7e4082b6c66bfa709db80c56}
+      \strng{bibnamehash}{50817ddc7e4082b6c66bfa709db80c56}
+      \strng{authorbibnamehash}{50817ddc7e4082b6c66bfa709db80c56}
+      \strng{authornamehash}{b901439fc1c7b2c77ae95bd9091e4393}
+      \strng{authorfullhash}{50817ddc7e4082b6c66bfa709db80c56}
+      \field{sortinit}{L}
+      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{HealthRecSys@RecSys}
+      \field{title}{Nutrilize a Personalized Nutrition Recommender System: an Enable Study}
+      \field{year}{2018}
+    \endentry
+    \entry{26_cost_interruption}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,uniquepart=base,hash=6f28a94d17224f23cf90575ea1d7ddc0}{%
+           family={Leiva},
+           familyi={L\bibinitperiod},
+           given={Luis},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=bb1717c63756bedb2678744a27ef7cba}{%
+           family={Böhmer},
+           familyi={B\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=cd49fd40e76dd22f6ef8e1acdbfdb3fa}{%
+           family={Gehring},
+           familyi={G\bibinitperiod},
+           given={Sven},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=1145bf8ba22928da0cce95645e3af6a4}{%
+           family={Krüger},
+           familyi={K\bibinitperiod},
+           given={Antonio},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {San Francisco, California, USA}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{03c4b7d8bad4c146cb20e0cdfb8f9fa9}
+      \strng{fullhash}{19bf659d2ce2e6f5fd73a0ac0cc82267}
+      \strng{bibnamehash}{19bf659d2ce2e6f5fd73a0ac0cc82267}
+      \strng{authorbibnamehash}{19bf659d2ce2e6f5fd73a0ac0cc82267}
+      \strng{authornamehash}{03c4b7d8bad4c146cb20e0cdfb8f9fa9}
+      \strng{authorfullhash}{19bf659d2ce2e6f5fd73a0ac0cc82267}
+      \field{sortinit}{L}
+      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 14th International Conference on Human-Computer Interaction with Mobile Devices and Services}
+      \field{isbn}{9781450311052}
+      \field{series}{MobileHCI ’12}
+      \field{title}{Back to the App: The Costs of Mobile Application Interruptions}
+      \field{year}{2012}
+      \field{pages}{291\bibrangedash 294}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1145/2371574.2371617
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/2371574.2371617
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/2371574.2371617
+      \endverb
+      \keyw{large-scale study,application switching,task interleaving,task deferral,interruptions,resumption lags}
+    \endentry
     \entry{14_comfort_food}{article}{}
       \name{author}{4}{}{%
         {{uniquename=0,uniquepart=base,hash=f411eb6634014ab9ef91a642c89c99e3}{%
@@ -473,6 +1001,74 @@
       \verb https://www.mentalhealth.org.uk/statistics/mental-health-statistics-stress
       \endverb
     \endentry
+    \entry{33_eades}{article}{}
+      \name{author}{6}{}{%
+        {{uniquename=0,uniquepart=base,hash=f21f69c561450f753b89cb6d39a06f2d}{%
+           family={Ozier},
+           familyi={O\bibinitperiod},
+           given={Amy\bibnamedelima D.},
+           giveni={A\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=ab2829cf9f57d7fa4ef3cbc332ef63d5}{%
+           family={Kendrick},
+           familyi={K\bibinitperiod},
+           given={Olivia\bibnamedelima W.},
+           giveni={O\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=d8c5155c8937b7a1736dc315e3f9e600}{%
+           family={Knol},
+           familyi={K\bibinitperiod},
+           given={Linda\bibnamedelima L.},
+           giveni={L\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=05e29b0e09373e1700550663962687e7}{%
+           family={Leeper},
+           familyi={L\bibinitperiod},
+           given={James\bibnamedelima D.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=f286b67a46c75500c09ecae55955ee6d}{%
+           family={Perko},
+           familyi={P\bibinitperiod},
+           given={Mike},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=ad35557651f845815ae25ed8145fba5b}{%
+           family={Burnham},
+           familyi={B\bibinitperiod},
+           given={Joy},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{eaa45cfaeffed29e677f510f19cdbfd8}
+      \strng{fullhash}{e927450e3dc4d64693ce5cfafaee57ce}
+      \strng{bibnamehash}{e927450e3dc4d64693ce5cfafaee57ce}
+      \strng{authorbibnamehash}{e927450e3dc4d64693ce5cfafaee57ce}
+      \strng{authornamehash}{eaa45cfaeffed29e677f510f19cdbfd8}
+      \strng{authorfullhash}{e927450e3dc4d64693ce5cfafaee57ce}
+      \field{sortinit}{O}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the American Dietetic Asociation}
+      \field{number}{4}
+      \field{title}{The Eating and Appraisal Due to Emotions and Stress (EADES) Questionnaire: Development and Validation}
+      \field{volume}{107}
+      \field{year}{2007}
+      \field{pages}{619\bibrangedash 628}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1016/j.jada.2007.01.004
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1016/j.jada.2007.01.004
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1016/j.jada.2007.01.004
+      \endverb
+    \endentry
     \entry{10_rasa}{online}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=c46817f2b68a1c27b344833ee96210cc}{%
@@ -502,6 +1098,55 @@
       \endverb
       \verb{url}
       \verb https://rasa.com/
+      \endverb
+    \endentry
+    \entry{36_early_chatbots}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=66089d75ee05cff58cc443077a2bd732}{%
+           family={Shum},
+           familyi={S\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=b5fceee09cbf412999a05dbeffc3dd5b}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={X.},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=71978c4b5986a507ef6d356436f8b574}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b7ebb553bbca701d9c1429d923a56f89}
+      \strng{fullhash}{156130916c91379de599a9d0b38a6183}
+      \strng{bibnamehash}{156130916c91379de599a9d0b38a6183}
+      \strng{authorbibnamehash}{156130916c91379de599a9d0b38a6183}
+      \strng{authornamehash}{b7ebb553bbca701d9c1429d923a56f89}
+      \strng{authorfullhash}{156130916c91379de599a9d0b38a6183}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Frontiers Inf Technol Electronic Eng}
+      \field{title}{From Eliza to XiaoIce: challenges and opportunities with social chatbots}
+      \field{volume}{19}
+      \field{year}{2018}
+      \field{pages}{10\bibrangedash 26}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1631/FITEE.1700826
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/article/10.1631%2FFITEE.1700826
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/article/10.1631%2FFITEE.1700826
       \endverb
     \endentry
     \entry{15_comfort_food_review}{article}{}
@@ -753,6 +1398,122 @@
       \verb http://www.sciencedirect.com/science/article/pii/S0899900707002493
       \endverb
       \keyw{Stress,Eating behavior,Sucrose,Fat,Rat,Weight gain,Obesity}
+    \endentry
+    \entry{38_turing}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=fdc523429c3c89c34880f733033f2099}{%
+           family={Turing},
+           familyi={T\bibinitperiod},
+           given={A.\bibnamedelimi M.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {[Oxford University Press, Mind Association]}%
+      }
+      \strng{namehash}{fdc523429c3c89c34880f733033f2099}
+      \strng{fullhash}{fdc523429c3c89c34880f733033f2099}
+      \strng{bibnamehash}{fdc523429c3c89c34880f733033f2099}
+      \strng{authorbibnamehash}{fdc523429c3c89c34880f733033f2099}
+      \strng{authornamehash}{fdc523429c3c89c34880f733033f2099}
+      \strng{authorfullhash}{fdc523429c3c89c34880f733033f2099}
+      \field{sortinit}{T}
+      \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00264423, 14602113}
+      \field{journaltitle}{Mind}
+      \field{number}{236}
+      \field{title}{Computing Machinery and Intelligence}
+      \field{volume}{59}
+      \field{year}{1950}
+      \field{pages}{433\bibrangedash 460}
+      \range{pages}{28}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/2251299
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/2251299
+      \endverb
+    \endentry
+    \entry{40_oizys}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=9c677286866aad38f8e9b660f5411814}{%
+           family={{Wikipedia}},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{fullhash}{9c677286866aad38f8e9b660f5411814}
+      \strng{bibnamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authorbibnamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authornamehash}{9c677286866aad38f8e9b660f5411814}
+      \strng{authorfullhash}{9c677286866aad38f8e9b660f5411814}
+      \field{sortinit}{W}
+      \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Oizys}
+      \field{urlday}{26}
+      \field{urlmonth}{4}
+      \field{urlyear}{2020}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/wiki/Oizys
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/Oizys
+      \endverb
+    \endentry
+    \entry{35_chatbot_name_1}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=682b77d2ba3865ade8b09395e7424725}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Kun},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=630e1e706e0024658b48a22c83e885ed}{%
+           family={Lombard},
+           familyi={L\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1efc9799771e11e0f62fa4e9caeb852e}
+      \strng{fullhash}{1efc9799771e11e0f62fa4e9caeb852e}
+      \strng{bibnamehash}{1efc9799771e11e0f62fa4e9caeb852e}
+      \strng{authorbibnamehash}{1efc9799771e11e0f62fa4e9caeb852e}
+      \strng{authornamehash}{1efc9799771e11e0f62fa4e9caeb852e}
+      \strng{authorfullhash}{1efc9799771e11e0f62fa4e9caeb852e}
+      \field{sortinit}{X}
+      \field{sortinithash}{b0b62a29ee4a21a0e618fed53a0313cc}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Past works on the human-computer relationship has investigated a) how computers can mediate the communication between people and b) how computer users perceive computers as social entities. However, little research has investigated how the two fields of research inform, challenge, and integrate with each other. By combining the Computers are Social Actors paradigm and the Social Identity Model of Deindividuation Effects, the present work provides an entry point into the conversation between these two fields. Specifically, this study examines how individuals may form group relations with computer agents. An experiment using a between-subject factorial design was conducted to explore the relationship between the two theoretical frameworks. The findings suggested that sharing the same color cues with multiple computer agents would lead to users' group identification with computer agents. Group identification with computer agents would further influence group conformity, conformity intention, group attraction, and group trustworthiness. However, the degree of compliance with and trust in computer agents was contingent on how much users felt as if these agents had been real humans.}
+      \field{issn}{0747-5632}
+      \field{journaltitle}{Computers in Human Behavior}
+      \field{title}{Persuasive computing: Feeling peer pressure from multiple computer agents}
+      \field{volume}{74}
+      \field{year}{2017}
+      \field{pages}{152\bibrangedash 162}
+      \range{pages}{11}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.chb.2017.04.043
+      \endverb
+      \verb{urlraw}
+      \verb http://www.sciencedirect.com/science/article/pii/S0747563217302856
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/S0747563217302856
+      \endverb
+      \keyw{Computers are social actors,Social presence,Computer agents,Social Identity Model of Deindividuation Effects,Group discussion}
     \endentry
     \entry{7_stress_detection}{inproceedings}{}
       \name{author}{2}{}{%

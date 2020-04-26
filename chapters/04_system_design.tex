@@ -2,3 +2,186 @@
 % Add the above to each chapter to make compiling the PDF easier in some editors.
 
 \chapter{System Design}\label{chapter:sys_design}
+This chapter presents the system design in detail. It will start with an introduction of the main features of the framework used for developing the chatbot, Rasa, including its features and how it interacts with the Telegram Bot API that is used to communicate with the users. Then it will show how stress detection is done with adaptive sampling, followed by a brief introduction on how the self-reporting of stress is done. After that, it will explain how eating behavior data is collected and processed. Furthermore, the conversation flow is going to be delivered in detail. The last section will present how data is persisted.
+
+\section{The Rasa Framework}
+Rasa (\citeyear{10_rasa}) is an open-source framework based on natural language processing (NLP) for developing chatbots. This section introduces why it is used and its main components and features.
+
+\subsection{Why Rasa}
+The most important reason for choosing Rasa was that the software developed in this thesis is based on the project of \citeauthor{17_ludwig} (\citeyear{17_ludwig}) who chose Rasa as the underlying framework. However, apart from that, there are certain benefits that Rasa comes with that serve very well the goals of this project. Firstly, Rasa is completely open-source, which means it is not only free to use but also easy to customize. For example, the chatbot was designed to collect user's location data for automatic timezone conversion and image data for food reflection, and this feature can be easily fulfilled by modifying the social network platform connector of Rasa, which will be shown in detail later this section. Secondly, Rasa comes along with a sophisticated natural language understanding (NLU) model for common English. Developers only need to provide a small set of sample data for it to predict user intents with a low error rate. Thirdly, unlike its commercial counterparts such as Amazon’s Lex and Google's Dialogflow, it does not depend on cloud infrastructure, and can instead be run as a piece of self-host software (\cite{24_why_rasa}). This makes it easy to integrate other components into the chatbot. For example, a separate scheduler which not only schedules messages but also does on-the-flight training of the data was developed alongside the chatbot and interacts well with the latter.
+
+\subsection{Main Components of Rasa}
+\citeauthor{16_martin} (\citeyear{17_ludwig}) gave a general review of the components of Rasa. This subsection is therefore based on his review and the requirements of this project.
+
+\subsubsection{Rasa NLU}
+As the name suggests, this is the NLU module of the Rasa framework which is responsible for understanding the user input. Specifically, this module helps identify the intent of the user and entities in the application domain from English sentences the user sends to the bot. This is done by training an NLU model based on sample data provided by the developer. In the context of this work, the usage of this module is mainly limited to identifying users' intend to describe food and report stress. For each user input, another module called Rasa Core utilizes the NLU model to calculate the probability of each pre-defined intent and predicts the intent with the highest probability.
+
+\subsubsection{Rasa Core}
+While Rasa NLU takes care of understanding what a user says, Rasa Core takes the initiative to respond to the user properly. Like Rasa NLU, Rasa Core uses machine learning to train its predictive model. The training data is a set of sample conversations in the markdown format. This training data is called Rasa stories.
+
+\subsubsection{Rasa Stories}
+The markdown file records all stories used as training data for Rasa Core. Every single story starts with "\#\#" followed by its name, and contains one or more user intent(s), denoted with "*", and one or more Rasa action(s), denoted by "-". Here is one example of a story:\bigskip
+
+\begin{lstlisting}
+## reflect food
+* reflect_food
+  - action_send_image
+* describe_food
+  - action_save_data
+  - utter_more_or_less
+\end{lstlisting}
+
+\bigskip
+\subsubsection{Rasa Actions}
+An action is a response the chatbot performs to the user intent. There are two types of actions, namely \emph{utterances} and \emph{custom actions}. Utterances have to be defined in a markdown file following a certain format. Below is an example of an utterance which asks the user if he or she has eaten anything:\bigskip
+
+\begin{lstlisting}
+utter_did_you_eat:
+- text: "Did you eat anything whilst you were stressed?"
+  buttons:
+  - title: Yes
+    payload: /affirm
+  - title: No
+    payload: /deny
+\end{lstlisting}
+
+\bigskip
+The uttered messages can have one or multiple types, which in the above case are a piece of text with two buttons. Each button can carry a payload which refers to a particular intent. When the user presses the button, its corresponding intent is sent back to the bot.
+
+Unlike utterances that are relatively restricted, custom actions call a web server that can perform any task defined by the server and send any number of messages to the user. A typical way of implementing custom actions is to use the Python SDK offered by Rasa. \hyperref[ssec:custom_action]{Subsection~\ref*{ssec:custom_action}} looks into details of custom actions implemented in this project.
+
+\subsubsection{Rasa Slots}
+Slots are key-value stores that provide memory to the chatbot. It can be viewed as variables shared among different actions in the Rasa service, as well as a bridge between the metadata used for training and the code used for handle actions. More specifically, slots can be get and set via stories (\autoref{story_slot}) or by calling getter and setter functions in custom actions (\autoref{action_slot}). This is otherwise impossible as, without slots, actions would become stateless.\bigskip
+
+\begin{lstlisting}[label={story_slot},caption={Using slots in stories to save user's stress level}]
+* previous_stress
+  - utter_ask_stress_level
+* tell_stress_level{"level":"1"}
+  - slot{"level":"1"}
+  - action_save_data
+  - utter_did_you_eat
+* deny
+  - utter_see_you
+\end{lstlisting}
+
+\bigskip
+\begin{lstlisting}[label={action_slot},caption={Getting and setting slots in a custom action to relate entries in persistent data. "photo\_timestamps" and "reference\_ids" are used to find the correct photos to be send to the user in the future\, which help the user to reflect food.},language=Python]
+class ActionSaveData(Action):
+    def name(self) -> Text:
+        return "action_save_data"
+    # some lines omitted
+    def run(self,
+            dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        # some lines omitted
+        reference_ids = []
+        photo_timestamps = []
+        if (intent == "describe_food"):
+            entity = "food"
+            try:
+                reference_ids = ';'.join(tracker.get_slot('reference_ids'))
+                photo_timestamps = ';'.join(
+                    tracker.get_slot('photo_timestamps'))
+        # some lines omitted
+        entry_id = self.addToProfile(
+                tracker.latest_message['text'].replace(',', ';'),
+                tracker.sender_id,
+                intent,
+                entityValue,
+                photo_timestamps,
+                reference_ids)
+        return [SlotSet("photo_timestamps", []),
+                SlotSet("reference_ids", [entry_id])]
+\end{lstlisting}
+
+\bigskip
+While Rasa was selected as the underlying platform the chatbot is based on, Telegram was chosen as the social platform to run the chatbot on. This was a straightforward choice since \citeauthor{17_ludwig} was already using Telegram in his project (and it's worth reminding that the code of this project is based on the one of \citeauthor{17_ludwig}). And it turned out that it was easy to find enough Telegram users from a wide variety of timezones to participate in the user trial.
+
+Rasa provided a Telegram connector which acts as an agent connecting to the Telegram Bot API. However, since Rasa is based on NLU, no photo or location data is handled by default. It is nevertheless necessary to deal with such information as part of the feature of this bot. The next subsection presents necessary changes made to this connector to facilitate these features.
+
+\subsection{Interaction with the Telegram Bot API}
+The built-in Telegram channels provided by Rasa consists of two classes, namely \emph{TelegramOutput} and \emph{TelegramInput}, controlling the handling of output and input messages to users, respectively. By default, the \emph{TelegramInput} channel only handles text data. In order for the handling of images and locations to work, this class was modified and renamed to \emph{TelegramPlusInput}. Additionally, some other functionalities are added, which are explained below.
+
+\subsubsection{User Registration}
+A new user needs to be registered before his or her data can be recorded. Details of the registration process will be presented in \autoref{ssec:onboarding}. As a standard approach, this registration is done right after the user issues the \emph{/start} command to the bot. It creates a folder and two CSV files to record the user data, without which the chatbot continues to interact with the user, but no data is collected. In case there was an error in the standard registration process (e.g. the user issued the \emph{/start} command when the server is down), the \emph{TelegramPlusInput} channel triggers a backup process in case that a user message is received, but no folder of the respective user is found.
+
+\subsubsection{User Location and Timezone}
+The bot needs to collect the timezone data from the users to schedule messages to them at the right time. The timezones are calculated based on locations sent by the users. On Telegram, a location is a JSON object consisting of the latitude and longitude. The \emph{TelegramPlusInput} connector captures this object and converts it into a Python string that can be recognized by Rasa NLU. The format of this string is defined as follows:
+
+\begin{lstlisting}
+## intent:tell_lat_lng
+- "lng":0.0, "lat":0.0
+- "lat":0.0, "lng":0.0
+\end{lstlisting}
+
+\bigskip
+and the respective logic in the Telegram connector is
+
+\begin{lstlisting}[language=Python]
+elif self._is_location(msg):
+    text = '{{"lng":{0}, "lat":{1}}}'.format(
+        msg.location.longitude, msg.location.latitude
+    )
+    # store timezone information of the user
+    tf = TimezoneFinder()
+    latitude, longitude = msg.location.latitude, msg.location.longitude
+    timezone_str = tf.timezone_at(
+        lng=longitude, lat=latitude)
+    with open('./user_data/timezones.csv', 'a', newline='') as csvfile:
+        writer = csv.writer(
+            csvfile,
+            delimiter=',',
+            quotechar='|',
+            quoting=csv.QUOTE_MINIMAL)
+        writer.writerow(
+            [datetime.now(), str(msg.chat.id), timezone_str])
+\end{lstlisting}
+
+\subsubsection{Photos}
+Another important feature is to process photos sent by users to the bot. If the bot detects a user being stressed and eating at the same time, instead of asking the user to describe immediately in text what he or she is eating, it asks the user to take a photo of the food. This design choice was made under the assumption that it is relatively easier for someone who is eating to take and send a photo than to text description of the food. In addition, the photos collected were included in the survey which collects users' opinions on comfort food at the end of the user study. When a user sends a file (e.g. a photo) in a Telegram conversation, Telegram saves the photo on its server that can be accessed via the \emph{chat\_id} which identifies the chat and a unique \emph{file\_id} by calling the Telegram Bot API. With this feature, the Rasa bot does not need to save the photos locally, but only need to save the \emph{chat\_id} and \emph{file\_id}. This feature is implemented by the following code in the \emph{TelegramPlusInput} connector. \bigskip
+
+\begin{lstlisting}[language=Python]
+if not hasattr(msg, 'photo'):
+    return response.text("success")
+if len(msg.photo) == 0:
+    print("Not a photo")
+    return response.text("success")
+max_size = 0
+for photo in msg.photo:
+    if photo.file_size > max_size:
+        max_size = photo.file_size
+        file_id = photo.file_id
+reference_id = ''
+try:
+    with open(
+      './user_data/' + str(str(msg.chat.id)) + '/profiles.csv',
+        newline='') as csvfile:
+        reader = csv.reader(
+            csvfile, delimiter=',', quotechar='|')
+        for row in reader:
+            reference_id = row[0]
+except FileNotFoundError:
+    pass
+with open(
+  './user_data/' + str(str(msg.chat.id)) + '/photos.csv',
+  'a',
+  newline='') as csvfile:
+    writer = csv.writer(
+        csvfile, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)
+    writer.writerow([datetime.now(), str(
+        msg.chat.id), file_id, reference_id])
+return response.text("success")
+\end{lstlisting}
+
+\subsubsection{Naming of the Chatbot}
+The history of chatbot is closely coupled with that of artificial intelligence, with the goal of mimicking humans and the challenge of passing the Turing's test (\cite{38_turing}). Since it's earliest days, chatbot has been given human-like names, from ELIZA to PARRY (\cite{37_early_chatbots_1}). In fact, these names came about to sound like humans much earlier than chatbots themselves start to get out of the rule-based zone and use more intelligent means (such as machine learning) to communicate with humans (\cite{36_early_chatbots}). Apart from this tradition, is it widely researched that having human-like names could help a chatbot to be perceived more human by the actual human chatting with it (\cite{35_chatbot_name_1, 34_chatbot_name}). Therefore, it is crucial to name the chatbot. The bot in this project was named Demezys, which is a combination of \emph{Demeter} and \emph{Oizys}. Demeter is the Greek goddess of agriculture (\cite{39_demeter}) and Oizys the goddess of misery, anxiety, grief, and depression (\cite{40_oizys}). This name symbolizes the combination of eating and stress at a spiritual level.
+
+\subsection{Custom Actions} \label{ssec:custom_action}
+
+\section{Conversation Flow}
+
+\subsection{Onboarding} \label{ssec:onboarding}
+
+
+\section{Data Persistence}
