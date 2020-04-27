@@ -26,10 +26,10 @@ Furthermore, no contextual information such as GPS data and social activities be
 Instead, stress detection is done with a two-step process solely relying on simple conversations between the chatbot and the user. First, stress is sampled three times per day at fixed hours for every participant, i.e, the chatbot decides to ask about the user’s level of stress at these timestamps. Second, based on the answers collected from the users in the first two weeks, a weighted clustering algorithm is performed on the timestamps to determine the scheduled time of the coming day of stress detection. The number of clusters is determined by the stress states of the user in the past two days. If the user was stressed the day before, stress is going to be sampled three times the day after, hence three clusters. If the user was not stressed the day before but was two days before, two clusters will be trained, leading to asking for stress twice in the coming day. Otherwise, only one cluster is going to be trained. \autoref{fig:adapt-stress} illustrates the way this adaptive stress-sampling works.
 
 \begin{figure}[ht]
-  \caption{The adaptive stress-sampling process}
-  \label{fig:adapt-stress}
   \centering
   \includegraphics[width=0.7\textwidth]{fig-adapt-stress}
+	\caption{The adaptive stress-sampling process}
+	\label{fig:adapt-stress}
 \end{figure}
 
 \section{Scope of Stress Self-Reporting}

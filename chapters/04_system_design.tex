@@ -53,7 +53,7 @@ Unlike utterances that are relatively restricted, custom actions call a web serv
 \subsubsection{Rasa Slots}
 Slots are key-value stores that provide memory to the chatbot. It can be viewed as variables shared among different actions in the Rasa service, as well as a bridge between the metadata used for training and the code used for handle actions. More specifically, slots can be get and set via stories (\autoref{story_slot}) or by calling getter and setter functions in custom actions (\autoref{action_slot}). This is otherwise impossible as, without slots, actions would become stateless.\bigskip
 
-\begin{lstlisting}[label={story_slot},caption={Using slots in stories to save user's stress level}]
+\begin{lstlisting}[label={story_slot},caption={Using slots in stories to save user's stress level},captionpos=b]
 * previous_stress
   - utter_ask_stress_level
 * tell_stress_level{"level":"1"}
@@ -65,7 +65,7 @@ Slots are key-value stores that provide memory to the chatbot. It can be viewed 
 \end{lstlisting}
 
 \bigskip
-\begin{lstlisting}[label={action_slot},caption={Getting and setting slots in a custom action to relate entries in persistent data. "photo\_timestamps" and "reference\_ids" are used to find the correct photos to be send to the user in the future\, which help the user to reflect food.},language=Python]
+\begin{lstlisting}[label={action_slot},caption={Getting and setting slots in a custom action to relate entries in persistent data. "photo\_timestamps" and "reference\_ids" are used to find the correct photos to be send to the user in the future\, which help the user to reflect food.},language=Python,captionpos=b]
 class ActionSaveData(Action):
     def name(self) -> Text:
         return "action_save_data"
@@ -177,11 +177,88 @@ return response.text("success")
 \subsubsection{Naming of the Chatbot}
 The history of chatbot is closely coupled with that of artificial intelligence, with the goal of mimicking humans and the challenge of passing the Turing's test (\cite{38_turing}). Since it's earliest days, chatbot has been given human-like names, from ELIZA to PARRY (\cite{37_early_chatbots_1}). In fact, these names came about to sound like humans much earlier than chatbots themselves start to get out of the rule-based zone and use more intelligent means (such as machine learning) to communicate with humans (\cite{36_early_chatbots}). Apart from this tradition, is it widely researched that having human-like names could help a chatbot to be perceived more human by the actual human chatting with it (\cite{35_chatbot_name_1, 34_chatbot_name}). Therefore, it is crucial to name the chatbot. The bot in this project was named Demezys, which is a combination of \emph{Demeter} and \emph{Oizys}. Demeter is the Greek goddess of agriculture (\cite{39_demeter}) and Oizys the goddess of misery, anxiety, grief, and depression (\cite{40_oizys}). This name symbolizes the combination of eating and stress at a spiritual level.
 
-\subsection{Custom Actions} \label{ssec:custom_action}
+\subsection{Training Data}
+This subsection explains the training data used to train Rasa Core and Rasa NLU.
 
-\section{Conversation Flow}
+\subsubsection{domain.yml}
+The declaration of actions, intents, slots and templates to each utterance are saved in \emph{domain.yml} (see \autoref{domain}).
+
+\subsubsection{NLU}
+All training data regarding the intents is saved in \emph{nlu.md} (see \autoref{nlu}). It includes the food data that is used to predict the \emph{describe\_food} intent. The items are determined according to the training data from \citeauthor{17_ludwig}. In addition, phrases such as "I didn't eat anything when I was stressful" and "Nothing" was added to address the case when a user has no food to report.
+
+\subsubsection{Stories}
+The stories are defined in \emph{stories.md} (see \autoref{stories}). Details about the conversation flow is to be discussed in \autoref{flow}.
+
+\subsection{Custom Actions} \label{ssec:custom_action}
+Some of the important features of Demezys was implemented in the custom actions. This subsection discusses the details of them. A full list of custom actions can be found at \autoref{domain}.
+
+\subsubsection{User Registration}
+The user registration is done via the \emph{action\_register\_user} action. This action is triggered when the user issues the \emph{/start} command to Demezys. The file path \emph{./user\_data} is created, followed by the creation of the file \emph{./user\_data/users.csv}, which saves the \emph{chat\_id} of the user. Afterwards, it creates a path \emph{./user\_data/<chat\_id>} for holding the user data, and two files \emph{profiles.csv} and \emph{photos.csv} under that path.\bigskip
+
+\begin{figure}
+  \begin{forest}
+    for tree={
+      font=\ttfamily,
+      grow'=0,
+      child anchor=west,
+      parent anchor=south,
+      anchor=west,
+      calign=first,
+      edge path={
+        \noexpand\path [draw, \forestoption{edge}]
+        (!u.south west) +(7.5pt,0) |- node[fill,inner sep=1.25pt] {} (.child anchor)\forestoption{edge label};
+      },
+      before typesetting nodes={
+        if n=1
+          {insert before={[,phantom]}}
+          {}
+      },
+      fit=band,
+      before computing xy={l=15pt},
+    }
+  [.
+    [user\_data
+      [timezones.csv]
+      [users.csv]
+      [user\_1
+        [photos.csv]
+        [profiles.csv]
+      ]
+      [user\_2
+        [photos.csv]
+        [profiles.csv]
+      ]
+      [... more users]
+    ]
+  ]
+  \end{forest}
+  \caption{Structure of data persistence}
+  \label{fig:file_treev}
+\end{figure}
+
+\subsubsection{Saving Data}
+\emph{action\_save\_data} is responsible for saving the stress and eating data in the \emph{profiles.csv} files. The format of the data is illustrated in \autoref{data_persis}. It first checks the latest intent of the user in order to take the corresponding actions.
+
+If the intent was \emph{describe\_food}, it will try to get the slot values of \emph{reference\_ids} and \emph{photo\_timestamps}, which potentially link the food photo(s) being described to a previous stress entry, building the connection between stress and eating. It could be, however, that the user was not describing food according to photo(s). This situation can be broken down into two cases. One is that the user is describing food right after he or she told the bot the stress level. In this case, the \emph{describe\_food} entry is linked to the latest stress entry. The other case is that the user is describing food at the end of the day which does not refer to a specific stress entry but the day in general. In such a case, no stress entry is linked to the \emph{describe\_food} entry.
+
+If the intent was not \emph{describe\_food}, it will directly extract the entity and save the data entry together with the intent.
+
+\subsubsection{Sending Image/Imanges}
+\emph{action\_send\_image} extracts all the \emph{file\_id}s of the photos a user has sent to Demezys during the day and sends the photos back to the user by calling the Telegram Bot API, together with a text prompting the user to reflect food according to the photos. If no photos are found, it asks the user to reflect food directly. If the user was not detected stressed during the day, it directly sends the \emph{utter\_pieces} action to the user, which asks about how many pieces of meal/snacks the user has had during the day, bypassing the process of describing food.
+
+\subsubsection{Asking Location}
+After a user is registered, Demezys asks the user to send his or her location via Telegram. This is done by \emph{action\_ask\_location}. It prompts the user with a text saying "Please send your location to me. I need this information to schedule message to you in the right time. Please use the Telegram built-in function to send location, and \textbf{DO NOT} send a text message." while sending a photo (\autoref{fig:share-loc}) instructing the user to do so, in case some people are not familiar with the share-location feature of Telegram.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.5\textwidth]{fig-share-loc}
+  \caption{Instruction to sharing location via Telegram}
+  \label{fig:share-loc}
+\end{figure}
+
+\section{Conversation Flow} \label{flow}
 
 \subsection{Onboarding} \label{ssec:onboarding}
 
 
-\section{Data Persistence}
+\section{Data Persistence} \label{data_persis}

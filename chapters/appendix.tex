@@ -1,0 +1,654 @@
+\chapter{Rasa Training Data}
+
+\section{domain.yml} \label{domain}
+
+\begin{lstlisting}
+%YAML 1.1
+---
+actions:
+- action_register_user
+- action_save_data
+- action_send_image
+- utter_are_you_eating
+- utter_ask_food
+- utter_ask_for_image
+- action_ask_location
+- utter_ask_stress_level
+- utter_cheers
+- utter_describe_food
+- utter_did_you_eat
+- utter_goodbye
+- utter_good_night
+- utter_greet
+- utter_happy
+- utter_iamabot
+- utter_intro
+- utter_more_or_less
+- utter_pieces
+- utter_remind_to_take_photo
+- utter_see_you
+- utter_stress
+- utter_stress_delayed
+- utter_success
+- utter_unstressed
+entities:
+- level
+- more_or_less
+- pieces
+intents:
+- affirm
+- bot_challenge
+- deny
+- describe_food
+- detect_stress
+- eating_now
+- goodbye
+- not_eating_now
+- now_no_stress
+- now_stress
+- photo_sent
+- polite
+- previous_no_stress
+- previous_stress
+- reflect_food
+- register
+- start
+- stressful_yes
+- stressful_no
+- tell_lat_lng
+- tell_more_or_less
+- tell_pieces
+- tell_stress_level
+- thank
+slots:
+  level:
+    type: text
+  more_or_less:
+    type: text
+  photo_timestamps:
+    type: list
+  pieces:
+    type: text
+  reference_ids:
+    type: list
+templates:
+  utter_are_you_eating:
+  - text: Are you eating right now?
+    buttons:
+    - title: Yes
+      payload: /eating_now
+    - title: No
+      payload: /not_eating_now
+  utter_ask_food:
+  - text: "What did you eat?"
+  utter_ask_for_image:
+  - text: "Please take a photo of what you're eating and sent it to me
+    now. When the photo is sent, press 'Done'."
+    buttons:
+    - title: Done
+      payload: /photo_sent
+  utter_ask_stress_level:
+  - text: "Can you tell me the intensity of your stress within the scale
+    between 1 (slightly stressful) and 5 (extremely stressful)?"
+    buttons:
+    - title: 1
+      payload: /tell_stress_level{"level":"1"}
+    - title: 2
+      payload: /tell_stress_level{"level":"2"}
+    - title: 3
+      payload: /tell_stress_level{"level":"3"}
+    - title: 4
+      payload: /tell_stress_level{"level":"4"}
+    - title: 5
+      payload: /tell_stress_level{"level":"5"}
+  utter_cheers:
+  - text: "Cheers"
+  utter_describe_food:
+  - text: "Hi, time to reflect what you've eaten when you were stressed.
+    Please describe the food on the photo(s)."
+  utter_did_that_help:
+  - text: "Did that help you?"
+  utter_did_you_eat:
+  - text: "Did you eat anything whilst you were stressed?"
+    buttons:
+    - title: Yes
+      payload: /affirm
+    - title: No
+      payload: /deny
+  utter_goodbye:
+  - text: Bye
+  utter_good_night:
+  - text: Got it. Good night
+  utter_greet:
+  - text: Hey! How are you?
+  utter_happy:
+  - text: "Great, carry on!"
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+  utter_intro:
+  - text: "Welcome on board. Demeter is the Greek goddess of agriculture,
+    and Oizys the goddess of misery, anxiety, grief, and depression.
+    This is how I got my name. Eating is a highly emotional behaviour,
+    and it's the first step to relate stress with eating that will
+    eventually help you to eat mindfully.\n\nPlease press the button
+    below to continue"
+    buttons:
+    - title: Start the Journey
+      payload: /register
+  utter_more_or_less:
+  - text: "Was it more or less than the amount you would normally eat
+    when you're *not* stressed?"
+    buttons:
+    - title: More
+      payload: /tell_more_or_less{"more_or_less":"more"}
+    - title: Less
+      payload: /tell_more_or_less{"more_or_less":"less"}
+    - title: Same
+      payload: /tell_more_or_less{"more_or_less":"same"}
+  utter_pieces:
+  - text: "How many *pieces* did you eat in total today? A *piece*
+    can be either a meal, an afternoon tea, an extra dessert, or a
+    snack/some snacks you eat at once."
+    buttons:
+    - title: 0
+      payload: /tell_pieces{"pieces":"0"}
+    - title: 1
+      payload: /tell_pieces{"pieces":"1"}
+    - title: 2
+      payload: /tell_pieces{"pieces":"2"}
+    - title: 3
+      payload: /tell_pieces{"pieces":"3"}
+    - title: 4
+      payload: /tell_pieces{"pieces":"4"}
+    - title: 5
+      payload: /tell_pieces{"pieces":"5"}
+    - title: 6
+      payload: /tell_pieces{"pieces":"6"}
+    - title: 6+
+      payload: /tell_pieces{"pieces":"N"}
+  utter_remind_to_take_photo:
+  - text: "If you eat in the coming **2 hours**, please **take a
+    photo of the food** and **send it to me**."
+  utter_see_you:
+  - text: "Give yourself some space."
+  - text: "Take a deep breath."
+  - text: "A hug from me and everything will be fine. Bye."
+  - text: "Try to break big problem down to small tasks, and it
+    might help you turn stress into productivity. Bye."
+  - text: "Make yourself a cup of tea or coffee."
+  - text: "Many people are dealing with stress just like you.
+    Talk to someone close to you and you can help each other."
+  - text: "Reflect on how you dealt with stress last time and
+    that might help. Bye."
+  - text: "It's said that focusing on your body and finding
+    tense muscles can help calming down. Give it a try."
+  - text: "Remember, storms don't last forever. Bye."
+  - text: "Find yourself a comfortable place. This is the first
+    step dealing with stress. Bye."
+  utter_stress:
+  - text: "Are you feeling stressed?"
+    buttons:
+    - title: Yes
+      payload: /now_stress
+    - title: No
+      payload: /now_no_stress
+  utter_stress_delayed:
+  - text: "What about one hour ago? Were you stressed then?"
+    buttons:
+    - title: Yes
+      payload: /previous_stress
+    - title: No
+      payload: /previous_no_stress
+  utter_success:
+  - text: "You're successfully registered."
+  utter_unstressed:
+  - text: "Great to know!"
+\end{lstlisting}
+
+\bigskip\bigskip
+\section{nlu.md} \label{nlu}
+\begin{lstlisting}
+## intent:affirm
+- yes
+- indeed
+- of course
+- that sounds good
+- correct
+- a little
+- a little bit
+- a bit
+- ja
+
+## intent:describe_food
+- an apple
+- Apfelstrudel
+- Aprikose
+- aubergine
+- avocado
+- a bread
+- a bread and a cup of coffee
+- a chocolate bar
+- a burger
+- a coffee
+- bacon
+- baguette
+- a baguette
+- bami
+- banana
+- banana and chocolate
+- barbecue
+- BBQ
+- beef
+- berries
+- berry
+- biscuits
+- blackberries
+- blueberries
+- Bonbon
+- breakfast
+- brezel
+- burger
+- burrito
+- butter
+- cake
+- cakes
+- candy
+- candies
+- carotte
+- cereal
+- cheese
+- cheese burger
+- cherries
+- chicken
+- chicken nuggets
+- chicken wings
+- chili con carne
+- chips
+- chocolate
+- cookies
+- corn
+- crab
+- crepe
+- crepes
+- croissant
+- a croissant
+- cucumber
+- curry
+- Currywurst
+- dessert
+- dim sum
+- dinner
+- doner
+- Donerkebab
+- donut
+- doughnut
+- duck
+- dumplings
+- egg
+- eggplant
+- eggs
+- falafel
+- fish
+- fish and chips
+- flour
+- fondue
+- food
+- fried
+- fried rice
+- grapes
+- grape fruit
+- ham
+- hamburger
+- Haxe
+- hazel nuts
+- honey
+- hotpot
+- hot dog
+- icecream
+- instant noodles
+- jam
+- juice
+- just candies
+- kebab
+- ketchup
+- KFC
+- kimchi
+- Knodel
+- lamb
+- lasagne
+- Lebkuchen
+- lemon
+- liver
+- lunch
+- mango
+- marmelade
+- marone
+- maroni
+- marshmallow
+- mayo
+- McDonald's
+- meat
+- meat ball
+- meatball
+- melon
+- milk tea
+- mint
+- miso
+- mousse
+- Mozzarella
+- mushrooms
+- musli
+- m&m
+- M&M
+- m & m
+- noodles
+- Nutella
+- octopus
+- olive
+- omelette
+- onion
+- orange
+- paprika
+- parmesan
+- pasta
+- peach
+- peanut
+- pear
+- peperoni
+- pizza
+- pommes
+- popcorn
+- pork
+- potato
+- pretzel
+- pudding
+- raisin
+- ramen
+- ravioli
+- ribs
+- rice
+- rice noodles
+- risotto
+- Ritter Sport
+- rose
+- salad
+- salami
+- salmon
+- sandwich
+- sashimi
+- sausage
+- seafood
+- Schnitzel
+- Schweinshaxe
+- shrimps
+- some snacks
+- soup
+- spaghetti
+- spring roll
+- steak
+- strawberry
+- strawberries
+- supper
+- sushi
+- sweet
+- sweet melon
+- taco
+- tapas
+- tart
+- tatar
+- tea
+- tiramisu
+- tofu
+- tomato
+- tortilla
+- turkey
+- udon
+- vegetables
+- wasabi
+- wheat
+- wok
+- wrap
+- wurst
+- yogurt
+- I didn't eat anything
+- no food
+- I didn't eat anything when I was stressful
+- I don't eat when I'm stressful
+- nothing
+- I did not eat anything
+
+## intent:detect_stress
+- detect stress
+- hello
+- Guten Tag
+- hey there
+- hi
+- hey
+- Hi
+- Hallo Foodbot.
+- Servus
+- Hi
+- Hallo
+- good morning
+- good evening
+
+## intent:goodbye
+- bye
+- goodbye
+- Tschuess
+- Goodbye
+- see you around
+- see you later
+
+## intent:polite
+- good night
+- same to you
+- sweet dream
+- see you tomorrow
+- see you
+
+## intent:previous_stress
+- previous stress
+
+## intent:reflect_food
+- reflect food
+
+## intent:register
+- register me
+
+## intent:stressful_yes
+- I am feeling stressful
+- I'm worried
+- I feel tense
+- I am nervous
+- stressful
+- tense
+- worried
+- nervous
+
+## intent:stressful_no
+- I am calm
+- I feel relaxed
+- calm
+- everything's ok
+- relaxed
+
+## intent:tell_lat_lng
+- "lng":0.0, "lat":0.0
+- "lat":0.0, "lng":0.0
+
+## intent:thank
+- thank you
+- thanks
+- cheers
+
+## intent:bot_challenge
+- are you a bot?
+- are you a human?
+- am I talking to a bot?
+- am I talking to a human?
+\end{lstlisting}
+
+\bigskip\bigskip
+\section{stories.md} \label{stories}
+\begin{lstlisting}
+<!-- User registration -->
+## user register
+* register
+  - action_register_user
+  - action_ask_location
+* tell_lat_lng
+  - utter_success
+  - action_restart
+
+<!-- Reacting to Stress -->
+
+## path 1 - rightly detect stress - eating
+* detect_stress
+  - utter_stress
+* now_stress
+  - utter_ask_stress_level
+* tell_stress_level{"level":"1"}
+  - slot{"level":"1"}
+  - action_save_data
+  - utter_are_you_eating
+* eating_now
+  - utter_ask_for_image
+* photo_sent
+  - utter_see_you
+
+## path 1 - rightly detect stress - eating - repeat
+* detect_stress
+  - utter_stress
+* now_stress
+  - utter_ask_stress_level
+* tell_stress_level{"level":"1"}
+  - slot{"level":"1"}
+  - action_save_data
+  - utter_are_you_eating
+* eating_now
+  - utter_ask_for_image
+* photo_sent
+  - utter_see_you
+
+## path 1 - rightly detect stress - not eating
+* detect_stress
+  - utter_stress
+* now_stress
+  - utter_ask_stress_level
+* tell_stress_level{"level":"1"}
+  - slot{"level":"1"}
+  - action_save_data
+  - utter_are_you_eating
+* not_eating_now
+  - utter_see_you
+
+## path 2 - wrongly detect stress
+* detect_stress
+  - utter_stress
+* now_no_stress
+  - slot{"level":"0"}
+  - action_save_data
+  - utter_stress_delayed
+
+## path 2 - wrongly detect stress - previously stress - eaten
+* previous_stress
+  - utter_ask_stress_level
+* tell_stress_level{"level":"1"}
+  - slot{"level":"1"}
+  - action_save_data
+  - utter_did_you_eat
+* affirm
+  - utter_ask_food
+* describe_food
+  - action_save_data
+
+## path 2 - wrongly detect stress - previously stress - haven't eaten
+* previous_stress
+  - utter_ask_stress_level
+* tell_stress_level{"level":"1"}
+  - slot{"level":"1"}
+  - action_save_data
+  - utter_did_you_eat
+* deny
+  - utter_see_you
+
+## path 2 - wrongly detect stress - previously no stress
+* previous_no_stress
+  - utter_unstressed
+
+## path 3 - self-report stress - eating
+* stressful_yes
+  - utter_ask_stress_level
+* tell_stress_level{"level":"1"}
+  - slot{"level":"1"}
+  - action_save_data
+  - utter_are_you_eating
+* eating_now
+  - utter_ask_for_image
+* photo_sent
+  - utter_see_you
+
+## path 3 - self-report stress - not eating
+* stressful_yes
+  - utter_ask_stress_level
+* tell_stress_level{"level":"1"}
+  - slot{"level":"1"}
+  - action_save_data
+  - utter_are_you_eating
+* not_eating_now
+  - utter_remind_to_take_photo
+
+<!-- Reflection on Food -->
+
+## path 11 - reflect food
+* reflect_food
+  - action_send_image
+* describe_food
+  - action_save_data
+  - utter_more_or_less
+
+## path 11 - tell more or less
+* tell_more_or_less{"more_or_less":"more"}
+  - slot{"more_or_less":"more"}
+  - action_save_data
+  - utter_pieces
+
+## path 11 - tell pieces
+* tell_pieces{"pieces":"1"}
+  - slot{"pieces":"1"}
+  - action_save_data
+  - utter_good_night
+
+<!-- Auxiliary  -->
+
+## start
+* start
+  - utter_intro
+
+## gratitude
+* thank
+  - utter_cheers
+
+## bot challenge
+* bot_challenge
+  - utter_iamabot
+
+## say goodbye
+* goodbye
+  - action_restart
+
+## being polite
+* polite
+  - action_restart
+
+## being polite 2
+* reflect_food
+  - action_send_image
+* polite
+  - action_restart
+
+## save data whenever user describes food
+* describe_food
+  - action_save_data
+\end{lstlisting}

@@ -4,11 +4,11 @@
   <bcf:options component="biber" type="global">
     <bcf:option type="singlevalued">
       <bcf:key>output_encoding</bcf:key>
-      <bcf:value>utf8</bcf:value>
+      <bcf:value>ascii</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>input_encoding</bcf:key>
-      <bcf:value>utf8</bcf:value>
+      <bcf:value>ascii</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>debug</bcf:key>
@@ -2072,6 +2072,7 @@
     <bcf:citekey order="65">34_chatbot_name</bcf:citekey>
     <bcf:citekey order="66">39_demeter</bcf:citekey>
     <bcf:citekey order="67">40_oizys</bcf:citekey>
+    <bcf:citekey order="68">17_ludwig</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

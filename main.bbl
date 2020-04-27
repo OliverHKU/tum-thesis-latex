@@ -569,7 +569,7 @@
     \entry{27_oguz}{thesis}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=0e401e042d68c18cbeaf6906c28e92f5}{%
-           family={Gültepe},
+           family={G\"{u}ltepe},
            familyi={G\bibinitperiod},
            given={Oguz},
            giveni={O\bibinitperiod},
@@ -627,7 +627,7 @@
     \entry{31_marija}{thesis}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=b9df425dafae1993cfb403fd333171f5}{%
-           family={Juodytė},
+           family={Juodyt\.{e}},
            familyi={J\bibinitperiod},
            given={Marija},
            giveni={M\bibinitperiod},
@@ -656,9 +656,9 @@
     \entry{39_demeter}{article}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=fae4e23a5ad753a2ebe6edd6f9b98d3c}{%
-           family={Kárpáti},
+           family={K\'{a}rp\'{a}ti},
            familyi={K\bibinitperiod},
-           given={János},
+           given={J\'{a}nos},
            giveni={J\bibinitperiod},
            givenun=0}}%
       }
@@ -680,7 +680,7 @@
       \field{abstract}{Our discussion focuses on two analogous mythic personalities: the Japanese sun-goddess, Amaterasu, and the Greek corn-goddess, Demeter. Parallel examination of both myths and their related rituals reveals a process of identical structure in which different peoples realize the cycles of the solar year and agriculture. In order to influence these cycles, they create rites in which primitive magic, shamanism, and more developed human communication, i.e. chant, music, and dance, are superimposed upon one another. A lack of historical documentation on the music in both myths, especially the Demeter, is addressed.}
       \field{issn}{09419535}
       \field{journaltitle}{International Journal of Musicology}
-      \field{title}{Amaterasu and Demeter: About a Japanese – Greek Mythological Analogy}
+      \field{title}{Amaterasu and Demeter: About a Japanese -- Greek Mythological Analogy}
       \field{volume}{2}
       \field{year}{1993}
       \field{pages}{9\bibrangedash 21}
@@ -707,7 +707,7 @@
            giveni={M\bibinitperiod},
            givenun=0}}%
         {{uniquename=0,uniquepart=base,hash=9de3e53965df0baad0aee14979e1be7c}{%
-           family={Sch{ä}fer},
+           family={Sch{\"{a}}fer},
            familyi={S\bibinitperiod},
            given={Hanna},
            giveni={H\bibinitperiod},
@@ -731,7 +731,7 @@
            giveni={G\bibinitperiod},
            givenun=0}}%
         {{uniquename=0,uniquepart=base,hash=a18ba2cdb90a29f7f9749135d440476e}{%
-           family={B{ö}hm},
+           family={B{\"{o}}hm},
            familyi={B\bibinitperiod},
            given={Markus},
            giveni={M\bibinitperiod},
@@ -774,7 +774,7 @@
            giveni={L\bibinitperiod},
            givenun=0}}%
         {{uniquename=0,uniquepart=base,hash=bb1717c63756bedb2678744a27ef7cba}{%
-           family={Böhmer},
+           family={B\"{o}hmer},
            familyi={B\bibinitperiod},
            given={Matthias},
            giveni={M\bibinitperiod},
@@ -786,7 +786,7 @@
            giveni={S\bibinitperiod},
            givenun=0}}%
         {{uniquename=0,uniquepart=base,hash=1145bf8ba22928da0cce95645e3af6a4}{%
-           family={Krüger},
+           family={Kr\"{u}ger},
            familyi={K\bibinitperiod},
            given={Antonio},
            giveni={A\bibinitperiod},
@@ -812,7 +812,7 @@
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the 14th International Conference on Human-Computer Interaction with Mobile Devices and Services}
       \field{isbn}{9781450311052}
-      \field{series}{MobileHCI ’12}
+      \field{series}{MobileHCI \textquoteright{}12}
       \field{title}{Back to the App: The Costs of Mobile Application Interruptions}
       \field{year}{2012}
       \field{pages}{291\bibrangedash 294}
@@ -1350,7 +1350,7 @@
       \verb{url}
       \verb http://www.sciencedirect.com/science/article/pii/S0306453011001296
       \endverb
-      \keyw{Abdominal fat,Cortisol,Stress,Stress eating,Hypothalamicâpituitaryâadrenal axis}
+      \keyw{Abdominal fat,Cortisol,Stress,Stress eating,Hypothalamic\^{a}\x{0080}\x{0093}pituitary\^{a}\x{0080}\x{0093}adrenal axis}
     \endentry
     \entry{5_stress_eating}{article}{}
       \name{author}{2}{}{%

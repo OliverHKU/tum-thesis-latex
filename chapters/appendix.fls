@@ -1,0 +1,6 @@
+PWD /Users/Oliver9/GoogleDrive/Dropbox/academy/TUM/Studium/master_thesis/writing/tum-thesis-latex/chapters
+INPUT /usr/local/texlive/2019/texmf.cnf
+INPUT /usr/local/texlive/2019/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT appendix.tex
+OUTPUT appendix.log

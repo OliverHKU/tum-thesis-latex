@@ -26,10 +26,10 @@ The use of chatbots as behavioral change advisors, or specifically, dietary advi
 This section summarizes two closely related research papers (\cite{20_ciman, 21_ciman_2}) that have exploited smartphone usage data to detect stress. Such data includes, but is not limited to, the applications used, the usage patterns of the phone such as screen time, the patterns of typing using a keyboard such as typing speed and mistakes made, and speed and pressure of certain gestures (scrolling and swiping). The authors categorized the human-smartphone interaction (HSI) patterns into a layered structure. \autoref{fig:hsi-level} shows this structure. The first research (\cite{20_ciman}) conducted in a laboratory setting, utilizing level 0 and level 1 of HSI data. The second research (\cite{21_ciman_2}) was a continuation of the first one, which was conducted in both laboratory and in-the-wild settings, utilizing levels 0, 1, and 3 of HSI data. User studies showed that typing speed, typing errors, and the types of applications used during the day are the most prominent features related to stress.
 
 \begin{figure}[ht]
-  \caption{Human-smartphone interaction levels (\cite{21_ciman_2})}
-  \label{fig:hsi-level}
   \centering
   \includegraphics[width=0.7\textwidth]{fig-hsi-level}
+  \caption{Human-smartphone interaction levels (\cite{21_ciman_2})}
+  \label{fig:hsi-level}
 \end{figure}
 
 While these two research papers provided valuable insight into a completely non-intrusive way of gathering user data for stress prediction which does not rely on any external devices other than smartphones, implementing its theory in reality is rather challenging. On the one hand, few mobile operating systems provide developers the freedom of tracking every gesture and keyboard input of the user. While on the other, gathering information on application usage greatly depends on the platform. It by no means rules out the possibility of building an application that is able to acquire such data, but it is likely to be an integrated one operating on both the OS level and application level. Therefore, it does not serve the goal of this thesis, where the chatbot is based on a light-weight open-source platform that has no access to users' phone data.
