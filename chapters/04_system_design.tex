@@ -2,7 +2,7 @@
 % Add the above to each chapter to make compiling the PDF easier in some editors.
 
 \chapter{System Design}\label{chapter:sys_design}
-This chapter presents the system design in detail. It will start with an introduction of the main features of the framework used for developing the chatbot, Rasa, including its features and how it interacts with the Telegram Bot API that is used to communicate with the users. Then it will show how stress detection is done with adaptive sampling, followed by a brief introduction on how the self-reporting of stress is done. After that, it will explain how eating behavior data is collected and processed. Furthermore, the conversation flow is going to be delivered in detail. The last section will present how data is persisted.
+This chapter presents the system design in detail. It will start with an introduction of the main features of the framework used for developing the chatbot, Rasa, including its features and how it interacts with the Telegram Bot API that is used to communicate with the users. Then it will show how stress detection is done with adaptive sampling. After that, it will explain how eating behavior data is collected and processed. Furthermore, the conversation flow is going to be delivered in detail. The last section will present how data is persisted.
 
 \section{The Rasa Framework}
 Rasa (\citeyear{10_rasa}) is an open-source framework based on natural language processing (NLP) for developing chatbots. This section introduces why it is used and its main components and features.
@@ -255,6 +255,51 @@ After a user is registered, Demezys asks the user to send his or her location vi
   \caption{Instruction to sharing location via Telegram}
   \label{fig:share-loc}
 \end{figure}
+
+\section{Stress Detection with Adaptive Sampling}
+As discussed in \autoref{scope_stress_detection}, collecting stress data relies solely on adaptive sampling. This section provides details on how the sampling works.
+
+In this project, stress is measured with levels from 0 to 5, 0 being not stressed and 5 being extremely stressed. This straightforward one-dimension scaling has proven to be effective in measuring stress and is being widely used in psychology questionnaires (\cite{41_stress_scale}). In addition, users only need to spend a minimal amount of time to answer such a question, making the chatbot less intrusive.
+
+The stress samplings are done by a scheduler written in Python. It schedules messages on a per-user basis. Upon registration, a user sends his or her location to Demezys, and the location is converted to its corresponding timezone and saved in the \emph{timezones.csv} file together with the \emph{chat\_id}. Initially, the scheduler sends four messages per day, three of which being \emph{detect\_stress} and one being \emph{reflect\_food}. \emph{detect\_stress} triggers the bot to ask "are you feeling stressed", entering into the process of collecting the user's stress level. \emph{reflect\_food} asks the user to reflect on the food he or she has eaten when feeling stressed during the day, as well as the amount of food. The scheduling of \emph{reflect\_food} is set to be 21:00 every day, with the assumption that this is the time between dinner and sleep for most of the people. \emph{detect\_stress} are initially scheduled 3 times per day, at 9:00, 13:00, and 19:00, which are slightly later than the times when most people are likely to have meals. The bot is designed to ask about the stress level of one hour before, in case the user says he or she is not stressed at the moment (\autoref{flow}). The scheduling scheme is therefore assumed to hit the time when the users are eating with a higher possibility than random scheduling.
+
+To better understand when participants are likely to feel stressed on an individual basis, an adaptive scheduling model was developed. This model not only adapts the scheduled timestamps based on historical values but also the number of stress samplings per day. This reduces the number of times when the chatbot asks about stress for those who feel stressed less frequently than others (\autoref{fig:adapt-stress}), ensuring that Demezys is not "spamming" its users.
+
+The adaptive sampling is achieved by using k-means clustering on previous timestamps of stress entries. First, all previous stress entries are collected, with the corresponding timestamps and stress levels. All timestamps were collected in the 'Europe/Berlin' timezone. Then, the timestamps are converted to the local time of the users according to the timezone saved in \emph{timezones.csv} Afterwards, the difference between each timestamp and the timestamp of the start of its day is calculated and saved. For example, for timestamp \texttt{2020-04-07 13:00:50} is transformed to 46850 seconds, which is the difference between itself and the start of the day (\texttt{2020-04-07 00:00:00}). Each saved time difference is a data point in integer form. Finally, each data point is copied \emph{n-1} times where \emph{n} is the stress level corresponding to that data point. This is to make sure that timestamps associated with higher levels of stress get more weight in the clustering training so that the training result can better predict the time when the user is likely to feel more stressed. This is based on the intuitive assumption that immense stress does not come and go abruptly so that a person is likely to feel some level of stress shortly before and after the timestamp when he or she is feeling a high level of stress.
+
+The centroid of each cluster is converted back to a timestamp from its integer form. The \texttt{hour}s of the centroids will be the hours when Demezys schedules the new \emph{detect\_stress} message the coming day. The k-means clustering algorithm is applied to all 18 participants whose \emph{chat\_id}s are even numbers, among the total of 33 participants. Participants with odd \emph{chat\_id}s receive reminders at fixed times per day, 3 times a day as the controlled group. The participants are not informed of this setting.
+
+\section{Collection and Processing of Eating Behavior Data}
+There are three types of eating behavior data collected, namely food descriptions, amount compared to the non-stress state, and the number of pieces.
+
+\subsection{Food Descriptions}
+Food descriptions are collected whenever a user tells Demezys that he or she was stressed one hour ago and was eating then. In addition, if there is at least one record with a positive stress level during the day, the user will be prompted to give food descriptions either according to the photo(s) he or she has sent during the day, or plainly if there is no photo. To collect food descriptions, Demezys asks the user either of the following questions
+
+\begin{itemize}
+  \item Hi, time to reflect what you've eaten when you were stressed. Please describe the food on the photo(s).
+  \item Please describe the food you've eaten when you felt stressed today.
+\end{itemize}
+
+according to the situation. Users' answers to these questions are saved into \emph{profiles.csv} as food descriptions.
+
+Towards the end of this study, the food items from the descriptions were extracted manually and sent back to the users for comfort-food labeling. The binary label is added back to each food record for training the prediction model.
+
+\subsection{Food Amount Compared to the Non-Stress State}
+Right after food descriptions, the food amount compared to the non-stress state is asked at the end of each day in case the user has reported as least once a possitive stress level. This is done by the following action
+
+\begin{lstlisting}
+utter_more_or_less:
+- text: "Was it more or less than the amount you would normally eat when you're *not* stressed?"
+  buttons:
+  - title: More
+    payload: /tell_more_or_less{"more_or_less":"more"}
+  - title: Less
+    payload: /tell_more_or_less{"more_or_less":"less"}
+  - title: Same
+    payload: /tell_more_or_less{"more_or_less":"same"}
+\end{lstlisting}
+
+where three buttons are presented to the user. The value of the slot \emph{more\_or\_less} is recorded. 
 
 \section{Conversation Flow} \label{flow}
 

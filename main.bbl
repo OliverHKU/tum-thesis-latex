@@ -347,6 +347,60 @@
       \verb https://web.archive.org/web/20080221093646/http://www.computerhistory.org/internet_history/internet_history_70s.shtml
       \endverb
     \endentry
+    \entry{41_stress_scale}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=15a88dcefa24c30400d102f6514af311}{%
+           family={Cushway},
+           familyi={C\bibinitperiod},
+           given={Delia},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=c0dee06ec78ddb3b40e506606638e44f}{%
+           family={Tyler},
+           familyi={T\bibinitperiod},
+           given={Patrick\bibnamedelima A.},
+           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=72e540aa1bbf0b63988c66387971b802}{%
+           family={Nolan},
+           familyi={N\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b27b9f8edcc8499162be827a581b7cdf}
+      \strng{fullhash}{f3aeddae0688d147fd941b0e3cd34d2f}
+      \strng{bibnamehash}{f3aeddae0688d147fd941b0e3cd34d2f}
+      \strng{authorbibnamehash}{f3aeddae0688d147fd941b0e3cd34d2f}
+      \strng{authornamehash}{b27b9f8edcc8499162be827a581b7cdf}
+      \strng{authorfullhash}{f3aeddae0688d147fd941b0e3cd34d2f}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper describes the development of the Mental Health Professionals Stress Scale (MHPSS): a self-report method of identifying sources of stress for mental health professionals. The 42-item scale, which includes seven subscales, was administered to 154 clinical psychologists and 111 mental health nurses. The MHPSS was found to have good internal consistency (alpha = .87 for clinical psychologists; alpha = .94 for mental health nurses). The preliminary evidence suggests that the concurrent validity of the MHPSS is good. The expected relationships between the scale and between the criterion measuresâ General Health Questionnaire, a symptom check list, job satisfaction, self-reported stress level and quality of social supportâwere demonstrated. The results also provide evidence for the discriminant validity of the subscales to measure different aspects of the stress experience. The MHPSS was shown to discriminate between two groups of health professionals who might be expected to differ in their sources of stress. For clinical psychologists the most important source of stress was âprofessional self-doubtâ whereas the major source of stress for mental health nurses was found to be the difficulty of handling potentially violent or difficult patients in the context of scarce staff resources. For both groups, however, âhome-work conflictâ was the subscalc most strongly and consistently associated with mental health outcome. It is concluded that the preliminary evidence regarding the utility of the MHPSS is encouraging, although further data are clearly needed.}
+      \field{journaltitle}{British Journal of Clinical Psychology}
+      \field{number}{2}
+      \field{title}{Development of a stress scale for mental health professionals}
+      \field{volume}{35}
+      \field{year}{1996}
+      \field{pages}{279\bibrangedash 295}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1111/j.2044-8260.1996.tb01182.x
+      \endverb
+      \verb{eprint}
+      \verb https://onlinelibrary.wiley.com/doi/pdf/10.1111/j.2044-8260.1996.tb01182.x
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/j.2044-8260.1996.tb01182.x
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/j.2044-8260.1996.tb01182.x
+      \endverb
+    \endentry
     \entry{1_stress_emotion}{article}{}
       \name{author}{4}{}{%
         {{uniquename=0,uniquepart=base,hash=4f85395494ef0dd5f8197ed896bcd383}{%
@@ -569,7 +623,7 @@
     \entry{27_oguz}{thesis}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=0e401e042d68c18cbeaf6906c28e92f5}{%
-           family={G\"{u}ltepe},
+           family={Gültepe},
            familyi={G\bibinitperiod},
            given={Oguz},
            giveni={O\bibinitperiod},
@@ -627,7 +681,7 @@
     \entry{31_marija}{thesis}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=b9df425dafae1993cfb403fd333171f5}{%
-           family={Juodyt\.{e}},
+           family={Juodytė},
            familyi={J\bibinitperiod},
            given={Marija},
            giveni={M\bibinitperiod},
@@ -656,9 +710,9 @@
     \entry{39_demeter}{article}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=fae4e23a5ad753a2ebe6edd6f9b98d3c}{%
-           family={K\'{a}rp\'{a}ti},
+           family={Kárpáti},
            familyi={K\bibinitperiod},
-           given={J\'{a}nos},
+           given={János},
            giveni={J\bibinitperiod},
            givenun=0}}%
       }
@@ -680,7 +734,7 @@
       \field{abstract}{Our discussion focuses on two analogous mythic personalities: the Japanese sun-goddess, Amaterasu, and the Greek corn-goddess, Demeter. Parallel examination of both myths and their related rituals reveals a process of identical structure in which different peoples realize the cycles of the solar year and agriculture. In order to influence these cycles, they create rites in which primitive magic, shamanism, and more developed human communication, i.e. chant, music, and dance, are superimposed upon one another. A lack of historical documentation on the music in both myths, especially the Demeter, is addressed.}
       \field{issn}{09419535}
       \field{journaltitle}{International Journal of Musicology}
-      \field{title}{Amaterasu and Demeter: About a Japanese -- Greek Mythological Analogy}
+      \field{title}{Amaterasu and Demeter: About a Japanese – Greek Mythological Analogy}
       \field{volume}{2}
       \field{year}{1993}
       \field{pages}{9\bibrangedash 21}
@@ -707,7 +761,7 @@
            giveni={M\bibinitperiod},
            givenun=0}}%
         {{uniquename=0,uniquepart=base,hash=9de3e53965df0baad0aee14979e1be7c}{%
-           family={Sch{\"{a}}fer},
+           family={Sch{ä}fer},
            familyi={S\bibinitperiod},
            given={Hanna},
            giveni={H\bibinitperiod},
@@ -731,7 +785,7 @@
            giveni={G\bibinitperiod},
            givenun=0}}%
         {{uniquename=0,uniquepart=base,hash=a18ba2cdb90a29f7f9749135d440476e}{%
-           family={B{\"{o}}hm},
+           family={B{ö}hm},
            familyi={B\bibinitperiod},
            given={Markus},
            giveni={M\bibinitperiod},
@@ -774,7 +828,7 @@
            giveni={L\bibinitperiod},
            givenun=0}}%
         {{uniquename=0,uniquepart=base,hash=bb1717c63756bedb2678744a27ef7cba}{%
-           family={B\"{o}hmer},
+           family={Böhmer},
            familyi={B\bibinitperiod},
            given={Matthias},
            giveni={M\bibinitperiod},
@@ -786,7 +840,7 @@
            giveni={S\bibinitperiod},
            givenun=0}}%
         {{uniquename=0,uniquepart=base,hash=1145bf8ba22928da0cce95645e3af6a4}{%
-           family={Kr\"{u}ger},
+           family={Krüger},
            familyi={K\bibinitperiod},
            given={Antonio},
            giveni={A\bibinitperiod},
@@ -812,7 +866,7 @@
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the 14th International Conference on Human-Computer Interaction with Mobile Devices and Services}
       \field{isbn}{9781450311052}
-      \field{series}{MobileHCI \textquoteright{}12}
+      \field{series}{MobileHCI ’12}
       \field{title}{Back to the App: The Costs of Mobile Application Interruptions}
       \field{year}{2012}
       \field{pages}{291\bibrangedash 294}
@@ -1350,7 +1404,7 @@
       \verb{url}
       \verb http://www.sciencedirect.com/science/article/pii/S0306453011001296
       \endverb
-      \keyw{Abdominal fat,Cortisol,Stress,Stress eating,Hypothalamic\^{a}\x{0080}\x{0093}pituitary\^{a}\x{0080}\x{0093}adrenal axis}
+      \keyw{Abdominal fat,Cortisol,Stress,Stress eating,Hypothalamicâpituitaryâadrenal axis}
     \endentry
     \entry{5_stress_eating}{article}{}
       \name{author}{2}{}{%
