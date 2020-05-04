@@ -107,24 +107,36 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {6}Data Analysis}{32}{chapter.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Result}{33}{chapter.7}% 
+\contentsline {section}{\numberline {6.1}Data Gathered}{33}{section.6.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Limitations}{34}{chapter.8}% 
+\contentsline {section}{\numberline {6.2}Data Pre-Processing}{33}{section.6.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {9}Future Work}{35}{chapter.9}% 
+\contentsline {section}{\numberline {6.3}Model Selection}{34}{section.6.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {10}Conclusion}{36}{chapter.10}% 
+\contentsline {section}{\numberline {6.4}Profile Generation}{34}{section.6.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Rasa Training Data}{37}{appendix.A}% 
+\contentsline {chapter}{\numberline {7}Result}{36}{chapter.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}domain.yml}{37}{section.A.1}% 
+\contentsline {chapter}{\numberline {8}Limitations}{38}{chapter.8}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}nlu.md}{42}{section.A.2}% 
+\contentsline {chapter}{\numberline {9}Future Work}{39}{chapter.9}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.3}stories.md}{49}{section.A.3}% 
+\contentsline {chapter}{\numberline {10}Conclusion}{41}{chapter.10}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Figures}{54}{chapter*.30}% 
+\contentsline {chapter}{\numberline {A}Rasa Training Data}{42}{appendix.A}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Tables}{55}{chapter*.31}% 
+\contentsline {section}{\numberline {A.1}domain.yml}{42}{section.A.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Bibliography}{56}{chapter*.32}% 
+\contentsline {section}{\numberline {A.2}nlu.md}{47}{section.A.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.3}stories.md}{54}{section.A.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.4}Model Selection and Training Results for the Candidates}{58}{section.A.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.5}Complete Collection of Statements Describing the Candidates' Eating Behaviors}{61}{section.A.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline List of Figures}{63}{chapter*.32}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline List of Tables}{64}{chapter*.33}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline Bibliography}{65}{chapter*.34}% 

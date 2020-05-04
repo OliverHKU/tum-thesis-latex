@@ -19,6 +19,78 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global}
+    \entry{42_underfitting}{article}{}
+      \name{author}{6}{}{%
+        {{uniquename=0,uniquepart=base,hash=db3cc5c3ac52a67c524d01a1f5e51928}{%
+           family={Aalst},
+           familyi={A\bibinitperiod},
+           given={W.\bibnamedelimi M.\bibnamedelimi P.},
+           giveni={W\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0,
+           prefix={van\bibnamedelima der},
+           prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod},
+           prefixun=0}}%
+        {{uniquename=0,uniquepart=base,hash=f0aad48c374987fb20568a449a4ad8ab}{%
+           family={Rubin},
+           familyi={R\bibinitperiod},
+           given={V.},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=d6c66f8e3207de935f6d33182b09a2e2}{%
+           family={Verbeek},
+           familyi={V\bibinitperiod},
+           given={H.\bibnamedelimi M.\bibnamedelimi W.},
+           giveni={H\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=6305c32472e584dc2ccccfb59ebcb75a}{%
+           family={Dongen},
+           familyi={D\bibinitperiod},
+           given={B.\bibnamedelimi F.},
+           giveni={B\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0,
+           prefix={van},
+           prefixi={v\bibinitperiod},
+           prefixun=0}}%
+        {{uniquename=0,uniquepart=base,hash=85a4f0d429c3ae117aa6e7a3ef99e01f}{%
+           family={Kindler},
+           familyi={K\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=9ba00e642bca49d56a81dfa50e91ec26}{%
+           family={Günther},
+           familyi={G\bibinitperiod},
+           given={C.\bibnamedelimi W.},
+           giveni={C\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c6b745bc3b958101430b324721b5aa42}
+      \strng{fullhash}{aa5a673da4152bbf9e0a2c8b5f0510dc}
+      \strng{bibnamehash}{aa5a673da4152bbf9e0a2c8b5f0510dc}
+      \strng{authorbibnamehash}{aa5a673da4152bbf9e0a2c8b5f0510dc}
+      \strng{authornamehash}{c6b745bc3b958101430b324721b5aa42}
+      \strng{authorfullhash}{aa5a673da4152bbf9e0a2c8b5f0510dc}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Software \& Systems Modeling}
+      \field{number}{87}
+      \field{title}{Process mining: a two-step approach to balance between underfitting and overfitting}
+      \field{volume}{9}
+      \field{year}{2008}
+      \verb{doi}
+      \verb 10.1007/s10270-008-0106-z
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/article/10.1007/s10270-008-0106-z
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/article/10.1007/s10270-008-0106-z
+      \endverb
+    \endentry
     \entry{25_timing_review}{article}{}
       \name{author}{6}{}{%
         {{uniquename=0,uniquepart=base,hash=e20b581922923b9fb23c8544df3fa98b}{%
@@ -192,6 +264,37 @@
       \verb{url}
       \verb https://doi.org/10.1080/15228830802094429
       \endverb
+    \endentry
+    \entry{48_why_chatbot}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=752dc41f90e1825a46950fe85adc7719}{%
+           family={Brandtzaeg},
+           familyi={B\bibinitperiod},
+           given={Petter},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=44bd8bfc77d4014590132abca95752cd}{%
+           family={FÃžlstad},
+           familyi={F\bibinitperiod},
+           given={AsbjÃžrn},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b2ebfbfc91ef10e1f574a3233bf14f7a}
+      \strng{fullhash}{b2ebfbfc91ef10e1f574a3233bf14f7a}
+      \strng{bibnamehash}{b2ebfbfc91ef10e1f574a3233bf14f7a}
+      \strng{authorbibnamehash}{b2ebfbfc91ef10e1f574a3233bf14f7a}
+      \strng{authornamehash}{b2ebfbfc91ef10e1f574a3233bf14f7a}
+      \strng{authorfullhash}{b2ebfbfc91ef10e1f574a3233bf14f7a}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{11}
+      \field{title}{Why people use chatbots}
+      \field{year}{2017}
     \endentry
     \entry{24_why_rasa}{inproceedings}{}
       \name{author}{4}{}{%
@@ -882,6 +985,54 @@
       \endverb
       \keyw{large-scale study,application switching,task interleaving,task deferral,interruptions,resumption lags}
     \endentry
+    \entry{45_overfitting}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=3c3cc807d04a03ee18c8680cea9f9dda}{%
+           family={Lever},
+           familyi={L\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=a27ea6bc0184bb71af0c31180b0664b8}{%
+           family={Krzywinski},
+           familyi={K\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=d14fe4e989e5afbea3bb3cbbd895ce41}{%
+           family={Altman},
+           familyi={A\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4ae8d85694ddd4589c2810a0f6ea215e}
+      \strng{fullhash}{c1591aa45bf699f72abacd5aefe722de}
+      \strng{bibnamehash}{c1591aa45bf699f72abacd5aefe722de}
+      \strng{authorbibnamehash}{c1591aa45bf699f72abacd5aefe722de}
+      \strng{authornamehash}{4ae8d85694ddd4589c2810a0f6ea215e}
+      \strng{authorfullhash}{c1591aa45bf699f72abacd5aefe722de}
+      \field{sortinit}{L}
+      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Model selection and overfitting}
+      \field{volume}{13}
+      \field{year}{2016}
+      \field{pages}{703\bibrangedash 704}
+      \range{pages}{2}
+      \verb{doi}
+      \verb https://doi.org/10.1038/nmeth.3968
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/nmeth.3968
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/nmeth.3968
+      \endverb
+    \endentry
     \entry{14_comfort_food}{article}{}
       \name{author}{4}{}{%
         {{uniquename=0,uniquepart=base,hash=f411eb6634014ab9ef91a642c89c99e3}{%
@@ -946,6 +1097,41 @@
       \verb{url}
       \verb https://doi.org/10.1080/07409710500334509
       \endverb
+    \endentry
+    \entry{43_multiclass_classification}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=8322801dd3081c880b8fde83425552e2}{%
+           family={Mehra},
+           familyi={M\bibinitperiod},
+           given={Neha},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=1774a1f1ad14dc83fbedb7ce144b2603}{%
+           family={Gupta},
+           familyi={G\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{db4365e41aa1c213ba2729a20fc784c2}
+      \strng{fullhash}{db4365e41aa1c213ba2729a20fc784c2}
+      \strng{bibnamehash}{db4365e41aa1c213ba2729a20fc784c2}
+      \strng{authorbibnamehash}{db4365e41aa1c213ba2729a20fc784c2}
+      \strng{authornamehash}{db4365e41aa1c213ba2729a20fc784c2}
+      \strng{authorfullhash}{db4365e41aa1c213ba2729a20fc784c2}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Int. J. Comput. Sci. Inf. Technol.}
+      \field{month}{01}
+      \field{title}{Survey on multiclass classification methods}
+      \field{volume}{4}
+      \field{year}{2013}
+      \field{pages}{572\bibrangedash 576}
+      \range{pages}{5}
     \endentry
     \entry{16_martin}{thesis}{}
       \name{author}{1}{}{%
@@ -1152,6 +1338,37 @@
       \endverb
       \verb{url}
       \verb https://rasa.com/
+      \endverb
+    \endentry
+    \entry{44_sklearn}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=2ad72e574157d613a63fe8732cf468a8}{%
+           family={{scikit-learn developers}},
+           familyi={s\bibinitperiod}}}%
+      }
+      \strng{namehash}{2ad72e574157d613a63fe8732cf468a8}
+      \strng{fullhash}{2ad72e574157d613a63fe8732cf468a8}
+      \strng{bibnamehash}{2ad72e574157d613a63fe8732cf468a8}
+      \strng{authorbibnamehash}{2ad72e574157d613a63fe8732cf468a8}
+      \strng{authornamehash}{2ad72e574157d613a63fe8732cf468a8}
+      \strng{authorfullhash}{2ad72e574157d613a63fe8732cf468a8}
+      \field{sortinit}{s}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{1. Supervised learning}
+      \field{urlday}{4}
+      \field{urlmonth}{5}
+      \field{urlyear}{2020}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://scikit-learn.org/stable/supervised_learning.html#supervised-learning
+      \endverb
+      \verb{url}
+      \verb https://scikit-learn.org/stable/supervised_learning.html#supervised-learning
       \endverb
     \endentry
     \entry{36_early_chatbots}{article}{}
@@ -1568,6 +1785,62 @@
       \verb http://www.sciencedirect.com/science/article/pii/S0747563217302856
       \endverb
       \keyw{Computers are social actors,Social presence,Computer agents,Social Identity Model of Deindividuation Effects,Group discussion}
+    \endentry
+    \entry{47_curiosity}{article}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,uniquepart=base,hash=4a75233b222388ade931a61c42effd9d}{%
+           family={Zarouali},
+           familyi={Z\bibinitperiod},
+           given={Brahim},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=bc4f5b4117c5ecc53ae7f4c7d3bed21a}{%
+           family={Broeck},
+           familyi={B\bibinitperiod},
+           given={Evert\bibnamedelima Van},
+           giveni={E\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0,
+           prefix={den},
+           prefixi={d\bibinitperiod},
+           prefixun=0}}%
+        {{uniquename=0,uniquepart=base,hash=741fa2583d57df298b8ec16cadc01358}{%
+           family={Walrave},
+           familyi={W\bibinitperiod},
+           given={Michel},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=5cefa5eae400ff16742893d0dd8fbc6c}{%
+           family={Poels},
+           familyi={P\bibinitperiod},
+           given={Karolien},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{403a25bdf11e228ac2e886478a45cd90}
+      \strng{fullhash}{9b2d2a09588663b7fc743ce9379943e9}
+      \strng{bibnamehash}{9b2d2a09588663b7fc743ce9379943e9}
+      \strng{authorbibnamehash}{9b2d2a09588663b7fc743ce9379943e9}
+      \strng{authornamehash}{403a25bdf11e228ac2e886478a45cd90}
+      \strng{authorfullhash}{9b2d2a09588663b7fc743ce9379943e9}
+      \field{sortinit}{Z}
+      \field{sortinithash}{156173bd08b075d7295bc3e0f4735a04}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Predicting consumer responses to a chatbot on Facebook}
+      \field{year}{2018}
+      \field{pages}{491\bibrangedash 497}
+      \range{pages}{7}
+      \verb{doi}
+      \verb http://doi.org/10.1089/cyber.2017.0518
+      \endverb
+      \verb{urlraw}
+      \verb https://www.liebertpub.com/doi/abs/10.1089/cyber.2017.0518
+      \endverb
+      \verb{url}
+      \verb https://www.liebertpub.com/doi/abs/10.1089/cyber.2017.0518
+      \endverb
     \endentry
     \entry{7_stress_detection}{inproceedings}{}
       \name{author}{2}{}{%
