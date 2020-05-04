@@ -349,9 +349,9 @@ As introduced, the data of each user is saved into two files, namely \emph{profi
   \item \textbf{photos.csv:} [Timestamp, ChatID, FileID, StressRecordID]
 \end{itemize}
 
-The choice that the data was saved in CSV files instead of a database, is out of the fact that the relations between entries are rather simple. Speficially, only food descriptions need to relate to their image counterparts (if there is any) and ultimately the corresponding stress entry when the eating behavior happened. This is done by the \emph{ReferenceID} entry in \emph{profiles.csv} and \emph{StressRecordID} in \emph{photos.csv}. Whenever an image of the food is retrieved from the Telegram server, its \emph{StressRecordID} is retrieved and saved in a Rasa slot, which will be linked to the entry in \emph{profiles.csv} whose \emph{EntryID} matches it. Another benefit of saving the data in CSV files is that it is straightforward to bulk process the data for analysis based on machine learning tools.
+The choice that the data was saved in CSV files instead of a database, is out of the fact that the relations between entries are rather simple. Specifically, only food descriptions need to relate to their image counterparts (if there are any) and ultimately the corresponding stress entry when the eating behavior happened. This is done by the \emph{ReferenceID} entry in \emph{profiles.csv} and \emph{StressRecordID} in \emph{photos.csv}. Whenever an image of the food is retrieved from the Telegram server, its \emph{StressRecordID} is retrieved and saved in a Rasa slot, which will be linked to the entry in \emph{profiles.csv} whose \emph{EntryID} matches it. Another benefit of saving the data in CSV files is that it is straightforward to bulk process the data for analysis based on machine learning tools.
 
-The timestamps are kept regarding the timezone of the server where the chatbot is run. When user-specific timestamps are required, they are obtained by converting the timezone to that of the user saved in \emph{timezones.csv}. \emph{Message} saves the original user message to the bot, while the \emph{Intent} field is self-explainatory. \emph{Entity} saves the useful information extracted from the message and the intent, e.g. "less" for \emph{tell\_more\_or\_less} or "4" for \emph{tell\_stress\_level}. In case a food description refers to two or more photos, multiple photo timestamps and reference IDs are saved in the respective fields in the form of formatted lists. \autoref{tab:profiles} shows the \emph{profiles.csv} of one participant with data collected within a day (\emph{ChatID} is omitted due to privacy concern).
+The timestamps are kept regarding the timezone of the server where the chatbot is run. When user-specific timestamps are required, they are obtained by converting the timezone to that of the user saved in \emph{timezones.csv}. \emph{Message} saves the original user message to the bot, while the \emph{Intent} field is self-explanatory. \emph{Entity} saves the useful information extracted from the message and the intent, e.g. "less" for \emph{tell\_more\_or\_less} or "4" for \emph{tell\_stress\_level}. In case a food description refers to two or more photos, multiple photo timestamps and reference IDs are saved in the respective fields in the form of formatted lists. \autoref{tab:profiles} shows the \emph{profiles.csv} of one participant with data collected within a day (\emph{ChatID} is omitted due to privacy concern).
 
 \begin{table}[htpb]
   \caption[Sample User Data]{Part of a profile.csv file generated for a participant}\label{tab:profiles}
@@ -361,8 +361,12 @@ The timestamps are kept regarding the timezone of the server where the chatbot i
     \toprule
       EntryID & Timestamp & Message & Intent & Entity & PhotoTimestamp & ReferenceID \\
     \midrule
-      45 & 2020-04-12 03:09:51 & /tell\_stress\_level{level:2} & tell\_stress\_level & 2 & & \\
-      46 & 2020-04-12 08:00:19 & /tell\_stress\_level{level:3} & tell\_stress\_level & 3 & & \\
+      45 & 2020-04-12 03:09:51 & /tell\_stress\_level\{level:2\} & tell\_stress\_level & 2 & & \\
+      46 & 2020-04-12 08:00:19 & /tell\_stress\_level\{level:3\} & tell\_stress\_level & 3 & & \\
+      47 & 2020-04-12 13:01:22 & /tell\_stress\_level\{level:2\} & tell\_stress\_level & 2 & & \\
+      48 & 2020-04-12 15:03:41 & Fried chicken wings & describe\_food & & 2020-04-12 13:01:39 & 47 \\
+      49 & 2020-04-12 15:03:49 & /tell\_more\_or\_less\{more\_or\_less:same\} & tell\_more\_or\_less & same & & \\
+      50 & 2020-04-12 15:03:54 & /tell\_pieces\{pieces:6\} & tell\_pieces & 6 & & \\
     \bottomrule
   \end{tabular}
 \end{table}

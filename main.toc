@@ -91,34 +91,36 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.3.1}Food Descriptions}{25}{subsection.4.3.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Conversation Flow}{26}{section.4.4}% 
+\contentsline {subsection}{\numberline {4.3.2}Food Amount Compared to the Non-Stress State}{26}{subsection.4.3.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.1}Onboarding}{26}{subsection.4.4.1}% 
+\contentsline {subsection}{\numberline {4.3.3}Number of Pieces}{26}{subsection.4.3.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Data Persistence}{26}{section.4.5}% 
+\contentsline {section}{\numberline {4.4}Conversation Flow}{27}{section.4.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Experiment}{27}{chapter.5}% 
+\contentsline {section}{\numberline {4.5}Data Persistence}{27}{section.4.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Data Analysis}{28}{chapter.6}% 
+\contentsline {chapter}{\numberline {5}Experiment}{30}{chapter.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Result}{29}{chapter.7}% 
+\contentsline {chapter}{\numberline {6}Data Analysis}{31}{chapter.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Limitations}{30}{chapter.8}% 
+\contentsline {chapter}{\numberline {7}Result}{32}{chapter.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {9}Future Work}{31}{chapter.9}% 
+\contentsline {chapter}{\numberline {8}Limitations}{33}{chapter.8}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {10}Conclusion}{32}{chapter.10}% 
+\contentsline {chapter}{\numberline {9}Future Work}{34}{chapter.9}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Rasa Training Data}{33}{appendix.A}% 
+\contentsline {chapter}{\numberline {10}Conclusion}{35}{chapter.10}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}domain.yml}{33}{section.A.1}% 
+\contentsline {chapter}{\numberline {A}Rasa Training Data}{36}{appendix.A}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}nlu.md}{38}{section.A.2}% 
+\contentsline {section}{\numberline {A.1}domain.yml}{36}{section.A.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.3}stories.md}{45}{section.A.3}% 
+\contentsline {section}{\numberline {A.2}nlu.md}{41}{section.A.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Figures}{50}{chapter*.27}% 
+\contentsline {section}{\numberline {A.3}stories.md}{48}{section.A.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Tables}{51}{chapter*.28}% 
+\contentsline {chapter}{\nonumberline List of Figures}{53}{chapter*.29}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Bibliography}{52}{chapter*.29}% 
+\contentsline {chapter}{\nonumberline List of Tables}{54}{chapter*.30}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline Bibliography}{55}{chapter*.31}% 
