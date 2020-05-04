@@ -330,13 +330,34 @@ utter_pieces:
 \end{lstlisting}
 
 \section{Conversation Flow} \label{flow}
-The choices made by the chatbot follow a certain conversation flow, meaning that it determines its actions based on previous conversations (user intents and chatbot actions). The major features within the conversation flow are onboarding, detecting stress, recording food, reflecting food, and a number of auxiliary conversation paths. \autoref{fig:conv-flow} summarizes the conversation flow, part of which has been discussed in previous sections.
+The choices made by the chatbot follow a certain conversation flow, meaning that it determines its actions based on previous conversations (user intents and chatbot actions). The major features within the conversation flow are onboarding, detecting stress, recording food, reflecting food, and a number of auxiliary conversation paths. \autoref{fig:conv-flow} summarizes the conversation flow, part of which has been discussed in previous sections. \autoref{fig:onboarding}, \autoref{fig:detect-stress}, and \autoref{fig:reflect-food} show typical conversation scenarios.
 
 \begin{figure}[ht]
   \centering
   \includegraphics[width=1.0\textwidth]{fig-conv-flow}
   \caption{Conversation Flow}
   \label{fig:conv-flow}
+\end{figure}
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.5\textwidth]{fig-onboard}
+  \caption{Onboarding}
+  \label{fig:onboarding}
+\end{figure}
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.5\textwidth]{fig-detect-stress}
+  \caption{Detect Stress}
+  \label{fig:detect-stress}
+\end{figure}
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.5\textwidth]{fig-reflect-food}
+  \caption{Reflect Food}
+  \label{fig:reflect-food}
 \end{figure}
 
 It is worth noticing that when stress is detected, the chatbot not only prompts the user to answer questions but also offers words of comfort or advice at the end of the conversation. One sentence will be selected randomly out of a list of ten, which are shown under the \emph{utter\_see\_you} template in \autoref{domain}.
