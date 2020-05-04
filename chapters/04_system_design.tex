@@ -104,7 +104,7 @@ Rasa provided a Telegram connector which acts as an agent connecting to the Tele
 The built-in Telegram channels provided by Rasa consists of two classes, namely \emph{TelegramOutput} and \emph{TelegramInput}, controlling the handling of output and input messages to users, respectively. By default, the \emph{TelegramInput} channel only handles text data. In order for the handling of images and locations to work, this class was modified and renamed to \emph{TelegramPlusInput}. Additionally, some other functionalities are added, which are explained below.
 
 \subsubsection{User Registration}
-A new user needs to be registered before his or her data can be recorded. Details of the registration process will be presented in \autoref{ssec:onboarding}. As a standard approach, this registration is done right after the user issues the \emph{/start} command to the bot. It creates a folder and two CSV files to record the user data, without which the chatbot continues to interact with the user, but no data is collected. In case there was an error in the standard registration process (e.g. the user issued the \emph{/start} command when the server is down), the \emph{TelegramPlusInput} channel triggers a backup process in case that a user message is received, but no folder of the respective user is found.
+A new user needs to be registered before his or her data can be recorded. As a standard approach, this registration is done right after the user issues the \emph{/start} command to the bot. It creates a folder and two CSV files to record the user data, without which the chatbot continues to interact with the user, but no data is collected. In case there was an error in the standard registration process (e.g. the user issued the \emph{/start} command when the server is down), the \emph{TelegramPlusInput} channel triggers a backup process in case that a user message is received, but no folder of the respective user is found.
 
 \subsubsection{User Location and Timezone}
 The bot needs to collect the timezone data from the users to schedule messages to them at the right time. The timezones are calculated based on locations sent by the users. On Telegram, a location is a JSON object consisting of the latitude and longitude. The \emph{TelegramPlusInput} connector captures this object and converts it into a Python string that can be recognized by Rasa NLU. The format of this string is defined as follows:
@@ -280,16 +280,17 @@ Food descriptions are collected whenever a user tells Demezys that he or she was
   \item Please describe the food you've eaten when you felt stressed today.
 \end{itemize}
 
-according to the situation. Users' answers to these questions are saved into \emph{profiles.csv} as food descriptions.
+\noindent according to the situation. Users' answers to these questions are saved into \emph{profiles.csv} as food descriptions.
 
-Towards the end of this study, the food items from the descriptions were extracted manually and sent back to the users for comfort-food labeling. The binary label is added back to each food record for training the prediction model.
+Towards the end of this study, the food items from the descriptions were extracted manually and sent back to the users for comfort-food labeling. The binary label is added back to each food record for training the prediction models.
 
 \subsection{Food Amount Compared to the Non-Stress State}
-Right after food descriptions, the food amount compared to the non-stress state is asked at the end of each day in case the user has reported as least once a possitive stress level. This is done by the following action
+Right after food descriptions, the food amount compared to the non-stress state is asked at the end of each day in case the user has reported at least once a positive stress level. This is done by the following action
 
 \begin{lstlisting}
 utter_more_or_less:
-- text: "Was it more or less than the amount you would normally eat when you're *not* stressed?"
+- text: "Was it more or less than the amount you would normally eat
+  when you're not stressed?"
   buttons:
   - title: More
     payload: /tell_more_or_less{"more_or_less":"more"}
@@ -299,11 +300,69 @@ utter_more_or_less:
     payload: /tell_more_or_less{"more_or_less":"same"}
 \end{lstlisting}
 
-where three buttons are presented to the user. The value of the slot \emph{more\_or\_less} is recorded. 
+\noindent where three buttons are presented to the user. The value of the slot \emph{more\_or\_less} is recorded.
+
+\subsection{Number of Pieces}
+While the \emph{more\_or\_less} values are relative to a non-stressed state, there is another piece of information collected which is the number of \emph{pieces}. A piece can be either a meal, an afternoon tea, an extra dessert, or a snack/some snacks a person eats at once. It is an absolute value that tells how frequently the user eats. Like \emph{more\_or\_less}, \emph{pieces} are also reported by the users at the end of the day, after Demezys prompts the users with the action:
+
+\begin{lstlisting}
+utter_pieces:
+- text: "How many pieces did you eat in total today?
+  A piece can be either a meal, an afternoon tea, an extra dessert,
+  or a snack/some snacks you eat at once."
+  buttons:
+  - title: 0
+    payload: /tell_pieces{"pieces":"0"}
+  - title: 1
+    payload: /tell_pieces{"pieces":"1"}
+  - title: 2
+    payload: /tell_pieces{"pieces":"2"}
+  - title: 3
+    payload: /tell_pieces{"pieces":"3"}
+  - title: 4
+    payload: /tell_pieces{"pieces":"4"}
+  - title: 5
+    payload: /tell_pieces{"pieces":"5"}
+  - title: 6
+    payload: /tell_pieces{"pieces":"6"}
+  - title: 6+
+    payload: /tell_pieces{"pieces":"N"}
+\end{lstlisting}
 
 \section{Conversation Flow} \label{flow}
+The choices made by the chatbot follow a certain conversation flow, meaning that it determines its actions based on previous conversations (user intents and chatbot actions). The major features within the conversation flow are onboarding, detecting stress, recording food, reflecting food, and a number of auxiliary conversation paths. \autoref{fig:conv-flow} summarizes the conversation flow, part of which has been discussed in previous sections.
 
-\subsection{Onboarding} \label{ssec:onboarding}
-
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=1.0\textwidth]{fig-conv-flow}
+  \caption{Conversation Flow}
+  \label{fig:conv-flow}
+\end{figure}
 
 \section{Data Persistence} \label{data_persis}
+In the previous sections, the design of the chatbot system was presented comprehensively. This last section of the chapter discusses how data collected via the chatbot is persisted for later analysis.
+
+As introduced, the data of each user is saved into two files, namely \emph{profiles.csv} and \emph{photos.csv}. The scheme of each file is listed below.
+
+\begin{itemize}
+  \item \textbf{profiles.csv:} [EntryID, Timestamp, ChatID, Message, Intent, Entity, PhotoTimestamp, ReferenceID]
+  \item \textbf{photos.csv:} [Timestamp, ChatID, FileID, StressRecordID]
+\end{itemize}
+
+The choice that the data was saved in CSV files instead of a database, is out of the fact that the relations between entries are rather simple. Speficially, only food descriptions need to relate to their image counterparts (if there is any) and ultimately the corresponding stress entry when the eating behavior happened. This is done by the \emph{ReferenceID} entry in \emph{profiles.csv} and \emph{StressRecordID} in \emph{photos.csv}. Whenever an image of the food is retrieved from the Telegram server, its \emph{StressRecordID} is retrieved and saved in a Rasa slot, which will be linked to the entry in \emph{profiles.csv} whose \emph{EntryID} matches it. Another benefit of saving the data in CSV files is that it is straightforward to bulk process the data for analysis based on machine learning tools.
+
+The timestamps are kept regarding the timezone of the server where the chatbot is run. When user-specific timestamps are required, they are obtained by converting the timezone to that of the user saved in \emph{timezones.csv}. \emph{Message} saves the original user message to the bot, while the \emph{Intent} field is self-explainatory. \emph{Entity} saves the useful information extracted from the message and the intent, e.g. "less" for \emph{tell\_more\_or\_less} or "4" for \emph{tell\_stress\_level}. In case a food description refers to two or more photos, multiple photo timestamps and reference IDs are saved in the respective fields in the form of formatted lists. \autoref{tab:profiles} shows the \emph{profiles.csv} of one participant with data collected within a day (\emph{ChatID} is omitted due to privacy concern).
+
+\begin{table}[htpb]
+  \caption[Sample User Data]{Part of a profile.csv file generated for a participant}\label{tab:profiles}
+  \centering
+  \tiny
+  \begin{tabular}{l l l l l l l}
+    \toprule
+      EntryID & Timestamp & Message & Intent & Entity & PhotoTimestamp & ReferenceID \\
+    \midrule
+      45 & 2020-04-12 03:09:51 & /tell\_stress\_level{level:2} & tell\_stress\_level & 2 & & \\
+      46 & 2020-04-12 08:00:19 & /tell\_stress\_level{level:3} & tell\_stress\_level & 3 & & \\
+    \bottomrule
+  \end{tabular}
+\end{table}

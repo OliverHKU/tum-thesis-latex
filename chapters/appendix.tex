@@ -503,7 +503,7 @@ templates:
 
 <!-- Reacting to Stress -->
 
-## path 1 - rightly detect stress - eating
+## rightly detect stress - eating
 * detect_stress
   - utter_stress
 * now_stress
@@ -517,7 +517,7 @@ templates:
 * photo_sent
   - utter_see_you
 
-## path 1 - rightly detect stress - eating - repeat
+## rightly detect stress - eating - repeat
 * detect_stress
   - utter_stress
 * now_stress
@@ -531,7 +531,7 @@ templates:
 * photo_sent
   - utter_see_you
 
-## path 1 - rightly detect stress - not eating
+## rightly detect stress - not eating
 * detect_stress
   - utter_stress
 * now_stress
@@ -543,7 +543,7 @@ templates:
 * not_eating_now
   - utter_see_you
 
-## path 2 - wrongly detect stress
+## wrongly detect stress
 * detect_stress
   - utter_stress
 * now_no_stress
@@ -551,7 +551,7 @@ templates:
   - action_save_data
   - utter_stress_delayed
 
-## path 2 - wrongly detect stress - previously stress - eaten
+## wrongly detect stress - previously stress - eaten
 * previous_stress
   - utter_ask_stress_level
 * tell_stress_level{"level":"1"}
@@ -563,7 +563,7 @@ templates:
 * describe_food
   - action_save_data
 
-## path 2 - wrongly detect stress - previously stress - haven't eaten
+## wrongly detect stress - previously stress - haven't eaten
 * previous_stress
   - utter_ask_stress_level
 * tell_stress_level{"level":"1"}
@@ -573,11 +573,11 @@ templates:
 * deny
   - utter_see_you
 
-## path 2 - wrongly detect stress - previously no stress
+## wrongly detect stress - previously no stress
 * previous_no_stress
   - utter_unstressed
 
-## path 3 - self-report stress - eating
+## self-report stress - eating
 * stressful_yes
   - utter_ask_stress_level
 * tell_stress_level{"level":"1"}
@@ -589,7 +589,7 @@ templates:
 * photo_sent
   - utter_see_you
 
-## path 3 - self-report stress - not eating
+## self-report stress - not eating
 * stressful_yes
   - utter_ask_stress_level
 * tell_stress_level{"level":"1"}
@@ -601,20 +601,20 @@ templates:
 
 <!-- Reflection on Food -->
 
-## path 11 - reflect food
+## reflect food
 * reflect_food
   - action_send_image
 * describe_food
   - action_save_data
   - utter_more_or_less
 
-## path 11 - tell more or less
+## tell more or less
 * tell_more_or_less{"more_or_less":"more"}
   - slot{"more_or_less":"more"}
   - action_save_data
   - utter_pieces
 
-## path 11 - tell pieces
+## tell pieces
 * tell_pieces{"pieces":"1"}
   - slot{"pieces":"1"}
   - action_save_data
