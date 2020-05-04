@@ -2,3 +2,36 @@
 % Add the above to each chapter to make compiling the PDF easier in some editors.
 
 \chapter{Experiment}\label{chapter:experiment}
+This chapter presents the experiment done to test out the chatbot and to collect data for analysis. The format of the experiment is a user study. The following sections will introduce how users are recruited, and what the process of the user study is.
+
+\section{Participants}
+Participants were recruited worldwide by distributing an advertisement of the chatbot stating the intent of the study and the importance of understanding how stress affects eating. A privacy disclaimer was included making clear that no privacy-sensitive information was going to be collected or presented. A link to the chatbot was attached in the advertisement so that participants could directly start conversations with the chatbot if they agreed to participate in this study. The recruitment happened between April 3 and 10, 2020, with a total of 33 participants. The distribution of regions where the participants are located, according to their locations shared with the chatbot, are listed in \autoref{tab:loc}.
+
+\begin{table}[htpb]
+  \caption[Locations of Participants]{Locations of participants}\label{tab:loc}
+  \centering
+  \begin{tabular}{l l}
+    \toprule
+      Timezone & Number of Participants \\
+    \midrule
+      Asia/Shanghai & 8 \\
+      Europe/Berlin & 4 \\
+      Asia/Hong\_Kong & 4 \\
+      Europe/London & 3 \\
+      America/New\_York & 2 \\
+      Australia/Melbourne & 1 \\
+      America/Los\_Angeles & 1 \\
+      Europe/Amsterdam & 1 \\
+      Europe/Zurich & 1 \\
+      Europe/Paris & 1 \\
+      Not Specified & 7 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\section{Process}
+After a user started using the chatbot, the user study began, which lasted 4 weeks. The chatbot scheduled messages to each participant according to the method demonstrated in the previous chapter. In the first two weeks, all messages were scheduled at fixed times. In the following two weeks, the adaptive scheduling was applied to the participants whose \emph{chat\_id} were even numbers. After the four weeks of data collection, participants who had been recorded more than 20 \emph{tell\_stress\_level} entries were selected for data analysis and further user studies. The details of the data analysis are discussed in the coming chapter. Among the selected users, another selection was done with regard to their food record. Those who had reported food for fewer than 10 days were eliminated.
+
+The further user studies consisted of two parts. First, the selected users were invited to complete a survey in which each food item they had reported, as well as the food photos they had sent to Demezys, were presented to them. They were asked to label whether they consider the item comfort food or not. Each \emph{describe\_food} entry was then labeled accordingly. Then, after the data analysis was done and user-specific models were built, each model predicted how much its corresponding participant eats and whether or not he or she is likely to eat comfort food under the influence of stress. Such information provided a stress-eating profile that was sent to the user to evaluate how close the statements in the report resembled his or her reality.
+
+Finally, the response from the participants was used to evaluate the effectiveness of the methodology adopted by this thesis.
