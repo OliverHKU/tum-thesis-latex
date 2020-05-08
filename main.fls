@@ -546,6 +546,9 @@ INPUT chapters/04_system_design.tex
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/t1cmtt.fd
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/t1cmtt.fd
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/jknappen/ec/ectt1095.tfm
+INPUT ./figures/fig-buttons.jpg
+INPUT ./figures/fig-buttons.jpg
+INPUT ./figures/fig-buttons.jpg
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/jknappen/ec/ecit1095.tfm

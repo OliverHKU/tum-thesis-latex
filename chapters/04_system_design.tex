@@ -33,7 +33,7 @@ The markdown file records all stories used as training data for Rasa Core. Every
 
 \bigskip
 \subsubsection{Rasa Actions}
-An action is a response the chatbot performs to the user intent. There are two types of actions, namely \emph{utterances} and \emph{custom actions}. Utterances have to be defined in a markdown file following a certain format. Below is an example of an utterance which asks the user if he or she has eaten anything:\bigskip
+An action is a response the chatbot gives to the user intent. There are two types of actions, namely \emph{utterances} and \emph{custom actions}. \emph{Utterances} have to be defined in a markdown file following a certain format. Below is an example of an utterance which asks the user if he or she has eaten anything:\bigskip
 
 \begin{lstlisting}
 utter_did_you_eat:
@@ -46,9 +46,16 @@ utter_did_you_eat:
 \end{lstlisting}
 
 \bigskip
-The uttered messages can have one or multiple types, which in the above case are a piece of text with two buttons. Each button can carry a payload which refers to a particular intent. When the user presses the button, its corresponding intent is sent back to the bot.
+The uttered messages can have one or multiple types, which in the above case are a piece of text with two buttons. Each button can carry a payload that refers to a particular intent. When the user presses the button, its corresponding intent is sent back to the bot.\bigskip
 
-Unlike utterances that are relatively restricted, custom actions call a web server that can perform any task defined by the server and send any number of messages to the user. A typical way of implementing custom actions is to use the Python SDK offered by Rasa. \hyperref[ssec:custom_action]{Subsection~\ref*{ssec:custom_action}} looks into details of custom actions implemented in this project.
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.5\textwidth]{fig-buttons}
+  \caption{An utterance with buttons in action}
+  \label{fig:buttons}
+\end{figure}
+
+Unlike utterances that are relatively restricted, custom actions call a web server that can perform any task defined by the server and send any number of messages to the user. A typical way of implementing custom actions is to use the Python SDK offered by Rasa. \hyperref[ssec:custom_action]{Subsection~\ref*{ssec:custom_action}} looks into the details of custom actions implemented in this project.
 
 \subsubsection{Rasa Slots}
 Slots are key-value stores that provide memory to the chatbot. It can be viewed as variables shared among different actions in the Rasa service, as well as a bridge between the metadata used for training and the code used for handle actions. More specifically, slots can be get and set via stories (\autoref{story_slot}) or by calling getter and setter functions in custom actions (\autoref{action_slot}). This is otherwise impossible as, without slots, actions would become stateless.\bigskip
