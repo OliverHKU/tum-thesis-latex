@@ -127,12 +127,12 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {A.3}stories.md}{57}{section.A.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.4}Model Selection and Training Results for the Candidates}{61}{section.A.4}% 
+\contentsline {chapter}{\numberline {B}Model Selection and Training Results for the Candidates}{62}{appendix.B}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.5}Complete Collection of Statements Describing the Candidates' Eating Behaviors}{64}{section.A.5}% 
+\contentsline {chapter}{\numberline {C}Complete Collection of Statements Describing the Candidates' Eating Behaviors}{66}{appendix.C}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Figures}{66}{chapter*.31}% 
+\contentsline {chapter}{\nonumberline List of Figures}{67}{chapter*.31}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Tables}{67}{chapter*.32}% 
+\contentsline {chapter}{\nonumberline List of Tables}{68}{chapter*.32}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Bibliography}{68}{chapter*.33}% 
+\contentsline {chapter}{\nonumberline Bibliography}{69}{chapter*.33}% 
