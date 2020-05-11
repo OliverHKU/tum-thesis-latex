@@ -58,7 +58,7 @@ The uttered messages can have one or multiple types, which in the above case are
 Unlike utterances that are relatively restricted, custom actions call a web server that can perform any task defined by the server and send any number of messages to the user. A typical way of implementing custom actions is to use the Python SDK offered by Rasa. \hyperref[ssec:custom_action]{Subsection~\ref*{ssec:custom_action}} looks into the details of custom actions implemented in this project.
 
 \subsubsection{Rasa Slots}
-Slots are key-value stores that provide memory to the chatbot. It can be viewed as variables shared among different actions in the Rasa service, as well as a bridge between the metadata used for training and the code used for handle actions. More specifically, slots can be get and set via stories (\autoref{story_slot}) or by calling getter and setter functions in custom actions (\autoref{action_slot}). This is otherwise impossible as, without slots, actions would become stateless.\bigskip
+Slots are key-value stores that provide memory to the chatbot. It can be viewed as variables shared among different actions in the Rasa service, as well as a bridge between the metadata used for training and the code used for handling Rasa actions. Slots can be get and set via stories (\autoref{story_slot}) or by calling getter and setter functions in custom actions (\autoref{action_slot}). Slots make long conversations with rich information possible as they make Rasa's actions stateful.\bigskip
 
 \begin{lstlisting}[label={story_slot},caption={Using slots in stories to save user's stress level},captionpos=b]
 * previous_stress
@@ -103,7 +103,7 @@ class ActionSaveData(Action):
 \end{lstlisting}
 
 \bigskip
-While Rasa was selected as the underlying platform the chatbot is based on, Telegram was chosen as the social platform to run the chatbot on. This was a straightforward choice since \citeauthor{17_ludwig} was already using Telegram in his project (and it's worth reminding that the code of this project is based on the one of \citeauthor{17_ludwig}). And it turned out that it was easy to find enough Telegram users from a wide variety of timezones to participate in the user trial.
+While Rasa was selected as the underlying platform the chatbot is based on, Telegram was chosen as the social platform to run the chatbot on. This was a straightforward decision since \citeauthor{17_ludwig} was already using Telegram in his project (it's worth reminding the readers that the code of this project is based on that of \citeauthor{17_ludwig}). And it turned out that it was easy to find enough Telegram users from a wide variety of timezones to participate in the user trial.
 
 Rasa provided a Telegram connector which acts as an agent connecting to the Telegram Bot API. However, since Rasa is based on NLU, no photo or location data is handled by default. It is nevertheless necessary to deal with such information as part of the feature of this bot. The next subsection presents necessary changes made to this connector to facilitate these features.
 

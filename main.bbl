@@ -1241,6 +1241,70 @@
       \verb https://www.mentalhealth.org.uk/statistics/mental-health-statistics-stress
       \endverb
     \endentry
+    \entry{50_24hr}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=8be58b1eb6368207840f2df7a8c92a51}{%
+           family={{National Cancer Institute, National Institutes of Health}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{8be58b1eb6368207840f2df7a8c92a51}
+      \strng{fullhash}{8be58b1eb6368207840f2df7a8c92a51}
+      \strng{bibnamehash}{8be58b1eb6368207840f2df7a8c92a51}
+      \strng{authorbibnamehash}{8be58b1eb6368207840f2df7a8c92a51}
+      \strng{authornamehash}{8be58b1eb6368207840f2df7a8c92a51}
+      \strng{authorfullhash}{8be58b1eb6368207840f2df7a8c92a51}
+      \field{extraname}{1}
+      \field{sortinit}{N}
+      \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
+      \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{24-hour Dietary Recall (24HR) at a glance}
+      \field{urlday}{11}
+      \field{urlmonth}{5}
+      \field{urlyear}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://dietassessmentprimer.cancer.gov/profiles/recall/
+      \endverb
+      \verb{url}
+      \verb https://dietassessmentprimer.cancer.gov/profiles/recall/
+      \endverb
+    \endentry
+    \entry{49_ffq}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=8be58b1eb6368207840f2df7a8c92a51}{%
+           family={{National Cancer Institute, National Institutes of Health}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{8be58b1eb6368207840f2df7a8c92a51}
+      \strng{fullhash}{8be58b1eb6368207840f2df7a8c92a51}
+      \strng{bibnamehash}{8be58b1eb6368207840f2df7a8c92a51}
+      \strng{authorbibnamehash}{8be58b1eb6368207840f2df7a8c92a51}
+      \strng{authornamehash}{8be58b1eb6368207840f2df7a8c92a51}
+      \strng{authorfullhash}{8be58b1eb6368207840f2df7a8c92a51}
+      \field{extraname}{2}
+      \field{sortinit}{N}
+      \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Food Frequency Questionnaire at a glance}
+      \field{urlday}{11}
+      \field{urlmonth}{5}
+      \field{urlyear}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://dietassessmentprimer.cancer.gov/profiles/questionnaire/
+      \endverb
+      \verb{url}
+      \verb https://dietassessmentprimer.cancer.gov/profiles/questionnaire/
+      \endverb
+    \endentry
     \entry{33_eades}{article}{}
       \name{author}{6}{}{%
         {{uniquename=0,uniquepart=base,hash=f21f69c561450f753b89cb6d39a06f2d}{%

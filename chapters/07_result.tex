@@ -2,49 +2,56 @@
 % Add the above to each chapter to make compiling the PDF easier in some editors.
 
 \chapter{Result}\label{chapter:result}
-Since the result of data collection via the chatbot was already demonstrated in the previous chapter, this chapter focuses on the result of cross-validation, user evaluation, and the effectiveness of adaptive sampling.
+Since the outcome of data collection via the chatbot was already demonstrated in the previous chapter, this chapter focuses on the result of cross-validation, user evaluation, and the effectiveness of adaptive sampling.
 
 The results of the model selection for each task and its predictions for each user per task are showin in \autoref{model-selection}. As can be seen, a majority of the selected models achieved accuracies close to or over 75 percent. However, despite the relatively high cross-validation score, it is still likely that the models were overfitted, given the fact that the data size is small, and consequently neither the training or testing set in each phase can be representative enough to the user (\cite{45_overfitting}). Therefore, the user evaluation provided important additional input on how well the models as well as the methods presented in this work performed. For the four candidates, 16 statements were evaluated, and the evaluation score was 15. The average score per statement was, therefore, close to 1, corresponding to the evaluation "Yeah, sometimes". 7 out of the 16 statements were given the response "Oh my word! How did you know that!", demonstrating that, in general, the candidates thought that the stress-eating profiles captured their stress-eating patterns correctly, despite the relatively short period of data collection and small sample size. This shows that the methods developed in this thesis are potentially feasible for creating eating behavior reports for a larger population with more data.\bigskip
 
 \begin{lstlisting}[label={model-selection},caption={Result of model selection and prediction for each task},captionpos=b]
-**** Result for Daily more\_or\_less ****
+**** Result for Daily more_or_less ****
 
-SVM accuracy for candidate 2:	0.7533333333333333
-High-stress prediction for candidate 2:	  ['less']
-Acute-stress prediction for candidate 2:	['less']
-Low-stress prediction for candidate 2:	  ['less']
-
-DT accuracy for candidate 1:	0.75
+Selected model for candidate 1:           decision tree
+DT accuracy for candidate 1:	            0.75
 High-stress prediction for candidate 1:	  ['more']
 Acute-stress prediction for candidate 1:	['more']
 Low-stress prediction for candidate 1:	  ['more']
 
-kNN accuracy for candidate 3:	0.96
+Selected model for candidate 2:           SVM
+SVM accuracy for candidate 2:	            0.753
+High-stress prediction for candidate 2:	  ['less']
+Acute-stress prediction for candidate 2:	['less']
+Low-stress prediction for candidate 2:	  ['less']
+
+Selected model for candidate 3:           kNN
+kNN accuracy for candidate 3:	            0.96
 High-stress prediction for candidate 3:	  ['same']
 Acute-stress prediction for candidate 3:	['same']
 Low-stress prediction for candidate 3:	  ['same']
 
 **** Result for Daily pieces ****
 
-DT accuracy for candidate 2:	0.7328571428571429
-High-stress prediction for candidate 2:	  [3]
-Acute-stress prediction for candidate 2:	[3]
-Low-stress prediction for candidate 2:	  [4]
-Unstressed prediction for candidate 2:	  [3]
-
-kNN accuracy for candidate 1:	0.5742857142857143
+Selected model for candidate 1:           kNN
+kNN accuracy for candidate 1:	            0.574
 High-stress prediction for candidate 1:	  [7]
 Acute-stress prediction for candidate 1:	[7]
 Low-stress prediction for candidate 1:	  [6]
 Unstressed prediction for candidate 1:	  [6]
 
-SVM accuracy for candidate 3:	0.8016666666666667
+Selected model for candidate 2:           decision tree
+DT accuracy for candidate 2:	            0.733
+High-stress prediction for candidate 2:	  [3]
+Acute-stress prediction for candidate 2:	[3]
+Low-stress prediction for candidate 2:	  [4]
+Unstressed prediction for candidate 2:	  [3]
+
+Selected model for candidate 3:           SVM
+SVM accuracy for candidate 3:	            0.802
 High-stress prediction for candidate 3:	  [3]
 Acute-stress prediction for candidate 3:	[3]
 Low-stress prediction for candidate 3:	  [3]
 Unstressed prediction for candidate 3:	  [2]
 
-kNN accuracy for candidate 4:	0.7571428571428571
+Selected model for candidate 4:           kNN
+kNN accuracy for candidate 4:	            0.757
 High-stress prediction for candidate 4:	  [3]
 Acute-stress prediction for candidate 4:	[3]
 Low-stress prediction for candidate 4:	  [1]
@@ -52,24 +59,28 @@ Unstressed prediction for candidate 4:	  [3]
 
 **** Result for Daily comfort\_food ****
 
-kNN accuracy for candidate 2:	0.6833333333333332
-High-stress prediction for candidate 2:	  ['False']
-Acute-stress prediction for candidate 2:	['False']
-Low-stress prediction for candidate 2:	  ['False']
-
-SVM accuracy for candidate 1:	0.6866666666666668
+Selected model for candidate 1:           SVM
+SVM accuracy for candidate 1:	            0.687
 High-stress prediction for candidate 1:	  ['True']
 Acute-stress prediction for candidate 1:	['True']
 Low-stress prediction for candidate 1:	  ['True']
 
-DT accuracy for candidate 3:	0.96
+Selected model for candidate 2:           kNN
+kNN accuracy for candidate 2:	            0.683
+High-stress prediction for candidate 2:	  ['False']
+Acute-stress prediction for candidate 2:	['False']
+Low-stress prediction for candidate 2:	  ['False']
+
+Selected model for candidate 3:           decision tree
+DT accuracy for candidate 3:	            0.96
 High-stress prediction for candidate 3:	  ['True']
 Acute-stress prediction for candidate 3:	['True']
 Low-stress prediction for candidate 3:	  ['True']
 
 **** Result for Event-Based comfort\_food ****
 
-DT accuracy for candidate 1:	0.8099999999999999
+Selected model for candidate 1:           decision tree
+DT accuracy for candidate 1:	            0.810
 High-stress prediction for candidate 1:	  ['True']
 Acute-stress prediction for candidate 1:	['True']
 Low-stress prediction for candidate 1:	  ['True']
