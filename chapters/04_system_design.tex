@@ -272,27 +272,27 @@ The stress samplings are done by a scheduler written in Python. It schedules mes
 
 To better understand when participants are likely to feel stressed on an individual basis, an adaptive scheduling model was developed. This model not only adapts the scheduled timestamps based on historical values but also the number of stress samplings per day. This reduces the number of times when the chatbot asks about stress for those who feel stressed less frequently than others (\autoref{fig:adapt-stress}), ensuring that Demezys is not "spamming" its users.
 
-The adaptive sampling is achieved by using k-means clustering on previous timestamps of stress entries. First, all previous stress entries are collected, with the corresponding timestamps and stress levels. All timestamps were collected in the 'Europe/Berlin' timezone. Then, the timestamps are converted to the local time of the users according to the timezone saved in \emph{timezones.csv} Afterwards, the difference between each timestamp and the timestamp of the start of its day is calculated and saved. For example, for timestamp \texttt{2020-04-07 13:00:50} is transformed to 46850 seconds, which is the difference between itself and the start of the day (\texttt{2020-04-07 00:00:00}). Each saved time difference is a data point in integer form. Finally, each data point is copied \emph{n-1} times where \emph{n} is the stress level corresponding to that data point. This is to make sure that timestamps associated with higher levels of stress get more weight in the clustering training so that the training result can better predict the time when the user is likely to feel more stressed. This is based on the intuitive assumption that immense stress does not come and go abruptly so that a person is likely to feel some level of stress shortly before and after the timestamp when he or she is feeling a high level of stress.
+The adaptive sampling was achieved by using k-means clustering on previous timestamps of stress entries. First, all previous stress entries were collected, with the corresponding timestamps and stress levels. All timestamps were collected in the 'Europe/Berlin' timezone. Then, the timestamps were converted to the local time of the users according to the timezone saved in \emph{timezones.csv} Afterwards, the difference between each timestamp and the timestamp of the start of its day was calculated and saved. For example, for timestamp \texttt{2020-04-07 13:00:50} is transformed to 46850 seconds, which is the difference between itself and the start of the day (\texttt{2020-04-07 00:00:00}). Each saved time difference is a data point in integer form. Finally, each data point was copied \emph{n-1} times where \emph{n} is the stress level corresponding to that data point. This was to make sure that timestamps associated with higher levels of stress get more weight in the clustering training so that the training result can better predict the time when the user is likely to feel more stressed. This is based on the intuitive assumption that immense stress does not come and go abruptly so that a person is likely to feel some level of stress shortly before and after the timestamp when he or she is feeling a high level of stress.
 
-The centroid of each cluster is converted back to a timestamp from its integer form. The \texttt{hour}s of the centroids will be the hours when Demezys schedules the new \emph{detect\_stress} message the coming day. The k-means clustering algorithm is applied to all 18 participants whose \emph{chat\_id}s are even numbers, among the total of 33 participants. Participants with odd \emph{chat\_id}s receive reminders at fixed times per day, 3 times a day as the controlled group. The participants are not informed of this setting.
+The centroid of each cluster was then converted back to a timestamp from its integer form. The \texttt{hour}s of the centroids would be the hours when Demezys schedules the new \emph{detect\_stress} message the coming day. The k-means clustering algorithm was applied to all 18 participants whose \emph{chat\_id}s were even numbers, among the total of 33 participants. Participants with odd \emph{chat\_id}s received reminders at fixed times per day, 3 times a day as the controlled group. The participants were not informed of this setting.
 
 \section{Collection and Processing of Eating Behavior Data}
-There are three types of eating behavior data collected, namely food descriptions, amount compared to the non-stress state, and the number of pieces.
+There were three types of eating behavior data collected, namely food descriptions, amount compared to the non-stress state, and the number of pieces.
 
 \subsection{Food Descriptions}
-Food descriptions are collected whenever a user tells Demezys that he or she was stressed one hour ago and was eating then. In addition, if there is at least one record with a positive stress level during the day, the user will be prompted to give food descriptions either according to the photo(s) he or she has sent during the day, or plainly if there is no photo. To collect food descriptions, Demezys asks the user either of the following questions
+Food descriptions were collected whenever a user told Demezys that he or she had been stressed one hour ago and had been eating then. In addition, if there was at least one record with a positive stress level during the day, the user would be prompted to give food descriptions either according to the photo(s) he or she had sent during the day, or plainly if there was no photo. To collect food descriptions, Demezys asked the user either of the following questions
 
 \begin{itemize}
   \item Hi, time to reflect what you've eaten when you were stressed. Please describe the food on the photo(s).
   \item Please describe the food you've eaten when you felt stressed today.
 \end{itemize}
 
-\noindent according to the situation. Users' answers to these questions are saved into \emph{profiles.csv} as food descriptions.
+\noindent according to the situation. Users' answers to these questions were saved into \emph{profiles.csv} as food descriptions.
 
-Towards the end of this study, the food items from the descriptions were extracted manually and sent back to the users for comfort-food labeling. The binary label is added back to each food record for training the prediction models.
+Towards the end of this study, the food items from the descriptions were extracted manually and sent back to the users for comfort-food labeling. The binary label was added back to each food record for training the prediction models.
 
 \subsection{Food Amount Compared to the Non-Stress State}
-Right after food descriptions, the food amount compared to the non-stress state is asked at the end of each day in case the user has reported at least once a positive stress level. This is done by the following action
+Right after food descriptions, the food amount compared to the non-stress state was asked at the end of each day in case the user had reported at least once a positive stress level. This was done by the following action
 
 \begin{lstlisting}
 utter_more_or_less:
@@ -307,10 +307,10 @@ utter_more_or_less:
     payload: /tell_more_or_less{"more_or_less":"same"}
 \end{lstlisting}
 
-\noindent where three buttons are presented to the user. The value of the slot \emph{more\_or\_less} is recorded.
+\noindent where three buttons were presented to the user. The value of the slot \emph{more\_or\_less} was recorded.
 
 \subsection{Number of Pieces}
-While the \emph{more\_or\_less} values are relative to a non-stressed state, there is another piece of information collected which is the number of \emph{pieces}. A piece can be either a meal, an afternoon tea, an extra dessert, or a snack/some snacks a person eats at once. It is an absolute value that tells how frequently the user eats. Like \emph{more\_or\_less}, \emph{pieces} are also reported by the users at the end of the day, after Demezys prompts the users with the action:
+While the \emph{more\_or\_less} values are relative to a non-stressed state, there was another piece of information collected which was the number of \emph{pieces}. A piece can be either a meal, an afternoon tea, an extra dessert, or a snack/some snacks a person eats at once. It is an absolute value that tells how frequently the user eats. Like \emph{more\_or\_less}, \emph{pieces} were also reported by the users at the end of the day, after Demezys prompted the users with the action:
 
 \begin{lstlisting}
 utter_pieces:
@@ -370,9 +370,9 @@ The choices made by the chatbot follow a certain conversation flow, meaning that
 It is worth noticing that when stress is detected, the chatbot not only prompts the user to answer questions but also offers words of comfort or advice at the end of the conversation. One sentence will be selected randomly out of a list of ten, which are shown under the \emph{utter\_see\_you} template in \autoref{domain}.
 
 \section{Data Persistence} \label{data_persis}
-In the previous sections, the design of the chatbot system was presented comprehensively. This last section of the chapter discusses how data collected via the chatbot is persisted for later analysis.
+In the previous sections, the design of the chatbot system was presented comprehensively. This last section of the chapter discusses how data collected via the chatbot was persisted for later analysis.
 
-As introduced, the data of each user is saved into two files, namely \emph{profiles.csv} and \emph{photos.csv}. The scheme of each file is listed below.
+As introduced, the data of each user was saved into two files, namely \emph{profiles.csv} and \emph{photos.csv}. The scheme of each file is listed below.
 
 \begin{itemize}
   \item \textbf{profiles.csv:} [EntryID, Timestamp, ChatID, Message, Intent, Entity, PhotoTimestamp, ReferenceID]
