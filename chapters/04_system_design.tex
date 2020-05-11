@@ -2,7 +2,7 @@
 % Add the above to each chapter to make compiling the PDF easier in some editors.
 
 \chapter{System Design}\label{chapter:sys_design}
-This chapter presents the system design in detail. It will start with an introduction of the main features of the framework used for developing the chatbot, Rasa, including its features and how it interacts with the Telegram Bot API that is used to communicate with the users. Then it will show how stress detection is done with adaptive sampling. After that, it will explain how eating behavior data is collected and processed. Furthermore, the conversation flow is going to be delivered in detail. The last section will present how data is persisted.
+This chapter presents the system design in detail. It will start with an introduction of the main features of the framework used for developing the chatbot, Rasa, including its features and how it interacts with the Telegram Bot API that is used to communicate with the users. Then it will show how stress detection was done with adaptive sampling. After that, it will explain how eating behavior data was collected and processed. Furthermore, the conversation flow is going to be delivered in detail. The last section will present how data was persisted.
 
 \section{The Rasa Framework}
 Rasa (\citeyear{10_rasa}) is an open-source framework based on natural language processing (NLP) for developing chatbots. This section introduces why it was used and its main components and features.
@@ -14,7 +14,7 @@ The most important reason for choosing Rasa was that the software developed in t
 \citeauthor{16_martin} (\citeyear{17_ludwig}) gave a general review of the components of Rasa. This subsection is therefore based on his review and the requirements of this project.
 
 \subsubsection{Rasa NLU}
-As the name suggests, Rasa NLU is the NLU module of the Rasa framework, which is responsible for understanding the user input. Specifically, this module helps identify the intent of the user and entities in the application domain from English sentences the user sends to the bot. This is done by training an NLU model based on sample data provided by the developer. In the context of this work, the usage of this module is mainly limited to identifying users' intend to describe food and report stress. For each user input, another module called Rasa Core utilizes the NLU model to calculate the probability of each pre-defined intent and predicts the intent with the highest probability.
+As the name suggests, Rasa NLU is the NLU module of the Rasa framework, which is responsible for understanding the user input. Specifically, this module helps identify the intent of the user and entities in the application domain from English sentences the user sends to the bot. This is done by training an NLU model based on sample data provided by the developer. In the context of this work, the usage of this module was mainly limited to identifying users' intend to describe food and report stress. For each user input, another module called Rasa Core utilizes the NLU model to calculate the probability of each pre-defined intent and predicts the intent with the highest probability.
 
 \subsubsection{Rasa Core}
 While Rasa NLU takes care of understanding what a user says, Rasa Core is responsible for replying to the user appropriately. Like Rasa NLU, Rasa Core uses machine learning to train its predictive model. The training data is a set of sample conversations in the markdown format. This training data is called Rasa stories.
