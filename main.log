@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.4.2)  11 MAY 2020 12:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.4.2)  11 MAY 2020 13:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1451,29 +1451,29 @@ File: lstlang1.sty 2019/02/27 1.8b listings language file
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/cmtt/m/n' tried instead on input line 76.
  [16] [17] [18] [19] [20] [21]
-<./figures/fig-share-loc.png, id=452, 615.29875pt x 803.0pt>
+<./figures/fig-share-loc.png, id=453, 615.29875pt x 803.0pt>
 File: ./figures/fig-share-loc.png Graphic file (type png)
 <use ./figures/fig-share-loc.png>
 Package pdftex.def Info: ./figures/fig-share-loc.png  used on input line 261.
 (pdftex.def)             Requested size: 209.12778pt x 272.91837pt.
  [22] [23 <./figures/fig-share-loc.png>] [24] [25]
-<./figures/fig-conv-flow.png, id=493, 1921.1775pt x 809.0225pt>
+<./figures/fig-conv-flow.png, id=494, 1921.1775pt x 809.0225pt>
 File: ./figures/fig-conv-flow.png Graphic file (type png)
 <use ./figures/fig-conv-flow.png>
 Package pdftex.def Info: ./figures/fig-conv-flow.png  used on input line 344.
 (pdftex.def)             Requested size: 418.25555pt x 176.12146pt.
  [26]
-<./figures/fig-onboard.jpg, id=525, 831.105pt x 1859.94875pt>
+<./figures/fig-onboard.jpg, id=526, 831.105pt x 1859.94875pt>
 File: ./figures/fig-onboard.jpg Graphic file (type jpg)
 <use ./figures/fig-onboard.jpg>
 Package pdftex.def Info: ./figures/fig-onboard.jpg  used on input line 351.
 (pdftex.def)             Requested size: 209.12778pt x 467.99438pt.
-<./figures/fig-detect-stress.jpg, id=526, 831.105pt x 1443.3925pt>
+<./figures/fig-detect-stress.jpg, id=527, 831.105pt x 1443.3925pt>
 File: ./figures/fig-detect-stress.jpg Graphic file (type jpg)
 <use ./figures/fig-detect-stress.jpg>
 Package pdftex.def Info: ./figures/fig-detect-stress.jpg  used on input line 358.
 (pdftex.def)             Requested size: 209.12778pt x 363.18182pt.
-<./figures/fig-reflect-food.jpg, id=527, 831.105pt x 1344.02126pt>
+<./figures/fig-reflect-food.jpg, id=528, 831.105pt x 1344.02126pt>
 File: ./figures/fig-reflect-food.jpg Graphic file (type jpg)
 <use ./figures/fig-reflect-food.jpg>
 Package pdftex.def Info: ./figures/fig-reflect-food.jpg  used on input line 365.
@@ -1573,18 +1573,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 64740 strings out of 492616
- 1474366 string characters out of 6129482
- 2195405 words of memory out of 5000000
+ 64748 strings out of 492616
+ 1474440 string characters out of 6129482
+ 2196405 words of memory out of 5000000
  66287 multiletter control sequences out of 15000+600000
- 592149 words of font info for 340 fonts, out of 8000000 for 9000
+ 592569 words of font info for 346 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  150i,10n,185p,9083b,3382s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfit1095.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (80 pages, 2937514 bytes).
+Output written on main.pdf (80 pages, 2937600 bytes).
 PDF statistics:
- 2114 PDF objects out of 2487 (max. 8388607)
- 1990 compressed objects within 20 object streams
+ 2115 PDF objects out of 2487 (max. 8388607)
+ 1991 compressed objects within 20 object streams
  1189 named destinations out of 1200 (max. 500000)
  35815 words of extra memory for PDF output out of 35830 (max. 10000000)
 

@@ -61,7 +61,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\nonumberline Photos}{18}{section*.13}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\nonumberline Naming of the Chatbot}{20}{section*.14}% 
+\contentsline {subsubsection}{\nonumberline Demezys - the Naming of the Chatbot}{20}{section*.14}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.1.4}Training Data}{20}{subsection.4.1.4}% 
 \defcounter {refsection}{0}\relax 
