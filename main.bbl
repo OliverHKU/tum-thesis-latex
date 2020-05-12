@@ -273,19 +273,19 @@
            given={Petter},
            giveni={P\bibinitperiod},
            givenun=0}}%
-        {{uniquename=0,uniquepart=base,hash=44bd8bfc77d4014590132abca95752cd}{%
-           family={FÃžlstad},
+        {{uniquename=0,uniquepart=base,hash=085f904e1f2578612d557a9701e0bae5}{%
+           family={Følstad},
            familyi={F\bibinitperiod},
-           given={AsbjÃžrn},
+           given={Asbjørn},
            giveni={A\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{b2ebfbfc91ef10e1f574a3233bf14f7a}
-      \strng{fullhash}{b2ebfbfc91ef10e1f574a3233bf14f7a}
-      \strng{bibnamehash}{b2ebfbfc91ef10e1f574a3233bf14f7a}
-      \strng{authorbibnamehash}{b2ebfbfc91ef10e1f574a3233bf14f7a}
-      \strng{authornamehash}{b2ebfbfc91ef10e1f574a3233bf14f7a}
-      \strng{authorfullhash}{b2ebfbfc91ef10e1f574a3233bf14f7a}
+      \strng{namehash}{b70fff3300fc47b248aeadf5c3734f03}
+      \strng{fullhash}{b70fff3300fc47b248aeadf5c3734f03}
+      \strng{bibnamehash}{b70fff3300fc47b248aeadf5c3734f03}
+      \strng{authorbibnamehash}{b70fff3300fc47b248aeadf5c3734f03}
+      \strng{authornamehash}{b70fff3300fc47b248aeadf5c3734f03}
+      \strng{authorfullhash}{b70fff3300fc47b248aeadf5c3734f03}
       \field{sortinit}{B}
       \field{sortinithash}{276475738cc058478c1677046f857703}
       \field{extradatescope}{labelyear}

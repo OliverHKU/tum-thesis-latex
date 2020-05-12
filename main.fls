@@ -582,8 +582,16 @@ INPUT chapters/06_data_analysis.tex
 INPUT chapters/06_data_analysis.tex
 INPUT chapters/07_result.tex
 INPUT chapters/07_result.tex
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplr9e.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplb9e.tfm
 INPUT chapters/08_limitations.tex
 INPUT chapters/08_limitations.tex
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplr9e.vf
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplb9e.vf
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmb.tfm
 INPUT chapters/09_future_work.tex
 INPUT chapters/09_future_work.tex
 INPUT chapters/10_conclusion.tex

@@ -113,26 +113,30 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {7}Result}{38}{chapter.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Limitations}{42}{chapter.8}% 
+\contentsline {section}{\numberline {7.1}Result of Model Cross-Validation and User Evaluation}{38}{section.7.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {9}Future Work}{43}{chapter.9}% 
+\contentsline {section}{\numberline {7.2}Result of Adaptive Sampling of Stress}{41}{section.7.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {10}Conclusion}{45}{chapter.10}% 
+\contentsline {chapter}{\numberline {8}Limitations}{43}{chapter.8}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Rasa Training Data}{46}{appendix.A}% 
+\contentsline {chapter}{\numberline {9}Future Work}{44}{chapter.9}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}domain.yml}{46}{section.A.1}% 
+\contentsline {chapter}{\numberline {10}Conclusion}{46}{chapter.10}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}nlu.md}{51}{section.A.2}% 
+\contentsline {chapter}{\numberline {A}Rasa Training Data}{47}{appendix.A}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.3}stories.md}{58}{section.A.3}% 
+\contentsline {section}{\numberline {A.1}domain.yml}{47}{section.A.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}Model Selection and Training Results for the Candidates}{63}{appendix.B}% 
+\contentsline {section}{\numberline {A.2}nlu.md}{52}{section.A.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {C}Complete Collection of Statements Describing the Candidates' Eating Behaviors}{67}{appendix.C}% 
+\contentsline {section}{\numberline {A.3}stories.md}{59}{section.A.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Figures}{68}{chapter*.32}% 
+\contentsline {chapter}{\numberline {B}Model Selection and Training Results for the Candidates}{64}{appendix.B}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Tables}{69}{chapter*.33}% 
+\contentsline {chapter}{\numberline {C}Complete Collection of Statements Describing the Candidates' Eating Behaviors}{68}{appendix.C}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Bibliography}{70}{chapter*.34}% 
+\contentsline {chapter}{\nonumberline List of Figures}{69}{chapter*.33}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline List of Tables}{70}{chapter*.34}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline Bibliography}{71}{chapter*.35}% 

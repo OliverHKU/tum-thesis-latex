@@ -4,7 +4,9 @@
 \chapter{Result}\label{chapter:result}
 Since the outcome of data collection via the chatbot was already demonstrated in the previous chapter, this chapter focuses on the result of cross-validation, user evaluation, and the effectiveness of adaptive sampling.
 
-The results of the model selection for each task and its predictions for each user per task are showin in \autoref{model-selection}. As can be seen, a majority of the selected models achieved accuracies close to or over 75 percent. However, despite the relatively high cross-validation score, it is still likely that the models were overfitted, given the fact that the data size is small, and consequently neither the training or testing set in each phase can be representative enough to the user (\cite{45_overfitting}). Therefore, the user evaluation provided important additional input on how well the models as well as the methods presented in this work performed. For the four candidates, 16 statements were evaluated, and the evaluation score was 15. The average score per statement was, therefore, close to 1, corresponding to the evaluation "Yeah, sometimes". 7 out of the 16 statements were given the response "Oh my word! How did you know that!", demonstrating that, in general, the candidates thought that the stress-eating profiles captured their stress-eating patterns correctly, despite the relatively short period of data collection and small sample size. This shows that the methods developed in this thesis are potentially feasible for creating eating behavior reports for a larger population with more data.\bigskip
+\section{Result of Model Cross-Validation and User Evaluation}
+
+The results of the model selection for each task and the predictions for each user per task are showin in \autoref{model-selection}. As can be seen, a majority of the selected models achieved accuracies close to or over 75 percent. However, despite the relatively high cross-validation score, it is still likely that the models were overfitted, given the fact that the data size was small, and consequently neither the training nor testing set in each phase can be representative enough to the user (\cite{45_overfitting}). Therefore, the user evaluation provided important additional input on how well the models as well as the methods presented in this work performed qualitatively. As introduced in the previous chapter, the evaluation was done by letting the users assign scores to a number of statements describing their stress-eating patterns. The scores range within \{-2, -1, 0, 1, 2\} where 2 is the best and -2 the worst. The evaluation result is shown in \autoref{tab:evaluation}. For the four candidates, 16 statements were evaluated, and the evaluation score was 15. The average score per statement was, therefore, close to 1, corresponding to the evaluation "Yeah, sometimes". 7 out of the 16 statements were given the response "Oh my word! How did you know that!" corresponding to the score of 2, demonstrating that, in general, the candidates thought that the stress-eating profiles captured their stress-eating patterns correctly, despite the relatively short period of data collection and small sample size. This shows that the methods developed in this thesis are potentially feasible for creating eating behavior reports for a larger population with more data.\bigskip
 
 \begin{lstlisting}[label={model-selection},caption={Result of model selection and prediction for each task},captionpos=b]
 **** Result for Daily more_or_less ****
@@ -86,7 +88,28 @@ Acute-stress prediction for candidate 1:	['True']
 Low-stress prediction for candidate 1:	  ['True']
 \end{lstlisting}
 
-\bigskip
-In addition to the methods of building the stress-eating profile, the adaptive sampling scheme was also evaluated. This was done by counting the number of \emph{tell\_stress\_level} entries (stress entries). In the first half (2 weeks) of the data collection, 195 stress entries were recorded for all participants, with 143 of which from participants with even \emph{chat\_id}s, consisting of 73 percent of the total entries. In the second half, 124 entries were recorded, among which 104 were from those with even \emph{chat\_id}s. The proportion was increased to 84 percent. In addition, despite the decrease in the total number of entries, the number of entries of two participants with even \emph{chat\_id}s increased in the second half, which is not to be seen by any user with an odd ID. This suggests that the adaptive sampling scheme may have been effective, resulting in more accurate detection of stress. However, since both the population and the duration of this study were limited, further studies are needed to prove this hypothesis.
+\renewcommand{\arraystretch}{2}
+\begin{table}[htpb]
+  \caption[Result of User Evaluation]{Result of User Evaluation on Stress-Eating Reports (Scores from \{-2, -1, 0, 1, 2\})}\label{tab:evaluation}
+  \centering
+  \scriptsize
+  \begin{tabular}{| m{30em} | c | c | c | c |}
+    \toprule
+      Statement Templates Describing Food Behavior & User 1 & User 2 & User 3 & User 4 \\
+    \midrule
+      It appears that you are likely to eat [more/less] than usual when you're stressed & \textbf{2} & \textbf{2} & - & - \\
+      It appears that stress does not affect the amount of food you eat & - & - & 1 & - \\
+      On average, you eat [int] pieces per day when you're not stressed & 1 & \textbf{2} & \textbf{2} & \textbf{2} \\
+      {[Low/High]} levels of stress do not seem to affect the number of pieces & 0 & \textbf{2} & - & 1 \\
+      However, when you experience [high/low] levels of stress, you are likely to eat [more/less] pieces. & \textbf{2} & 1 & - & 0 \\
+      Most of the time, you [eat/don't eat] comfort food when you're stressed. & 1 & -1 & 1 & - \\
+    \bottomrule
+  \end{tabular}
+\end{table}
 
-Meanwhile, the decrease in the total number of entries was expected, as users tend to be less attached to the chatbot for two reasons. One is that some users might have tried the chatbot out of curiosity (\cite{47_curiosity}), and such curiosity decreases over time. The other is, as \citeauthor{48_why_chatbot} (\citeyear{48_why_chatbot}) suggested, that the biggest motivation people interact with chatbots is for productivity, which in the case of Demezys, is hard to obtain (users hardly get any input and immediate help by telling the chatbot whether he or she is stressed).
+\bigskip\bigskip
+\section{Result of Adaptive Sampling of Stress}
+
+In addition to the methods of building the stress-eating profile, the adaptive sampling scheme was also evaluated. This was done by counting the number of \emph{tell\_stress\_level} entries (stress entries) for each participant. In the first half (2 weeks) of the data collection, 195 stress entries were recorded for all 33 participants, with 143 of which from participants with even \emph{chat\_id}s, consisting of 73 percent of the total entries. In the second half, 124 entries were recorded, among which 104 were from those with even \emph{chat\_id}s. The proportion was increased to 84 percent. In addition, despite the decrease in the total number of entries, the individual number of entries of two participants with even \emph{chat\_id}s increased in the second half, which is not to be seen by any user with an odd \emph{chat\_id}. This suggests that the adaptive sampling scheme may have been effective, resulting in more accurate detection of stress. However, since both the population and the duration of this study were limited, further studies are needed to prove this hypothesis.
+
+Meanwhile, the decrease in the total number of entries was expected, as users tend to be less attached to the chatbot for two reasons. One is that some users might have tried the chatbot out of curiosity (\cite{47_curiosity}), and such curiosity decreases over time. The other is, as \citeauthor{48_why_chatbot} (\citeyear{48_why_chatbot}) suggested, that depite the fact that people start using chatbots with a variety of purposes, the biggest motivation they interact with chatbots is for productivity, which in the case of Demezys, was hard to obtain (users hardly get any input and immediate help by telling the chatbot whether he or she is stressed or what he or she is eating).
