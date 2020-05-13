@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.4.2)  12 MAY 2020 21:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.4.2)  13 MAY 2020 11:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1462,23 +1462,22 @@ File: ./figures/fig-conv-flow.png Graphic file (type png)
 <use ./figures/fig-conv-flow.png>
 Package pdftex.def Info: ./figures/fig-conv-flow.png  used on input line 344.
 (pdftex.def)             Requested size: 418.25555pt x 176.12146pt.
- [26]
-<./figures/fig-onboard.jpg, id=530, 831.105pt x 1859.94875pt>
+<./figures/fig-onboard.jpg, id=499, 831.105pt x 1859.94875pt>
 File: ./figures/fig-onboard.jpg Graphic file (type jpg)
 <use ./figures/fig-onboard.jpg>
 Package pdftex.def Info: ./figures/fig-onboard.jpg  used on input line 351.
 (pdftex.def)             Requested size: 209.12778pt x 467.99438pt.
-<./figures/fig-detect-stress.jpg, id=531, 831.105pt x 1443.3925pt>
+<./figures/fig-detect-stress.jpg, id=500, 831.105pt x 1443.3925pt>
 File: ./figures/fig-detect-stress.jpg Graphic file (type jpg)
 <use ./figures/fig-detect-stress.jpg>
 Package pdftex.def Info: ./figures/fig-detect-stress.jpg  used on input line 358.
 (pdftex.def)             Requested size: 209.12778pt x 363.18182pt.
-<./figures/fig-reflect-food.jpg, id=532, 831.105pt x 1344.02126pt>
+<./figures/fig-reflect-food.jpg, id=501, 831.105pt x 1344.02126pt>
 File: ./figures/fig-reflect-food.jpg Graphic file (type jpg)
 <use ./figures/fig-reflect-food.jpg>
 Package pdftex.def Info: ./figures/fig-reflect-food.jpg  used on input line 365.
 (pdftex.def)             Requested size: 209.12778pt x 338.17834pt.
- [27 <./figures/fig-conv-flow.png>]) (./chapters/05_experiment.tex [28] [29 <./figures/fig-onboard.jpg>] [30 <./figures/fig-detect-stress.jpg>] [31 <./figures/fig-reflect-food.jpg>]
+ [26] [27 <./figures/fig-conv-flow.png>]) (./chapters/05_experiment.tex [28] [29 <./figures/fig-onboard.jpg>] [30 <./figures/fig-detect-stress.jpg>] [31 <./figures/fig-reflect-food.jpg>]
 chapter 5.
 [32
 
@@ -1576,15 +1575,15 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 64767 strings out of 492616
- 1474658 string characters out of 6129482
+ 64763 strings out of 492616
+ 1474623 string characters out of 6129482
  2197460 words of memory out of 5000000
  66294 multiletter control sequences out of 15000+600000
- 597716 words of font info for 355 fonts, out of 8000000 for 9000
+ 597506 words of font info for 352 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  150i,11n,185p,9083b,3382s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfit1095.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (81 pages, 2940634 bytes).
+Output written on main.pdf (81 pages, 2940580 bytes).
 PDF statistics:
  2133 PDF objects out of 2487 (max. 8388607)
  2007 compressed objects within 21 object streams
